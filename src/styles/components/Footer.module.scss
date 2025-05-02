@@ -1,0 +1,65 @@
+@import "../helpers/helpers.scss";
+
+.main_footer {
+  padding: 40px 0;
+  background-color: #00127E;
+  .footer_section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .left{ 
+      width: 80%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #CDCDCD;
+      }
+      h6{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #fff;
+        display: inline-block;
+        padding-top: 10px;
+        border-bottom: 1px solid #fff;
+      }
+    }
+    .right{
+      width: 20%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #CDCDCD;
+        text-align: right;
+        padding-bottom: 10px;
+        @media (max-width: 767px) {
+          text-align: center;
+          margin-top: 25px;
+        }
+      }
+      ul{
+        display: flex;
+        grid-gap: 10px;
+        list-style: none;
+        padding-left: 0;
+        justify-content: flex-end;
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
