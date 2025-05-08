@@ -236,7 +236,7 @@ export default function Form() {
 							</label>
 						)}
 						<label htmlFor="terms">
-							I accept{" "}
+							I accept
 							<a
 								href="https://www.lubrizol.com/Legal/Lubrizol-Privacy-and-Cookie-Policy"
 								target="_blank"

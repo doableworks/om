@@ -1,8 +1,71 @@
 @import "../helpers/helpers.scss";
 
 .main_footer {
-  .footer_section{
-    .left{}
-    .right{}
+  background-color: var(--color_primary);
+  .footer_section_1{
+    display: flex;
+    justify-content: space-between;
+    .left{
+      width: 40%;
+    }
+    .right{ 
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      .link_box{
+        h4{
+          color: var(--color_secondary);
+          a{
+            color: var(--color_secondary);
+          }
+        }
+        ul{
+          padding-left: 0;
+          li{
+            padding-bottom: 5px;
+            a{
+              color: var(--color_secondary);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_section_2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+      width: 40%;
+      ul{
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        grid-gap: 15px;
+        list-style: none;
+        li{
+          width: 40px;
+          height: 40px;
+          display: flex;
+          border-radius: 100%;
+          align-items: center;
+          justify-content: center;
+          color: var(--color_secondary);
+          background-color: var(--color_secondary);
+          &:first-child{
+            width: auto;
+            height: auto;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .right{ 
+      width: 50%;
+      color: var(--color_secondary);
+      a{
+        color: var(--color_secondary);
+      }
+    }
   }
 }
