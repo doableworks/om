@@ -1,5 +1,4 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable no-irregular-whitespace */
 // MODULES //
 import { useRef, useEffect, useState } from "react";
 
@@ -74,7 +73,7 @@ export default function HomePage() {
 									Investors, and Execs.
 								</p>
 								<p className="text_18_m pb_20">
-									He splits his time between London and India. 
+									He splits his time between London and India.
 								</p>
 								<p className="text_18_m pb_20">
 									With 18+ years of Vedic learning, Om is a renowned speaker on the
