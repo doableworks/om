@@ -114,8 +114,8 @@ export default function Footer() {
 					<div className={`${styles.right}`}>
 						<a href="mailto:team@omdhumatkar.com" className="text_16_r">
 							Write to us at team@omdhumatkar.com
-						</a>
-						|
+						</a>{" "}
+						|{" "}
 						<a href="tel:+91 98765 54321" className="text_16_r">
 							Call us : +91 98765 54321
 						</a>
