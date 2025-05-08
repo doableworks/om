@@ -15,7 +15,7 @@ import Link from "next/link";
 import styles from "@/styles/components/Header.module.scss";
 
 // IMAGES //
-import Logo from "@/../public/img/logo.svg";
+import Logo from "../../public/img/header_logo.svg";
 
 // DATA //
 
@@ -42,24 +42,54 @@ export default function Header() {
 				openSidebar ? styles.sidebar_opened : ""
 			}`}
 		>
-			<div className={`${styles.header_inside}`}>
-				{/* Logo wrap */}
-				<div className={`${styles.header_logo}`}>
-					<Link href="/">
-						<div className={styles.image_wrap}>
-							<img src={Logo.src} alt="Logo" className="img-responsive" />
-						</div>
-					</Link>
-				</div>
+			<div className="container">
+				<div className={`${styles.header_inside}`}>
+					{/* Logo wrap */}
+					<div className={`${styles.header_logo}`}>
+						<Link href="/">
+							<div className={styles.image_wrap}>
+								<img src={Logo.src} alt="Logo" className="img-responsive" />
+							</div>
+						</Link>
+					</div>
 
-				{/* Links Wrap */}
-				<div className={`${styles.links_wrap}`}></div>
+					{/* Links Wrap */}
+					<div className={`${styles.links_wrap}`}>
+						<ul>
+							<li>
+								<a href="#" className="text_15_r">
+									ABOUT
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text_15_r">
+									WORK WITH OM
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text_15_r">
+									LEARN WITH OM
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text_15_r">
+									OD PARTNERS
+								</a>
+							</li>
+							<li>
+								<a href="#" className="text_15_r">
+									CONNECT
+								</a>
+							</li>
+						</ul>
+					</div>
 
-				{/* Hamburger icon visible in mobile only */}
-				<div className={styles.hamburger_icon} onClick={toggleSidebar}>
-					<span className={styles.hamburger_line}></span>
-					<span className={styles.hamburger_line}></span>
-					<span className={styles.hamburger_line}></span>
+					{/* Hamburger icon visible in mobile only */}
+					<div className={styles.hamburger_icon} onClick={toggleSidebar}>
+						<span className={styles.hamburger_line}></span>
+						<span className={styles.hamburger_line}></span>
+						<span className={styles.hamburger_line}></span>
+					</div>
 				</div>
 			</div>
 		</div>

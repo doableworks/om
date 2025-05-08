@@ -7,8 +7,9 @@
 
 body {
 	margin: 0;
-	@extend .text_reg;
-	font-family: 'Baloo 2', sans-serif;
+	@extend .text_18_m;
+	color: var(--color_primary);
+	font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -153,4 +154,27 @@ section {
 }
 .pt_100{
 	padding-top: 100px;
+}
+
+  /* Hide default circle dots */
+  .slick-dots li button:before {
+	content: "";
+	width: 30px;
+	height: 4px;
+	background: #7a8a8e; /* default dash color */
+	display: block;
+	border-radius: 2px;
+	opacity: 0.6;
+	transition: all 0.3s ease;
+}
+
+/* Space between the dashes */
+.slick-dots li {
+	margin: 0 10px;
+}
+
+/* Highlight active dot */
+.slick-dots li.slick-active button:before {
+	background: #ffffff; /* active dash color */
+	opacity: 1;
 }
