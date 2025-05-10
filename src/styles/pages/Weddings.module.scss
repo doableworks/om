@@ -1,0 +1,125 @@
+@import "../helpers/helpers.scss";
+.weddings_Page{
+    padding-top: 80px;
+    .banner{
+        height: calc(100vh - 80px);
+        .banner_section{
+            .item{
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    height: calc(100vh - 80px - 80px);
+                }
+                .para_section{
+                    width: 70%;
+                    margin-left: auto;
+                }
+            }
+        }
+        :global(.slick-dots){
+            left: -35vw !important;
+            bottom: 30px !important;
+        }
+        :global(.slick-dots li button:before){
+            background-color: #DBCEB9;
+        }
+    }
+    .weddings_info{
+        .para_section{
+            width: 60%;
+            margin: auto;
+        }
+    }
+    .video_section{
+        margin-bottom: 80px;
+        position: relative;
+        .play_btn{
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .testimonials{
+        background-color: var(--color_primary);
+        .testAnimation{
+            width: 250px;
+            margin: auto;
+        }
+        img{
+            margin: auto;
+        }
+        .testimonials_section{
+            width: 80%;
+            margin: auto;
+            .item{
+                p{
+                    text-align: center;
+                    color: var(--color_text_tint);
+                }
+            }
+        }
+    }
+    .weddings_work{
+        display: flex;
+        justify-content: space-between;
+        .left_box{
+            width: 49%;
+            .box{
+                .box_img{
+                    overflow: hidden;
+                    img{
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                   
+                }
+                .name_title{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .right_box{
+            width: 49%;
+            .box{
+                .box_img{
+                    overflow: hidden;
+                    img{
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                   
+                }
+                .name_title{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .connect_section{
+        display: flex;
+        grid-gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+        .btn_section{
+            width: 383px;
+            .btn{
+                a{
+                    padding: 10px 20px;
+                    letter-spacing: 4px;
+                    border: 2px solid var(--color_primary);
+                }
+            }
+        }
+    }
+}

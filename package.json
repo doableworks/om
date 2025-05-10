@@ -12,6 +12,7 @@
 		"create-page": "node scripts/createPage.js"
 	},
 	"dependencies": {
+        "@fancyapps/ui": "^5.0.36",
 		"@ckeditor/ckeditor5-build-classic": "^43.3.1",
 		"@ckeditor/ckeditor5-react": "^9.3.1",
 		"@studio-freight/lenis": "^1.0.22",
@@ -23,7 +24,9 @@
 		"html-react-parser": "^5.0.6",
 		"next": "12.3.0",
 		"path": "^0.12.7",
+        "react-fancybox": "^0.2.5",
 		"react": "18.2.0",
+		"lightgallery": "^2.7.2",
 		"react-dom": "18.2.0",
 		"react-hook-form": "^7.45.4",
 		"react-slick": "^0.30.3",

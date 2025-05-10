@@ -10,6 +10,7 @@ body {
 	@extend .text_18_m;
 	color: var(--color_primary);
 	font-family: 'Montserrat', sans-serif;
+	background-color: var(--color_secondary);
 }
 
 * {
@@ -178,3 +179,38 @@ section {
 	background: #ffffff; /* active dash color */
 	opacity: 1;
 }
+
+.weddings_Page{
+	.slick-dots{
+		bottom: 0 !important;
+	}
+	  /* Hide default circle dots */
+	  .slick-dots li button:before {
+		content: "";
+		width: 30px;
+		height: 4px;
+		background: #7a8a8e; /* default dash color */
+		display: block;
+		border-radius: 2px;
+		opacity: 0.6;
+		transition: all 0.3s ease;
+	}
+	
+	/* Space between the dashes */
+	.slick-dots li {
+		margin: 0 10px;
+	}
+	
+	/* Highlight active dot */
+	.slick-dots li.slick-active button:before {
+		background: #ffffff; /* active dash color */
+		opacity: 1;
+	}
+}
+
+.gradient_text {
+	background: linear-gradient(to right, #a16a2d, #e9a94a, #f8c173, #df9954, #b8794b, #8d5b3c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+  }
