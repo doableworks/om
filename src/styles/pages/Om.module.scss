@@ -1,0 +1,102 @@
+@import "../helpers/helpers.scss";
+.OmPage{
+    padding-top: 80px;
+    .banner{
+        height: calc(100vh - 80px);
+        .banner_section{
+            .item{
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    height: calc(100vh - 80px);
+                }
+                .para_section{
+                    width: 70%;
+                    margin-left: auto;
+                }
+            }
+        }
+        :global(.slick-dots){
+            left: -35vw !important;
+            bottom: 60px !important;
+        }
+        :global(.slick-dots li button:before){
+            // background-color: #DBCEB9;
+             background-color: transparent;
+        }
+    }
+    .weddings_info{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        .title_section{
+            width: 40%;
+        }
+        .para_section{
+            width: 56%;
+            margin: auto;
+        }
+    }
+    .video_section{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 80px;
+        position: relative;
+        .play_btn{
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .podcast{
+        background-color: #FEFBF7;
+        .podcast_info{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .podcast_section{
+            display: flex;
+            grid-gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            justify-content: space-between;
+            .podcast_item{
+                width: 48%;
+                margin: auto;
+                position: relative;
+                .play_btn{
+                    top: 50%;
+                    left: 50%;
+                    width: 100px;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+                p{
+                    color: #826862;
+                }
+            }
+        }
+    }
+    .connect_section{
+        display: flex;
+        grid-gap: 40px;
+        grid-gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        .btn_section{
+            width: 383px;
+            .btn{
+                a{
+                    padding: 10px 20px;
+                    letter-spacing: 4px;
+                    border: 2px solid var(--color_primary);
+                }
+            }
+        }
+    }
+}
