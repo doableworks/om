@@ -1,5 +1,5 @@
 // MODULES //
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // COMPONENTS //
 import Image from "next/image";
@@ -23,6 +23,7 @@ import Logo from "../../public/img/header_logo.svg";
 export default function Header() {
 	const [openSidebar, setOpenSidebar] = useState(false);
 	const [openDropdown, setOpenDropdown] = useState(null);
+	const dropdownRef = useRef(null);
 
 	/** Open sidebar on click of hamburger */
 	const toggleSidebar = () => {
@@ -36,62 +37,127 @@ export default function Header() {
 		);
 	};
 
+	useEffect(() => {
+		if (openDropdown !== "workWithOm") return;
+		function handleClickOutside(event) {
+			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+				setOpenDropdown(null);
+			}
+		}
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [openDropdown]);
+
 	return (
 		<div
 			className={`${styles.main_header} ${
 				openSidebar ? styles.sidebar_opened : ""
 			}`}
 		>
-			<div className="container">
-				<div className={`${styles.header_inside}`}>
-					{/* Logo wrap */}
-					<div className={`${styles.header_logo}`}>
-						<Link href="/">
-							<div className={styles.image_wrap}>
-								<img src={Logo.src} alt="Logo" className="img-responsive" />
-							</div>
-						</Link>
-					</div>
+			{/* <div className="container"> */}
+			<div className={`${styles.header_inside}`}>
+				{/* Logo wrap */}
+				<div className={`${styles.header_logo}`}>
+					<Link href="/">
+						<div className={styles.image_wrap}>
+							<img src={Logo.src} alt="Logo" className="img-responsive" />
+						</div>
+					</Link>
+				</div>
 
-					{/* Links Wrap */}
-					<div className={`${styles.links_wrap}`}>
-						<ul>
-							<li>
-								<a href="#" className="text_15_r">
-									ABOUT
-								</a>
-							</li>
-							<li>
-								<a href="#" className="text_15_r">
-									WORK WITH OM
-								</a>
-							</li>
-							<li>
-								<a href="#" className="text_15_r">
-									LEARN WITH OM
-								</a>
-							</li>
-							<li>
-								<a href="#" className="text_15_r">
-									OD PARTNERS
-								</a>
-							</li>
-							<li>
-								<a href="#" className="text_15_r">
-									CONNECT
-								</a>
-							</li>
-						</ul>
-					</div>
+				{/* Links Wrap */}
+				<div className={`${styles.links_wrap}`} ref={dropdownRef}>
+					<ul>
+						<li>
+							<a href="about-us" className="text_15_r">
+								ABOUT
+							</a>
+						</li>
+						<li
+							className="text_15_r"
+							style={{
+								position: "relative",
+							}}
+						>
+							<span
+								onClick={() => toggleDropdown("workWithOm")}
+								className={`text_15_r ${
+									openDropdown === "workWithOm" ? styles.work_with_om_open : ""
+								}`}
+							>
+								WORK WITH OM
+							</span>
+							{openDropdown === "workWithOm" && (
+								<ul className={`text_20_r ${styles.dropdown_custom_list}`}>
+									<li>
+										<a href="weddings" className="text_15_r" style={{ color: "#F0EAE0" }}>
+											Weddings
+										</a>
+									</li>
+									<li>
+										<a
+											href="ceremonies"
+											className="text_15_r"
+											style={{ color: "#F0EAE0" }}
+										>
+											ceremonies
+										</a>
+									</li>
+									<li>
+										<a href="speaking" className="text_15_r" style={{ color: "#F0EAE0" }}>
+											Speaking
+										</a>
+									</li>
+									<li>
+										<a
+											href="one-in-one"
+											className="text_15_r"
+											style={{ color: "#F0EAE0" }}
+										>
+											One-on-One
+										</a>
+									</li>
+									<li>
+										<a href="creative" className="text_15_r" style={{ color: "#F0EAE0" }}>
+											Creative Consulting
+										</a>
+									</li>
+									<li>
+										<a href="business" className="text_15_r" style={{ color: "#F0EAE0" }}>
+											Business Consulting
+										</a>
+									</li>
+								</ul>
+							)}
+						</li>
+						<li>
+							<a href="om" className="text_15_r">
+								LEARN WITH OM
+							</a>
+						</li>
+						<li>
+							<a href="business" className="text_15_r">
+								GD PARTNERS
+							</a>
+						</li>
+						<li>
+							<a href="contact-us" className="text_15_r">
+								CONNECT
+							</a>
+						</li>
+					</ul>
+				</div>
 
-					{/* Hamburger icon visible in mobile only */}
-					<div className={styles.hamburger_icon} onClick={toggleSidebar}>
-						<span className={styles.hamburger_line}></span>
-						<span className={styles.hamburger_line}></span>
-						<span className={styles.hamburger_line}></span>
-					</div>
+				{/* Hamburger icon visible in mobile only */}
+				<div className={styles.hamburger_icon} onClick={toggleSidebar}>
+					<span className={styles.hamburger_line}></span>
+					<span className={styles.hamburger_line}></span>
+					<span className={styles.hamburger_line}></span>
 				</div>
 			</div>
+			{/* </div> */}
 		</div>
 	);
 }

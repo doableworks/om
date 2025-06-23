@@ -107,7 +107,7 @@ export default function CreativePage() {
 									style={{ width: "100%", height: "auto" }}
 								/>
 							</span>
-							CREATIVE CONSULTING
+							BUSINESS CONSULTING
 						</a>
 					</Link>
 				</section>
@@ -152,22 +152,25 @@ export default function CreativePage() {
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_60 pb_100 text_center`}>
 						<h3 className="text_36_b gradient_text pt_60 pb_30">
-							CREATIVE CONSULTING
+							BUSINESS CONSULTING
 						</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="text_18_m pb_20">
-								Om is regularly approached by filmmakers and creative artists to
-								understand the spiritual meaning behind Hinduisms rich storytelling
-								traditions.
+								Dharma isn’t only tradition - it is a strategy for a thriving life. Our
+								culture is sacred yet smart. Our mantras, philosophies and rituals
+								weren’t crafted for worship alone - they were also built to help you win
+								and achieve your professional goals.
 							</p>
 							<p className="text_18_m pb_20">
-								His ability to bridge mystical Hindu history, with practical everyday
-								insights appeals to those who know these stories, and those who are new
-								to Hinduism. 
+								At GD Partners, we fuse dharmic wisdom with today's realities to build
+								the next generation of Bharatiya Business. We blend commercial acumen
+								with Indian ethos, marrying ancient wisdom with global best practices.
+								We see capital not as money, but in its timeless Sanskrit meaning
+								“Artha” which is the source of abundance & impact.
 							</p>
 							<p className="text_18_m pb_20">
-								Om is a credited writer for Dashavtar, a film production with a
-								six-month run at the Nita Mukesh Ambani Cultural Centre (NMACC).
+								We approach our clients as partners, so our success lies
+								in your success.
 							</p>
 						</div>
 					</div>

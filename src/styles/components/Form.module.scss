@@ -1,139 +1,112 @@
 @import "../helpers/helpers.scss";
 
-.form_section{
-    width: 80%;
-    margin: auto;
-    padding: 30px 50px 40px 50px;
+.form_section {
+    width: 50%;
+    // margin: auto;
+    margin-left: 40%;
+    margin-top: 8%;
+    // padding-top: 40px;
     border-radius: 20px;
-    background-color: #fff;
     @media (max-width: 767px) {
-        width: 100%;
-        padding: 30px 20px 40px 20px;
+        padding: 24px 8px 32px 8px;
     }
-    @media (min-width: 768px) and (max-width: 992px) {
-        width: 100%;
-    }
-    .title_section{
-        text-align: center;
-        h2{
-            color: #00127E;
-            font-size: 32px;
-            font-weight: 900;
-        }
-        p{
-            font-size: 16px;
-            font-weight: 400;
-            color: #727272;
-        }
-    }
-    .form{
-        margin-top: 50px;
-        @media (max-width: 767px) {
-            margin-top: 30px;
-        }
-        .formGroupSection{
+    .form {
+        margin-top: 0;
+        .formGroupSection {
             display: flex;
-            grid-gap: 25px;
-            margin-bottom: 20px;
-            align-items: center;
-            justify-content: space-between;
-            @media (max-width: 767px) {
-                flex-wrap: wrap;
-            }
-            .formGroup{
-                width: 48%;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 0;
+            margin-bottom: 18px;
+            .formGroup {
+                width: 100%;
+                margin-bottom: 12px;
                 position: relative;
-                @media (max-width: 767px) {
-                    width: 100%;
-                }
-                .lable_text{
-                    font-size: 15px;
+                .lable_text {
+                    font-size: 1.4rem;
                     font-weight: 400;
-                    color: #727272;
-                    span{
-                        color: red;
+                    color: var(--color-primary);
+                    margin-bottom: 6px;
+                    display: block;
+                    span {
+                        color: #e74c3c;
                     }
                 }
-                input{
+                input {
                     width: 100%;
-                    height: 50px;
-                    font-size: 16px;
-                    color: #1D1D1B;
-                    padding: 12px 15px;
-                    border-radius: 8px;
-                    border: 1px solid #E6E6E6;
-                    &:focus{
+                    font-size: 1rem;
+                    color: var(--color-primary);
+                    padding: 12px 15px 8px 0;
+                    border: none;
+                    border-bottom: 2px solid #00344A;;
+                    margin-top: 4px;
+                    background: transparent;
+                    &:focus {
                         outline: none;
+                        border-bottom: 2px solid #00344A;;
                     }
-                    
                 }
-                a{
-                    color: #00127E;
-                    font-weight: 600;
-                }
-                select{
+                textarea {
                     width: 100%;
-                    height: 50px;
-                    font-size: 16px;
-                    color: #1D1D1B;
-                    padding: 12px 15px;
-                    border-radius: 8px;
-                    border: 1px solid #E6E6E6;
-                    &:focus{
+                    font-size: 1rem;
+                    font-family: inherit;
+                    color: var(--color-primary);
+                    padding: 8px;
+                    border: 2px solid #00344A;
+                    // border-radius: 8px;
+                    margin-top: 4px;
+                    background: transparent;
+                    min-height: 200px;
+                    max-height: 400px;
+                    resize: none;
+                    &:focus {
                         outline: none;
+                        border: 2px solid #00344A ;
                     }
-                }
-                input[type="checkbox"] {
-                    width: 18px;
-                    height: 18px;
-                    margin-top: -3px;
-                    accent-color: black; /* Change checkbox color */
-                }
-                &.check_box{
-                    grid-gap: 10px;
-                    display: flex;
-                    align-items: center;
-                }
-                .checkbox_error{
-                    left: 0;
-                    bottom: -30px;
-                    position: absolute;
                 }
             }
         }
-        .btn_section{
-            margin-top: 50px;
+        .error {
+            color: #e74c3c;
+            font-size: 0.95rem;
+            // margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: left;
+        }
+        .btn_section {
+            margin-top: 18px;
             text-align: center;
-            .btn_secondary{
+            .btn_secondary {
                 border: 0;
-                z-index: 100;
+                width: 100%;
                 cursor: pointer;
-                font-size: 16px;
+                font-size: 0.9rem;
                 font-weight: 400;
+                letter-spacing: 2px;
                 color: #fff;
-                border-radius: 100px;
-                padding: 12px 30px;
-                box-shadow: none;
-                position: relative;
-                background: #00127E;
+                padding: 12px 36px;
+                background:#00344A ;
+                text-transform: uppercase;
+                &:hover {
+                    background: #002233;
+                }
             }
         }
-        
-        ::-webkit-input-placeholder { /* Chromee/Opera/Safari */
-            font-size: 16px;
-            color: #1D1D1B;
-          }
-          ::-moz-placeholder { /* Firefox 19+ */
-            font-size: 16px;
-            color: #1D1D1B;
-          }
-          :-ms-input-placeholder { /* IE 10+ */
-            font-size: 16px;
-            color: #1D1D1B;
-          }
-          :-moz-placeholder { /* Firefox 18- */
-            font-size: 16px;
-            color: #1D1D1B;
-          }
+        ::-webkit-input-placeholder {
+            font-size: 1.3rem;
+            color: #DCCFBA;
+        }
+        ::-moz-placeholder {
+            font-size: 1.3rem;
+            color: #DCCFBA;
+        }
+        :-ms-input-placeholder {
+            font-size: 1.3rem;
+            color: #DCCFBA;
+        }
+        :-moz-placeholder {
+            font-size: 1.3rem;
+            color: #DCCFBA;
+        }
     }
 }

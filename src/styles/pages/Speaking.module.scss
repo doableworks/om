@@ -1,41 +1,124 @@
 @import "../helpers/helpers.scss";
-.speaking_Page{
+.weddings_Page{
     padding-top: 80px;
     .banner{
         height: calc(100vh - 80px);
+        video{
+            // height: 100%;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            position: relative;
+        }
         .banner_section{
             .item{
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    height: calc(100vh - 80px - 80px);
-                }
+                position: absolute;
+                right: 10%;
                 .para_section{
                     width: 70%;
                     margin-left: auto;
+
                 }
+
             }
         }
-        :global(.slick-dots){
-            left: -35vw !important;
-            bottom: 30px !important;
+        .weddingBannerBtn {
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            background: none;
+            color: #D9C2A6;
+            border: none;
+            border-radius: 30px;
+            padding: 16px 48px 16px 32px;
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.5em;
+            cursor: pointer;
+            min-width: 240px;
+            text-decoration: none;
         }
-        :global(.slick-dots li button:before){
-            background-color: #DBCEB9;
+        .weddingBannerBtnArrow {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 18px;
+            font-weight: lighter;
+            width: 58px;
+            height: 8px;
+        }
+        // :global(.slick-dots){
+        //     position: absolute !important;
+        //     left: -35vw !important;
+        //     bottom: 30px !important;
+        //     transform: translateX(-50%);
+        // }
+        // :global(.slick-dots li button:before){
+        //     background-color: #DBCEB9;
+        // }
+    }
+    .slider_section{
+        width:100%;
+        padding: 0px 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end ;
+        margin-top: 40px;
+        .slider_container{
+            width:60%;
+            .item{
+                .para_section{
+                        font-size: 1.5rem;
+                        color: #696969;
+                        font-weight: 400;
+                }
+            }
+        }     
+    }
+    .weddings_info{
+        .para_section{
+            width: 60%;
+            margin: auto;
+            padding-bottom: 10%;
+            p{
+                font-size: 16px;
+            line-height: 1.3;
+            }
         }
     }
-    .speaking_section{
-        width: 80%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .speaking_img{
-            width: 46%;
+    .video_section{
+        margin-bottom: 80px;
+        position: relative;
+        .play_btn{
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            position: absolute;
+            transform: translate(-50%, -50%);
         }
-        .speaking_info{
-            width: 46%;
+    }
+    .testimonials{
+        background-color: var(--color_primary);
+        .testAnimation{
+            width: 250px;
+            margin: auto;
+        }
+        img{
+            margin: auto;
+        }
+        .testimonials_section{
+            width: 80%;
+            margin: auto;
+            .item{
+                .para_section{
+                
+                    text-align: center;
+                    color: var(--color_text_tint);
+                
+            }
+            }
         }
     }
     .weddings_work{
@@ -97,5 +180,11 @@
                 }
             }
         }
+    }
+    :global(.slick-dots) {
+        width: fit-content;
+        margin-bottom: 20px;
+        position: absolute;
+        left: -35vw;
     }
 }

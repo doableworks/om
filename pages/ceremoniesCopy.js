@@ -1,7 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
 import { useRef, useEffect, useState } from "react";
-import Link from "next/link";
 
 // COMPONENTS //
 import Header from "@/components/Header";
@@ -22,14 +21,14 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // UTILS //
 
 // STYLES //
-import styles from "@/styles/pages/Weddings.module.scss";
+import styles from "@/styles/pages/Ceremonies.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/weddings/banner.jpg";
+import BannerSlider from "../public/img/ceremonies/banner.jpg";
 import videoTham from "../public/img/weddings/video_tham.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import testAnimation from "../public/img/weddings/animation_img.png";
-import hindiText1 from "../public/img/weddings/hindi_text_1.png";
+import hindiText1 from "../public/img/ceremonies/hindi_text_1.png";
 import event1 from "../public/img/ceremonies/event_1.jpg";
 import event2 from "../public/img/ceremonies/event_2.jpg";
 import event3 from "../public/img/ceremonies/event_3.jpg";
@@ -37,33 +36,14 @@ import event4 from "../public/img/ceremonies/event_4.jpg";
 import event5 from "../public/img/ceremonies/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
-import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
 /** Home Page */
 export default function CeremoniesPage() {
-	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-	const videoRef = useRef(null);
-
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox]", {});
 	}, []);
-
-	useEffect(() => {
-		if (videoRef.current) {
-			if (isVideoPlaying) {
-				videoRef.current.play();
-			} else {
-				videoRef.current.pause();
-			}
-		}
-	}, [isVideoPlaying]);
-
-	const handleVideoToggle = () => {
-		setIsVideoPlaying((prev) => !prev);
-	};
-
 	var settings = {
 		dots: true,
 		infinite: true,
@@ -83,122 +63,73 @@ export default function CeremoniesPage() {
 
 			<Header />
 			{/* Page Content starts here */}
-			<main className={`${styles.weddings_Page}`}>
-				<section className={styles.banner}>
-					<video
-						src="https://awsvideostorage.s3.us-east-1.amazonaws.com/Copy+of+Top+Banner+-+Ceremonies.mp4"
-						className="img-responsive"
-						muted
-						autoPlay
-						loop
-					/>
-					<Link href="/" legacyBehavior>
-						<a className={styles.weddingBannerBtn}>
-							<span className={styles.weddingBannerBtnArrow}>
-								<img
-									src={arrows.src}
-									alt="arrow"
-									style={{ width: "100%", height: "auto" }}
-								/>
-							</span>
-							CEREMONIES
-						</a>
-					</Link>
-				</section>
-				<section className={`${styles.slider_section}`}>
-					<div className={styles.slider_container}>
+			<main className={`${styles.ceremonies_Page}`}>
+				<section className={`${styles.banner}`}>
+					<div className={`${styles.banner_section}`}>
 						<Slider {...settings}>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"Spiritual grounding on such an important day."
-								</p>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={BannerSlider.src}
+									className="img-responsive"
+									alt="BannerSlider"
+								/>
+								<div className="container">
+									<p className={`${styles.para_section} text_24_r pt_20`}>
+										“Lorem ipsum dolor sit amet consectetur. Commodo.”
+									</p>
+								</div>
 							</div>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"Your calm guidance and devotion brought peace and positivity."
-								</p>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={BannerSlider.src}
+									className="img-responsive"
+									alt="BannerSlider"
+								/>
+								<div className="container">
+									<p className={`${styles.para_section} text_24_r pt_20`}>
+										“Lorem ipsum dolor sit amet consectetur. Commodo.”
+									</p>
+								</div>
 							</div>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"Each chant felt like a bridge between the seen and the unseen."
-								</p>
-							</div>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"Created a space that felt both protected and profoundly blessed."
-								</p>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={BannerSlider.src}
+									className="img-responsive"
+									alt="BannerSlider"
+								/>
+								<div className="container">
+									<p className={`${styles.para_section} text_24_r pt_20`}>
+										“Lorem ipsum dolor sit amet consectetur. Commodo.”
+									</p>
+								</div>
 							</div>
 						</Slider>
 					</div>
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_40 pb_60 text_center`}>
-						<h3 className="text_36_b gradient_text pb_30">CEREMONIES</h3>
+						<h3 className="text_36_b gradient_text pb_30">Ceremonies</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="text_18_m pb_20">
 								Hindu wisdom is woven into every aspect of life - from auspicious
 								beginnings to life-changing events.
 							</p>
 							<p className="text_18_m pb_20">
-								Om's ceremonies bring out these profound nuggets of wisdom - allowing
+								Om’s ceremonies bring out these profound nuggets of wisdom - allowing
 								participants to fully understand and immerse themselves in the beauty of
 								Hindu worship.
 							</p>
 						</div>
 					</div>
-					<div
-						className={`${styles.video_section}`}
-						style={{ position: "relative" }}
-					>
-						{!isVideoPlaying && (
-							<>
-								<img
-									src={videoTham.src}
-									className="img-responsive"
-									alt="videoTham"
-									style={{ width: "100%", height: "100%", display: "block" }}
-								/>
-								<img
-									src={playBtn.src}
-									alt="playBtn"
-									style={{
-										position: "absolute",
-										top: "50%",
-										left: "50%",
-										transform: "translate(-50%, -50%)",
-										width: 100,
-										cursor: "pointer",
-										zIndex: 2,
-									}}
-									onClick={handleVideoToggle}
-								/>
-							</>
-						)}
-						{isVideoPlaying && (
-							<video
-								src={
-									"https://awsvideostorage.s3.us-east-1.amazonaws.com/SSYouTube.online_Wedding+Final+Draft_1080p.mp4"
-								}
-								className="img-responsive"
-								style={{ height: "100%", width: "100%" }}
+					<div className={`${styles.video_section}`}>
+						<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
+							<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+							<img
+								src={playBtn.src}
+								className={`${styles.play_btn} img-responsive`}
 								alt="videoTham"
-								playsInline
-								controls
-								ref={videoRef}
 							/>
-						)}
+						</a>
 					</div>
 				</section>
 				<section className={`${styles.testimonials} pb_80`}>
@@ -209,23 +140,58 @@ export default function CeremoniesPage() {
 					/>
 					<div className="container">
 						<div className={`${styles.testimonials_section} pt_40`}>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={"/img/HindiCeremonies.png"}
-									className="img-responsive pb_20"
-									alt="hindiText1"
-								/>
-								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
-									ALWAYS PERFORM ACTION IN A SPIRIT OF SACRIFICE. BY PERFORMING ACTION IN
-									THIS WAY, ONE ATTAINS THE SUPREME.
-								</p>
-							</div>
+							<Slider {...settings}>
+								<div className={`${styles.item} pb_40`}>
+									<img
+										src={hindiText1.src}
+										className="img-responsive"
+										alt="hindiText1"
+									/>
+									<p className="text_24_r pt_10">
+										Always perform action in a spirit of sacrifice. By performing action
+										in this way, one attains the supreme.
+									</p>
+								</div>
+								<div className={`${styles.item} pb_40`}>
+									<img
+										src={hindiText1.src}
+										className="img-responsive"
+										alt="hindiText1"
+									/>
+									<p className="text_24_r pt_10">
+										Always perform action in a spirit of sacrifice. By performing action
+										in this way, one attains the supreme.
+									</p>
+								</div>
+								<div className={`${styles.item} pb_40`}>
+									<img
+										src={hindiText1.src}
+										className="img-responsive"
+										alt="hindiText1"
+									/>
+									<p className="text_24_r pt_10">
+										Always perform action in a spirit of sacrifice. By performing action
+										in this way, one attains the supreme.
+									</p>
+								</div>
+								<div className={`${styles.item} pb_40`}>
+									<img
+										src={hindiText1.src}
+										className="img-responsive"
+										alt="hindiText1"
+									/>
+									<p className="text_24_r pt_10">
+										Always perform action in a spirit of sacrifice. By performing action
+										in this way, one attains the supreme.
+									</p>
+								</div>
+							</Slider>
 						</div>
 					</div>
 				</section>
 				<section className="container">
 					<h4 className="text_24_m text_uppercase text_center pt_80 pb_30">
-						ceremonies over the years
+						celebrations OVER the years
 					</h4>
 					<div className={`${styles.weddings_work}  pb_40`}>
 						<div className={`${styles.left_box}`}>
@@ -235,27 +201,27 @@ export default function CeremoniesPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Office Inauguration</h5>
+										<h5 className="text_18_m text_uppercase">Name of the event</h5>
+									</div>
+									<div className={`${styles.title}`}>
+										<h6 className="text_16_r">
+											“Lorem ipsum dolor sit amet consectetur...
+										</h6>
 									</div>
 								</div>
 							</div>
 							<div className={`${styles.box} pb_40`}>
 								<div className={`${styles.box_img}`}>
-									<img src={event4.src} className="img-responsive" alt="event1" />
+									<img src={event3.src} className="img-responsive" alt="event1" />
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Griha Pravesh</h5>
+										<h5 className="text_18_m text_uppercase">Name of the event</h5>
 									</div>
-								</div>
-							</div>
-							<div className={`${styles.box} pb_40`}>
-								<div className={`${styles.box_img}`}>
-									<img src={event5.src} className="img-responsive" alt="event1" />
-								</div>
-								<div className={`${styles.name_title} pt_20`}>
-									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Devi Havan</h5>
+									<div className={`${styles.title}`}>
+										<h6 className="text_16_r">
+											“Lorem ipsum dolor sit amet consectetur...
+										</h6>
 									</div>
 								</div>
 							</div>
@@ -267,17 +233,42 @@ export default function CeremoniesPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Ganesh Puja</h5>
+										<h5 className="text_18_m text_uppercase">Name of the event</h5>
+									</div>
+									<div className={`${styles.title}`}>
+										<h6 className="text_16_r">
+											“Lorem ipsum dolor sit amet consectetur...
+										</h6>
 									</div>
 								</div>
 							</div>
 							<div className={`${styles.box} pb_40`}>
 								<div className={`${styles.box_img}`}>
-									<img src={event3.src} className="img-responsive" alt="event1" />
+									<img src={event4.src} className="img-responsive" alt="event1" />
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Baby Nursery Blessing</h5>
+										<h5 className="text_18_m text_uppercase">Name of the event</h5>
+									</div>
+									<div className={`${styles.title}`}>
+										<h6 className="text_16_r">
+											“Lorem ipsum dolor sit amet consectetur...
+										</h6>
+									</div>
+								</div>
+							</div>
+							<div className={`${styles.box} pb_40`}>
+								<div className={`${styles.box_img}`}>
+									<img src={event5.src} className="img-responsive" alt="event1" />
+								</div>
+								<div className={`${styles.name_title} pt_20`}>
+									<div className={`${styles.name}`}>
+										<h5 className="text_18_m text_uppercase">Name of the event</h5>
+									</div>
+									<div className={`${styles.title}`}>
+										<h6 className="text_16_r">
+											“Lorem ipsum dolor sit amet consectetur...
+										</h6>
 									</div>
 								</div>
 							</div>
