@@ -58,36 +58,36 @@ export default function AboutPage() {
 					/>
 				</section>
 				<section className={`${styles.counter}`}>
-					<div className="container">
-						<div className={`${styles.counter_section}`}>
-							<div className={`${styles.counter_box}`}>
-								<h3 className="text_36_b text_uppercase">18 yrs</h3>
-								<h6 className="text_15_r f_w_m text_uppercase">Study of Shastras</h6>
-							</div>
-							<div className={`${styles.counter_box}`}>
-								<h3 className="text_36_b text_uppercase">16 yrs</h3>
-								<h6 className="text_15_r f_w_m text_uppercase">
-									Corporate Life in London
-								</h6>
-							</div>
-							<div className={`${styles.counter_box}`}>
-								<h3 className="text_36_b text_uppercase">10,000</h3>
-								<h6 className="text_15_r f_w_m text_uppercase">
-									Hours of leadership coaching 
-								</h6>
-							</div>
-							<div className={`${styles.counter_box}`}>
-								<h3 className="text_36_b text_uppercase">7.1 m</h3>
-								<h6 className="text_15_r f_w_m text_uppercase">Views on YouTube</h6>
-							</div>
-							<div className={`${styles.counter_box}`}>
-								<h3 className="text_36_b text_uppercase">200k</h3>
-								<h6 className="text_15_r f_w_m text_uppercase">
-									Followers on  Instagram
-								</h6>
-							</div>
+					{/* <div className="container"> */}
+					<div className={`${styles.counter_section}`}>
+						<div className={`${styles.counter_box}`}>
+							<h3 className="text_36_b text_uppercase">18 yrs</h3>
+							<h6 className="text_15_r f_w_m text_uppercase">Study of Shastras</h6>
+						</div>
+						<div className={`${styles.counter_box}`}>
+							<h3 className="text_36_b text_uppercase">16 yrs</h3>
+							<h6 className="text_15_r f_w_m text_uppercase">
+								Corporate Life in London
+							</h6>
+						</div>
+						<div className={`${styles.counter_box}`}>
+							<h3 className="text_36_b text_uppercase">10,000</h3>
+							<h6 className="text_15_r f_w_m text_uppercase">
+								Hours of leadership coaching 
+							</h6>
+						</div>
+						<div className={`${styles.counter_box}`}>
+							<h3 className="text_36_b text_uppercase">7.1 m</h3>
+							<h6 className="text_15_r f_w_m text_uppercase">Views on YouTube</h6>
+						</div>
+						<div className={`${styles.counter_box}`}>
+							<h3 className="text_36_b text_uppercase">200k</h3>
+							<h6 className="text_15_r f_w_m text_uppercase">
+								Followers on  Instagram
+							</h6>
 						</div>
 					</div>
+					{/* </div> */}
 				</section>
 				<section className={`${styles.journey} pb_80`}>
 					<div className="container">
@@ -140,89 +140,103 @@ export default function AboutPage() {
 					<h3 className="text_center text_24_m text_uppercase">Work with Om</h3>
 					<div className={`${styles.work_section} pt_40`}>
 						<div className={`${styles.work_item}`}>
-							<img src={Weddings.src} className="img-responsove" alt="Weddings" />
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">Weddings</h3>
-								<a href="weddings" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="weddings" className="text_16_m text_center text_uppercase">
+								<img src={Weddings.src} className="img-responsove" alt="Weddings" />
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										Weddings
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img
-								src={"img/home/Ceremonies2025.jpg"}
-								className="img-responsove"
-								alt="Weddings"
-							/>
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									ceremonies
-								</h3>
-								<a href="ceremonies" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="ceremonies" className="text_16_m text_center text_uppercase">
+								<img
+									src={"img/home/Ceremonies2025.jpg"}
+									className="img-responsove"
+									alt="Ceremonies"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										ceremonies
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img
-								src={"/img/home/Speaking2025.jpg"}
-								className="img-responsove"
-								alt="Weddings"
-							/>
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">speaking</h3>
-								<a href="speaking" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="speaking" className="text_16_m text_center text_uppercase">
+								<img
+									src={"/img/home/Speaking2025.jpg"}
+									className="img-responsove"
+									alt="Speaking"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										speaking
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img src={business.src} className="img-responsove" alt="Weddings" />
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									one-on-one
-								</h3>
-								<a href="one-in-one" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="one-on-one" className="text_16_m text_center text_uppercase">
+								<img src={business.src} className="img-responsove" alt="One on One" />
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										one-on-one
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img src={creative.src} className="img-responsove" alt="Weddings" />
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									creative Consulting
-								</h3>
-								<a href="creative" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a
+								href="creative-consulting"
+								className="text_16_m text_center text_uppercase"
+							>
+								<img
+									src={creative.src}
+									className="img-responsove"
+									alt="Creative Consulting"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										creative Consulting
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img
-								src={"/img/home/placeholder.jpg"}
-								className="img-responsove"
-								alt="Weddings"
-							/>
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									BUSINESS CONSULTING
-								</h3>
-								<a href="business" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a
+								href="business-consulting"
+								className="text_16_m text_center text_uppercase"
+							>
+								<img
+									src={"/img/home/placeholder.jpg"}
+									className="img-responsove"
+									alt="Business Consulting"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										BUSINESS CONSULTING
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 					</div>
 				</section>
-				<section className="container">
+				<section style={{ backgroundColor: "#fff", padding: "0 10%" }}>
 					<div className={`${styles.connect_section} pt_100 pb_80`}>
 						<div className={`${styles.left_img}`}>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="contact-us" className="text_24_m">
+								<a href="connect" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

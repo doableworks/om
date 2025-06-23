@@ -123,7 +123,7 @@ export default function Header() {
 									</li>
 									<li>
 										<a
-											href="one-in-one"
+											href="one-on-one"
 											className="text_15_r"
 											style={{ color: "#F0EAE0" }}
 										>
@@ -131,12 +131,20 @@ export default function Header() {
 										</a>
 									</li>
 									<li>
-										<a href="creative" className="text_15_r" style={{ color: "#F0EAE0" }}>
+										<a
+											href="creative-consulting"
+											className="text_15_r"
+											style={{ color: "#F0EAE0" }}
+										>
 											Creative Consulting
 										</a>
 									</li>
 									<li>
-										<a href="business" className="text_15_r" style={{ color: "#F0EAE0" }}>
+										<a
+											href="business-consulting"
+											className="text_15_r"
+											style={{ color: "#F0EAE0" }}
+										>
 											Business Consulting
 										</a>
 									</li>
@@ -144,17 +152,17 @@ export default function Header() {
 							)}
 						</li>
 						<li>
-							<a href="om" className="text_15_r">
+							<a href="learn-with-om" className="text_15_r">
 								LEARN WITH OM
 							</a>
 						</li>
 						<li>
-							<a href="business" className="text_15_r">
+							<a href="business-consulting" className="text_15_r">
 								GD PARTNERS
 							</a>
 						</li>
 						<li>
-							<a href="contact-us" className="text_15_r">
+							<a href="connect" className="text_15_r">
 								CONNECT
 							</a>
 						</li>

@@ -49,12 +49,12 @@ export default function Footer() {
 								</a>
 							</li>
 							<li>
-								<a href="one-in-one" className="text_15_r">
+								<a href="one-on-one" className="text_15_r">
 									One-on-One
 								</a>
 							</li>
 							<li>
-								<a href="creative" className="text_15_r">
+								<a href="creative-consulting" className="text_15_r">
 									Creative Consulting
 								</a>
 							</li>
@@ -62,7 +62,7 @@ export default function Footer() {
 					</div>
 					<div className={`${styles.link_box}`}>
 						<h4 className="text_16_b pb_10">
-							<a href="om">LEARN WITH OM</a>
+							<a href="learn-with-om">LEARN WITH OM</a>
 						</h4>
 						<h4 className="text_16_b pb_10">
 							<a href="about-us">ABOUT</a>
@@ -71,7 +71,7 @@ export default function Footer() {
 							<a href="blog">BLOG</a>
 						</h4>
 						<h4 className="text_16_b pb_10">
-							<a href="contact-us">CONNECT</a>
+							<a href="connect">CONNECT</a>
 						</h4>
 					</div>
 					<div className={`${styles.link_box}`}>
