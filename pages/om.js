@@ -64,8 +64,8 @@ export default function OmPage() {
 							<img src={videoTham.src} className="img-responsive" alt="BannerSlider" />
 							<div className={`${styles.banner_text}`}>
 								<p className="text_18_r">
-									Om's YouTube channel features a selection of videos that make ancient
-									Hindu scriptures accessible and easy to apply in daily life.
+									Om&apos;s YouTube channel features a selection of videos that make
+									ancient Hindu scriptures accessible and easy to apply in daily life.
 								</p>
 							</div>
 						</div>
@@ -270,7 +270,7 @@ export default function OmPage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

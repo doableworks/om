@@ -1,6 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
-import { useRef, useEffect, useState } from "react";
+import { useEffect } from "react";
 
 // COMPONENTS //
 import Header from "@/components/Header";
@@ -10,7 +10,6 @@ import Footer from "@/components/Footer";
 // SECTIONS //
 
 // PLUGINS //
-import Slider from "react-slick";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
@@ -24,11 +23,6 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/Contact.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/om/banner_slider_1.jpg";
-import videoTham from "../public/img/weddings/video_tham.jpg";
-import playBtn from "../public/img/weddings/play_btn.svg";
-import leftImg from "../public/img/weddings/left_img.png";
-import rightImg from "../public/img/weddings/right_img.png";
 import Form from "@/components/Form";
 
 // DATA //
@@ -38,18 +32,18 @@ export default function OmPage() {
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox]", {});
 	}, []);
-	var settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		fade: true,
-		arrows: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		pauseOnHover: false,
-	};
+	// var settings = {
+	// 	dots: true,
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	fade: true,
+	// 	arrows: false,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 3000,
+	// 	pauseOnHover: false,
+	// };
 	return (
 		<div>
 			{/* Metatags */}
@@ -78,14 +72,18 @@ export default function OmPage() {
 				</section>
 				<section className={`${styles.banner_Section}`}>
 					{/* <div> */}
-					<img src="/img/contactBanner.png" className="img-responsive" />
+					<img
+						src="/img/contactbanner.png"
+						className="img-responsive"
+						alt="Contact Banner"
+					/>
 					<p>
-						“I am optimistic on India's growth prospects; and has a personal mission
-						of{" "}
+						&ldquo;I am optimistic on India&apos;s growth prospects; and has a
+						personal mission of{" "}
 						<span style={{ fontWeight: "bolder" }}>
-							'bringing Bhakti to the Boardroom'
+							&apos;bringing Bhakti to the Boardroom&apos;
 						</span>
-						.”
+						.&rdquo;
 					</p>
 					{/* </div> */}
 				</section>

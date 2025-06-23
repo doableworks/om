@@ -2,7 +2,7 @@
 // MODULES //
 import Script from "next/script";
 import { useRef, useState } from "react";
-import { useRouter } from "next/router";
+
 // COMPONENTS //
 
 // SECTIONS //
@@ -19,14 +19,16 @@ import styles from "@/styles/components/Form.module.scss";
 
 // DATA //
 
-/** DummyComponent Component */
+/**
+ * Form component renders a contact form for connecting with OM.
+ * Handles validation, submission, and UI feedback.
+ * @returns {JSX.Element}
+ */
 export default function Form() {
 	const formRef = useRef();
-	const router = useRouter();
 	const [showSuccess, setShowSuccess] = useState(false);
 	const [wordCount, setWordCount] = useState(0);
 	const [isSubmitting, setIsSubmitting] = useState(false);
-
 	const {
 		register,
 		handleSubmit,
@@ -37,11 +39,12 @@ export default function Form() {
 		setValue,
 	} = useForm({ mode: "onBlur" });
 
-	const email = watch("email");
-	const reconfirmEmail = watch("reconfirmEmail");
-	const additionalInfo = watch("additionalInfo");
-
 	// Function to count words
+	/**
+	 * Counts the number of words in a string.
+	 * @param {string} text - The input text to count words from.
+	 * @returns {number} The number of words in the text.
+	 */
 	const countWords = (text) => {
 		if (!text) return 0;
 		return text
@@ -51,49 +54,48 @@ export default function Form() {
 	};
 
 	// Function to validate and clean input (only removes special characters, not URLs)
+	/**
+	 * Removes special characters except basic punctuation and URL characters.
+	 * @param {string} text - The input text to clean.
+	 * @returns {string} The cleaned text.
+	 */
 	const validateAndCleanInput = (text) => {
 		if (!text) return text;
-
-		// Remove special characters except basic punctuation and URL characters
-		// Allow: letters, numbers, spaces, periods, commas, exclamation, question marks, hyphens, apostrophes, colons, slashes, underscores
 		let cleanedText = text.replace(/[^a-zA-Z0-9\s.,!?'-:/_]/g, "");
-
 		return cleanedText;
 	};
 
 	// Handle textarea input change
+	/**
+	 * Handles changes in the textarea, cleans input, updates word count, and triggers validation.
+	 * @param {object} e - The event object from the textarea change.
+	 */
 	const handleTextareaChange = (e) => {
 		const rawValue = e.target.value;
 		const cleanedValue = validateAndCleanInput(rawValue);
 		const currentWordCount = countWords(cleanedValue);
-
-		// Update word count
 		setWordCount(currentWordCount);
-
-		// If the cleaned value is different from raw value (due to special characters), update the field
 		if (cleanedValue !== rawValue) {
 			setValue("additionalInfo", cleanedValue);
 			e.target.value = cleanedValue;
 		}
-
-		// Call the original register onChange and trigger validation
 		register("additionalInfo").onChange(e);
 		trigger("additionalInfo");
 	};
 
+	/**
+	 * Handles form submission, sends data, and manages UI state.
+	 * @param {object} data - The form data to submit.
+	 */
 	const onSubmit = async (data) => {
 		setIsSubmitting(true);
-		// Build FormData with only the required fields
 		const formData = new FormData();
 		formData.append("name", data.name || "");
 		formData.append("email", data.email || "");
 		formData.append("additionalInfo", data.additionalInfo || "");
-
 		console.log(formData);
-
 		const formUrl =
 			"https://script.google.com/macros/s/AKfycbwnQZcSGBdVWmjeXE4Vid9C8mtruuRm3AfCHE0TmO9GvBDA-byr3mYIAfQu7AejI7zc/exec";
-
 		fetch(formUrl, {
 			method: "POST",
 			body: formData,
@@ -195,30 +197,6 @@ export default function Form() {
 						/>
 						{errors.email && touchedFields.email && (
 							<div className={styles.error}>{errors.email.message}</div>
-						)}
-					</div>
-				</div>
-				<div className={styles.formGroupSection}>
-					<div className={styles.formGroup}>
-						<label className={styles.lable_text} htmlFor="reconfirmEmail">
-							Reconfirm Email ID<span>*</span>
-						</label>
-						<input
-							type="email"
-							id="reconfirmEmail"
-							placeholder="Reconfirm Email ID*"
-							className={styles.input}
-							{...register("reconfirmEmail", {
-								required: "Please reconfirm your email",
-								validate: (value) => value === email || "Emails do not match",
-							})}
-							onChange={(e) => {
-								register("reconfirmEmail").onChange(e);
-								trigger("reconfirmEmail");
-							}}
-						/>
-						{errors.reconfirmEmail && touchedFields.reconfirmEmail && (
-							<div className={styles.error}>{errors.reconfirmEmail.message}</div>
 						)}
 					</div>
 				</div>

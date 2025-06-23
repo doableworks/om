@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from "react";
 
 // COMPONENTS //
-import Image from "next/image";
 import Link from "next/link";
 
 // SECTIONS //
@@ -19,7 +18,11 @@ import Logo from "../../public/img/header_logo.svg";
 
 // DATA //
 
-/** Header Component */
+/**
+ * Header component renders the main navigation header with logo, links, and dropdowns.
+ * Handles sidebar and dropdown toggling for navigation.
+ * @returns {JSX.Element}
+ */
 export default function Header() {
 	const [openSidebar, setOpenSidebar] = useState(false);
 	const [openDropdown, setOpenDropdown] = useState(null);
@@ -30,20 +33,28 @@ export default function Header() {
 		setOpenSidebar(!openSidebar);
 	};
 
-	/** Function to toggle dropdown */
+	/**
+	 * Toggles the dropdown menu for the given dropdown key.
+	 * @param {string} dropdownKey - The key of the dropdown to toggle.
+	 */
 	const toggleDropdown = (dropdownKey) => {
 		setOpenDropdown((prevOpenDropdown) =>
 			prevOpenDropdown === dropdownKey ? null : dropdownKey
 		);
 	};
 
+	/**
+	 * Handles clicks outside the dropdown to close it.
+	 * @param {MouseEvent} event - The mouse event triggered by clicking outside.
+	 */
+	function handleClickOutside(event) {
+		if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+			setOpenDropdown(null);
+		}
+	}
+
 	useEffect(() => {
 		if (openDropdown !== "workWithOm") return;
-		function handleClickOutside(event) {
-			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-				setOpenDropdown(null);
-			}
-		}
 		document.addEventListener("mousedown", handleClickOutside);
 		return () => {
 			document.removeEventListener("mousedown", handleClickOutside);

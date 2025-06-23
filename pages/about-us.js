@@ -1,16 +1,17 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
-import { useRef, useEffect, useState } from "react";
+// Remove unused imports: useRef, useEffect, useState, Slider
 
 // COMPONENTS //
 import Header from "@/components/Header";
 import MetaTags from "@/components/MetaTags";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import Link from "next/link";
 
 // SECTIONS //
 
 // PLUGINS //
-import Slider from "react-slick";
 
 // UTILS //
 
@@ -18,6 +19,7 @@ import Slider from "react-slick";
 import styles from "@/styles/pages/About.module.scss";
 
 // IMAGES //
+// Remove unused image imports if not used in JSX
 import Banner from "../public/img/about/banner.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
@@ -101,13 +103,14 @@ export default function AboutPage() {
 							<div className={`${styles.info_section} pt_50`}>
 								<div className={`${styles.box}`}>
 									<p className="text_18_m pb_20">
-										Om Dhumatkar is a strategist & coach to India’s leading Founders,
-										Investors, and Execs; and splits his time between London and India. 
+										Om Dhumatkar is a strategist & coach to India&apos;s leading Founders,
+										Investors, and Execs; and splits his time between London and
+										India.&nbsp;
 									</p>
 									<p className="text_18_m pb_20">
 										With 18+ years of Vedic learning, Om is a renowned speaker on the
 										Bhagavad Gita. He is a sought-after pundit, bringing alive ancient
-										ceremonies for modern times. 
+										ceremonies for modern times.&nbsp;
 									</p>
 									<p className="text_18_m pb_20">
 										His insights on everyday spirituality means that Om is a regular guest
@@ -121,11 +124,12 @@ export default function AboutPage() {
 									</p>
 									<p className="text_18_m pb_20">
 										He is the founding MD of OD Partners Strategic Advisory, with clients
-										across California, New York, London, Amsterdam, Dubai, and India. 
+										across California, New York, London, Amsterdam, Dubai, and
+										India.&nbsp;
 									</p>
 									<p className="text_18_m pb_20">
 										He is a graduate of the prestigious London School of Economics; was
-										recognised as one of UK’s Top 10 Inspirational Leaders in 2021.
+										recognised as one of UK&apos;s Top 10 Inspirational Leaders in 2021.
 									</p>
 								</div>
 							</div>

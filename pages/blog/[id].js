@@ -6,6 +6,10 @@ import styles from "@/styles/pages/Blog1.module.scss";
 import blogData from "@/data/blogData.json";
 import BlogBanner from "../../public/img/blog/blog_banner_img.jpg";
 
+/**
+ * Blog dynamic page for displaying individual blog posts.
+ * @returns {JSX.Element}
+ */
 export default function BlogDynamicPage() {
 	const router = useRouter();
 	const { id } = router.query;
@@ -66,7 +70,7 @@ export default function BlogDynamicPage() {
 							{blog.content.map((para, idx) => {
 								if (para.includes("•")) {
 									const lines = para
-										.split(`\\n`)
+										.split("\\n")
 										.filter((line) => line.trim().length > 0);
 									return (
 										<div key={idx} className="text_18_m pb_20">

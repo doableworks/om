@@ -25,19 +25,19 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/OneInOne.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/weddings/banner.jpg";
 import videoTham from "../public/img/weddings/video_tham.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import testAnimation from "../public/img/weddings/animation_img.png";
-import hindiText1 from "../public/img/ceremonies/hindi_text_1.png";
-import OneEvent from "../public/img/one-in-one/one_event.png";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
-/** Home Page */
+/**
+ * One-on-one coaching page for Om.
+ * @returns {JSX.Element}
+ */
 export default function OneInOnePage() {
 	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 	const videoRef = useRef(null);
@@ -56,9 +56,9 @@ export default function OneInOnePage() {
 		}
 	}, [isVideoPlaying]);
 
-	const handleVideoToggle = () => {
-		setIsVideoPlaying((prev) => !prev);
-	};
+	// const handleVideoToggle = () => {
+	// 	setIsVideoPlaying((prev) => !prev);
+	// };
 
 	var settings = {
 		dots: true,
@@ -115,7 +115,8 @@ export default function OneInOnePage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Being coached by Om means feeling seen, heard and understood"
+									&ldquo;Being coached by Om means feeling seen, heard and
+									understood&rdquo;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -123,7 +124,7 @@ export default function OneInOnePage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Om, your guidance has reshaped my world."
+									&ldquo;Om, your guidance has reshaped my world.&rdquo;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -131,7 +132,8 @@ export default function OneInOnePage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									“I have grown more in these two years than I did in the past 15 years.”
+									&ldquo;I have grown more in these two years than I did in the past 15
+									years.&rdquo;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -139,7 +141,7 @@ export default function OneInOnePage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									“Om has helped me align with my true self.”
+									&ldquo;Om has helped me align with my true self.&rdquo;
 								</p>
 							</div>
 						</Slider>
@@ -150,15 +152,14 @@ export default function OneInOnePage() {
 						<h3 className="text_36_b gradient_text pb_30">ONE-ON-ONE</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="text_18_m pb_20">
-								As a 1-1 coach Om regularly helps investors, CEOs, and senior
-								executives" achieve balance and purpose. Using timeless concepts such as
-								Karma Yoga, Om guides people to unlock and honour the divinity that lies
-								within.
+								As a 1-1 coach Om regularly helps investors, CEOs, and senior executives
+								achieve balance and purpose. Using timeless concepts such as Karma Yoga,
+								Om guides people to unlock and honour the divinity that lies within.
 							</p>
 							<p className="text_18_m pb_20">
 								Through 1-1 sessions with Om, several people have been able to navigate
-								life's challenges with faith, clarity, resilience, and an ever-deepening
-								connection to their truest selves.
+								life&apos;s challenges with faith, clarity, resilience, and an
+								ever-deepening connection to their truest selves.
 							</p>
 						</div>
 					</div>
@@ -293,7 +294,7 @@ export default function OneInOnePage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>
