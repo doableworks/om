@@ -202,6 +202,26 @@ export default function Form() {
 				</div>
 				<div className={styles.formGroupSection}>
 					<div className={styles.formGroup}>
+						<label className={styles.lable_text} htmlFor="confirmEmail">
+							Confirm Email ID<span>*</span>
+						</label>
+						<input
+							type="email"
+							id="confirmEmail"
+							placeholder="Confirm Email ID*"
+							className={styles.input}
+							{...register("confirmEmail", {
+								required: "Please confirm your email",
+								validate: (value) => value === watch("email") || "Emails do not match",
+							})}
+						/>
+						{errors.confirmEmail && touchedFields.confirmEmail && (
+							<div className={styles.error}>{errors.confirmEmail.message}</div>
+						)}
+					</div>
+				</div>
+				<div className={styles.formGroupSection}>
+					<div className={styles.formGroup}>
 						<label className={styles.lable_text} htmlFor="additionalInfo">
 							Please let us know how we can help you.
 						</label>
