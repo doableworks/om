@@ -315,7 +315,7 @@ export default function WeddingsPage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="connect" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

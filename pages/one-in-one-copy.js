@@ -231,7 +231,7 @@ export default function OneInOnePage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="contact-us" className="text_24_m">
+								<a href="connect" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

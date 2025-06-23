@@ -51,6 +51,7 @@ export default function HomePage() {
 						autoPlay
 						loop
 					/>
+					<div className={styles.banner_overlay}></div>
 					<img
 						src={BannerText.src}
 						className={`${styles.banner_text} img-responsive`}
@@ -93,82 +94,92 @@ export default function HomePage() {
 					</h3>
 					<div className={`${styles.work_section} pt_40`}>
 						<div className={`${styles.work_item}`}>
-							<img src={Weddings.src} className="img-responsove" alt="Weddings" />
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">Weddings</h3>
-								<a href="weddings" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="weddings" className="text_16_m text_center text_uppercase">
+								<img src={Weddings.src} className="img-responsove" alt="Weddings" />
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										Weddings
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img
-								src={"img/home/Ceremonies2025.jpg"}
-								className="img-responsove"
-								alt="Weddings"
-							/>
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									ceremonies
-								</h3>
-								<a href="ceremonies" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="ceremonies" className="text_16_m text_center text_uppercase">
+								<img
+									src={"img/home/Ceremonies2025.jpg"}
+									className="img-responsove"
+									alt="Weddings"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										ceremonies
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img
-								src={"/img/home/Speaking2025.jpg"}
-								className="img-responsove"
-								alt="Weddings"
-							/>
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">speaking</h3>
-								<a href="speaking" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="speaking" className="text_16_m text_center text_uppercase">
+								<img
+									src={"/img/home/Speaking2025.jpg"}
+									className="img-responsove"
+									alt="Weddings"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										speaking
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img src={business.src} className="img-responsove" alt="Weddings" />
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									one-on-one
-								</h3>
-								<a href="one-in-one" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a href="one-on-one" className="text_16_m text_center text_uppercase">
+								<img src={business.src} className="img-responsove" alt="Weddings" />
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										one-on-one
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img
-								src={"/img/creativeImage.jpg"}
-								className="img-responsove"
-								alt="Weddings"
-							/>
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									creative Consulting
-								</h3>
-								<a href="creative" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a
+								href="creative-consulting"
+								className="text_16_m text_center text_uppercase"
+							>
+								<img
+									src={"/img/creativeImage.jpg"}
+									className="img-responsove"
+									alt="Weddings"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										creative Consulting
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img
-								src={"/img/home/placeholder.jpg"}
-								className="img-responsove"
-								alt="Weddings"
-							/>
-							<div className={`${styles.work_info} text_center`}>
-								<h3 className="text_center text_24_b text_uppercase pb_10">
-									BUSINESS CONSULTING
-								</h3>
-								<a href="business" className="text_16_m text_center text_uppercase">
-									+ Know More
-								</a>
-							</div>
+							<a
+								href="business-consulting"
+								className="text_16_m text_center text_uppercase"
+							>
+								<img
+									src={"/img/home/placeholder.jpg"}
+									className="img-responsove"
+									alt="Weddings"
+								/>
+								<div className={`${styles.work_info} text_center`}>
+									<h3 className="text_center text_24_b text_uppercase pb_10">
+										BUSINESS CONSULTING
+									</h3>
+									<span className={styles.knowMorePlus}>+</span> Know More
+								</div>
+							</a>
 						</div>
 					</div>
 				</section>
