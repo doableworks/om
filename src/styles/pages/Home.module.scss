@@ -23,15 +23,18 @@
         .about_section{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
+            column-gap: 10%;
             .image{
                 width: 40%;
             }
             .info{
-                width: 40%;
+                width: 37%;
                 .btn{
                     a{
                         text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 3px;
                     }
                 }
             }
@@ -44,7 +47,7 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-between;            
             .work_item{
                 width: 33.15%;
                 position: relative;

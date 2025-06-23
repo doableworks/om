@@ -42,10 +42,17 @@ export default function AboutPage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.AboutPage}`}>
 				<section className={styles.banner_section}>
-					<img
+					{/* <img
 						src={Banner.src}
 						className={`${styles.banner_img} img-responsive`}
 						alt="banner"
+					/> */}
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/aboutUsBanner.mp4"
+						className={`${styles.banner_img} img-responsive`}
+						muted
+						autoPlay
+						loop
 					/>
 				</section>
 				<section className={`${styles.counter}`}>
@@ -132,38 +139,46 @@ export default function AboutPage() {
 							<img src={Weddings.src} className="img-responsove" alt="Weddings" />
 							<div className={`${styles.work_info} text_center`}>
 								<h3 className="text_center text_24_b text_uppercase pb_10">Weddings</h3>
-								<a href="#" className="text_16_m text_center text_uppercase">
+								<a href="weddings" className="text_16_m text_center text_uppercase">
 									+ Know More
 								</a>
 							</div>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img src={ceremonies.src} className="img-responsove" alt="Weddings" />
+							<img
+								src={"img/home/Ceremonies2025.jpg"}
+								className="img-responsove"
+								alt="Weddings"
+							/>
 							<div className={`${styles.work_info} text_center`}>
 								<h3 className="text_center text_24_b text_uppercase pb_10">
 									ceremonies
 								</h3>
-								<a href="#" className="text_16_m text_center text_uppercase">
+								<a href="ceremonies" className="text_16_m text_center text_uppercase">
 									+ Know More
 								</a>
 							</div>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img src={speaking.src} className="img-responsove" alt="Weddings" />
+							<img
+								src={"/img/home/Speaking2025.jpg"}
+								className="img-responsove"
+								alt="Weddings"
+							/>
 							<div className={`${styles.work_info} text_center`}>
 								<h3 className="text_center text_24_b text_uppercase pb_10">speaking</h3>
-								<a href="#" className="text_16_m text_center text_uppercase">
+								<a href="speaking" className="text_16_m text_center text_uppercase">
 									+ Know More
 								</a>
 							</div>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img src={OneON.src} className="img-responsove" alt="Weddings" />
+							<img src={business.src} className="img-responsove" alt="Weddings" />
 							<div className={`${styles.work_info} text_center`}>
 								<h3 className="text_center text_24_b text_uppercase pb_10">
 									one-on-one
 								</h3>
-								<a href="#" className="text_16_m text_center text_uppercase">
+								<a href="one-in-one" className="text_16_m text_center text_uppercase">
 									+ Know More
 								</a>
 							</div>
@@ -174,18 +189,22 @@ export default function AboutPage() {
 								<h3 className="text_center text_24_b text_uppercase pb_10">
 									creative Consulting
 								</h3>
-								<a href="#" className="text_16_m text_center text_uppercase">
+								<a href="creative" className="text_16_m text_center text_uppercase">
 									+ Know More
 								</a>
 							</div>
 						</div>
 						<div className={`${styles.work_item}`}>
-							<img src={business.src} className="img-responsove" alt="Weddings" />
+							<img
+								src={"/img/home/placeholder.jpg"}
+								className="img-responsove"
+								alt="Weddings"
+							/>
 							<div className={`${styles.work_info} text_center`}>
 								<h3 className="text_center text_24_b text_uppercase pb_10">
 									BUSINESS CONSULTING
 								</h3>
-								<a href="#" className="text_16_m text_center text_uppercase">
+								<a href="business" className="text_16_m text_center text_uppercase">
 									+ Know More
 								</a>
 							</div>
@@ -199,7 +218,7 @@ export default function AboutPage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

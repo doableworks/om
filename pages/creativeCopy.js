@@ -1,7 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
 import { useRef, useEffect, useState } from "react";
-import Link from "next/link";
 
 // COMPONENTS //
 import Header from "@/components/Header";
@@ -22,48 +21,22 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // UTILS //
 
 // STYLES //
-import styles from "@/styles/pages/Weddings.module.scss";
+import styles from "@/styles/pages/Creative.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/weddings/banner.jpg";
+import BannerSlider from "../public/img/creative/banner.jpg";
 import videoTham from "../public/img/weddings/video_tham.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
-import testAnimation from "../public/img/weddings/animation_img.png";
-import hindiText1 from "../public/img/weddings/hindi_text_1.png";
-import event1 from "../public/img/weddings/event_1.jpg";
-import event2 from "../public/img/weddings/event_2.jpg";
-import event3 from "../public/img/weddings/event_3.jpg";
-import event4 from "../public/img/weddings/event_4.jpg";
-import event5 from "../public/img/weddings/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
-import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
 /** Home Page */
 export default function CreativePage() {
-	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-	const videoRef = useRef(null);
-
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox]", {});
 	}, []);
-
-	useEffect(() => {
-		if (videoRef.current) {
-			if (isVideoPlaying) {
-				videoRef.current.play();
-			} else {
-				videoRef.current.pause();
-			}
-		}
-	}, [isVideoPlaying]);
-
-	const handleVideoToggle = () => {
-		setIsVideoPlaying((prev) => !prev);
-	};
-
 	var settings = {
 		dots: true,
 		infinite: true,
@@ -83,77 +56,52 @@ export default function CreativePage() {
 
 			<Header />
 			{/* Page Content starts here */}
-			<main className={`${styles.weddings_Page}`}>
-				<section className={styles.banner}>
-					{/* <video
-						src="/Video/weddingBanner.mp4"
-						className="img-responsive"
-						muted
-						autoPlay
-						loop
-					/> */}
-					<img
-						src={videoTham.src}
-						className="img-responsive"
-						alt="videoTham"
-						style={{ width: "100%", height: "100%", display: "block" }}
-					/>
-					<Link href="/" legacyBehavior>
-						<a className={styles.weddingBannerBtn}>
-							<span className={styles.weddingBannerBtnArrow}>
-								<img
-									src={arrows.src}
-									alt="arrow"
-									style={{ width: "100%", height: "auto" }}
-								/>
-							</span>
-							CREATIVE CONSULTING
-						</a>
-					</Link>
-				</section>
-				{/* <section className={`${styles.slider_section}`}>
-					<div className={styles.slider_container}>
+			<main className={`${styles.creative_Page}`}>
+				<section className={`${styles.banner}`}>
+					<div className={`${styles.banner_section}`}>
 						<Slider {...settings}>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"Thank you for being such a guiding light"
-								</p>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={BannerSlider.src}
+									className="img-responsive"
+									alt="BannerSlider"
+								/>
+								<div className="container">
+									<p className={`${styles.para_section} text_24_r pt_20`}>
+										“Lorem ipsum dolor sit amet consectetur. Commodo.”
+									</p>
+								</div>
 							</div>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"Every mantra felt like a blessing."
-								</p>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={BannerSlider.src}
+									className="img-responsive"
+									alt="BannerSlider"
+								/>
+								<div className="container">
+									<p className={`${styles.para_section} text_24_r pt_20`}>
+										“Lorem ipsum dolor sit amet consectetur. Commodo.”
+									</p>
+								</div>
 							</div>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"Om brought divine grace to our wedding."
-								</p>
-							</div>
-							<div className={`${styles.item}`}>
-								<p
-									className={`${styles.para_section} text_24_r`}
-									style={{ textAlign: "end" }}
-								>
-									"The rituals were deeply meaningful and unforgettable."
-								</p>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={BannerSlider.src}
+									className="img-responsive"
+									alt="BannerSlider"
+								/>
+								<div className="container">
+									<p className={`${styles.para_section} text_24_r pt_20`}>
+										“Lorem ipsum dolor sit amet consectetur. Commodo.”
+									</p>
+								</div>
 							</div>
 						</Slider>
 					</div>
-				</section> */}
+				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_60 pb_100 text_center`}>
-						<h3 className="text_36_b gradient_text pt_60 pb_30">
-							CREATIVE CONSULTING
-						</h3>
+						<h3 className="text_36_b gradient_text pb_30">creative consulting</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="text_18_m pb_20">
 								Om is regularly approached by filmmakers and creative artists to

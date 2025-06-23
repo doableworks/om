@@ -1,6 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
 import { useRef, useEffect, useState } from "react";
+import Link from "next/link";
 
 // COMPONENTS //
 import Header from "@/components/Header";
@@ -24,22 +25,41 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/OneInOne.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/creative/banner.jpg";
+import BannerSlider from "../public/img/weddings/banner.jpg";
 import videoTham from "../public/img/weddings/video_tham.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
-import leftImg from "../public/img/weddings/left_img.png";
-import rightImg from "../public/img/weddings/right_img.png";
 import testAnimation from "../public/img/weddings/animation_img.png";
 import hindiText1 from "../public/img/ceremonies/hindi_text_1.png";
 import OneEvent from "../public/img/one-in-one/one_event.png";
+import leftImg from "../public/img/weddings/left_img.png";
+import rightImg from "../public/img/weddings/right_img.png";
+import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
-/** OneInOnePage Page */
+/** Home Page */
 export default function OneInOnePage() {
+	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+	const videoRef = useRef(null);
+
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox]", {});
 	}, []);
+
+	useEffect(() => {
+		if (videoRef.current) {
+			if (isVideoPlaying) {
+				videoRef.current.play();
+			} else {
+				videoRef.current.pause();
+			}
+		}
+	}, [isVideoPlaying]);
+
+	const handleVideoToggle = () => {
+		setIsVideoPlaying((prev) => !prev);
+	};
+
 	var settings = {
 		dots: true,
 		infinite: true,
@@ -59,45 +79,68 @@ export default function OneInOnePage() {
 
 			<Header />
 			{/* Page Content starts here */}
-			<main className={`${styles.one_in_one_Page}`}>
-				<section className={`${styles.banner}`}>
-					<div className={`${styles.banner_section}`}>
+			<main className={`${styles.weddings_Page}`}>
+				<section className={styles.banner}>
+					{/* <video
+						src="/Video/weddingBanner.mp4"
+						className="img-responsive"
+						muted
+						autoPlay
+						loop
+					/> */}
+					<img
+						src={videoTham.src}
+						className="img-responsive"
+						alt="videoTham"
+						style={{ width: "100%", height: "100%", display: "block" }}
+					/>
+					<Link href="/" legacyBehavior>
+						<a className={styles.weddingBannerBtn}>
+							<span className={styles.weddingBannerBtnArrow}>
+								<img
+									src={arrows.src}
+									alt="arrow"
+									style={{ width: "100%", height: "auto" }}
+								/>
+							</span>
+							ONE ON ONE
+						</a>
+					</Link>
+				</section>
+				<section className={`${styles.slider_section}`}>
+					<div className={styles.slider_container}>
 						<Slider {...settings}>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={BannerSlider.src}
-									className="img-responsive"
-									alt="BannerSlider"
-								/>
-								<div className="container">
-									<p className={`${styles.para_section} text_24_r pt_20`}>
-										“Lorem ipsum dolor sit amet consectetur. Commodo.”
-									</p>
-								</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									"Being coached by Om means feeling seen, heard and understood"
+								</p>
 							</div>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={BannerSlider.src}
-									className="img-responsive"
-									alt="BannerSlider"
-								/>
-								<div className="container">
-									<p className={`${styles.para_section} text_24_r pt_20`}>
-										“Lorem ipsum dolor sit amet consectetur. Commodo.”
-									</p>
-								</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									"Om, your guidance has reshaped my world."
+								</p>
 							</div>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={BannerSlider.src}
-									className="img-responsive"
-									alt="BannerSlider"
-								/>
-								<div className="container">
-									<p className={`${styles.para_section} text_24_r pt_20`}>
-										“Lorem ipsum dolor sit amet consectetur. Commodo.”
-									</p>
-								</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									“I have grown more in these two years than I did in the past 15 years.”
+								</p>
+							</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									“Om has helped me align with my true self.”
+								</p>
 							</div>
 						</Slider>
 					</div>
@@ -107,26 +150,59 @@ export default function OneInOnePage() {
 						<h3 className="text_36_b gradient_text pb_30">ONE-ON-ONE</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="text_18_m pb_20">
-								As a 1-1 coach Om regularly helps investors, CEOs, and senior executives
-								achieve balance and purpose. Using timeless concepts such as Karma Yoga,
-								Om guides people to unlock and honour the divinity that lies within.
+								As a 1-1 coach Om regularly helps investors, CEOs, and senior
+								executives" achieve balance and purpose. Using timeless concepts such as
+								Karma Yoga, Om guides people to unlock and honour the divinity that lies
+								within.
 							</p>
 							<p className="text_18_m pb_20">
 								Through 1-1 sessions with Om, several people have been able to navigate
-								life’s challenges with faith, clarity, resilience, and an ever-deepening
+								life's challenges with faith, clarity, resilience, and an ever-deepening
 								connection to their truest selves.
 							</p>
 						</div>
 					</div>
-					<div className={`${styles.video_section}`}>
-						<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
-							<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+					<div
+						className={`${styles.video_section}`}
+						style={{ position: "relative" }}
+					>
+						{/* {!isVideoPlaying && ( */}
+						<>
+							<img
+								src={videoTham.src}
+								className="img-responsive"
+								alt="videoTham"
+								style={{ width: "100%", height: "100%", display: "block" }}
+							/>
 							<img
 								src={playBtn.src}
-								className={`${styles.play_btn} img-responsive`}
-								alt="videoTham"
+								alt="playBtn"
+								style={{
+									position: "absolute",
+									top: "50%",
+									left: "50%",
+									transform: "translate(-50%, -50%)",
+									width: 100,
+									cursor: "pointer",
+									zIndex: 2,
+								}}
+								// onClick={handleVideoToggle}
 							/>
-						</a>
+						</>
+						{/* )} */}
+						{/* {isVideoPlaying && (
+							<video
+								src={
+									"https://awsvideostorage.s3.us-east-1.amazonaws.com/SSYouTube.online_Wedding+Final+Draft_1080p.mp4"
+								}
+								className="img-responsive"
+								style={{ height: "100%", width: "100%" }}
+								alt="videoTham"
+								playsInline
+								controls
+								ref={videoRef}
+							/>
+						)} */}
 					</div>
 				</section>
 				<section className={`${styles.testimonials} pb_80`}>
@@ -137,56 +213,42 @@ export default function OneInOnePage() {
 					/>
 					<div className="container">
 						<div className={`${styles.testimonials_section} pt_40`}>
-							<Slider {...settings}>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Always perform action in a spirit of sacrifice. By performing action
-										in this way, one attains the supreme.
-									</p>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={"/img/HindiOneOnOne.png"}
+									className="img-responsive pb_20"
+									alt="hindiText1"
+								/>
+								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
+									Lift yourself by yourself
+								</p>
+								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
+									Do not lower yourself. For this self alone is your friend; and this
+									self also can be your enemy.
+								</p>
+								<div
+									style={{
+										width: "10px",
+										height: "10px",
+										backgroundColor: "#00A1BC",
+										borderRadius: "15px",
+										margin: "40px auto",
+										display: "block",
+									}}
+								>
+									{" "}
 								</div>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Always perform action in a spirit of sacrifice. By performing action
-										in this way, one attains the supreme.
-									</p>
-								</div>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Always perform action in a spirit of sacrifice. By performing action
-										in this way, one attains the supreme.
-									</p>
-								</div>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Always perform action in a spirit of sacrifice. By performing action
-										in this way, one attains the supreme.
-									</p>
-								</div>
-							</Slider>
+								<p
+									className="text_24_r"
+									style={{ lineHeight: "1.2", color: "#F9B875" }}
+								>
+									Bhagvad Gita Chapter 6 | Verse 5
+								</p>
+							</div>
 						</div>
 					</div>
 				</section>
-				<section className={`${styles.one_in_one_event} ptb_80`}>
+				{/* <section className={`${styles.one_in_one_event} ptb_80`}>
 					<div className={`${styles.one_in_one_event_section}`}>
 						<h4 className="text_24_m text_center text_uppercase pb_50">
 							One-on-one events
@@ -223,9 +285,9 @@ export default function OneInOnePage() {
 							</Slider>
 						</div>
 					</div>
-				</section>
+				</section> */}
 				<section className="container">
-					<div className={`${styles.connect_section} pt_20 pb_80`}>
+					<div className={`${styles.connect_section} pt_80 pb_80`}>
 						<div className={`${styles.left_img}`}>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>

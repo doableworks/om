@@ -59,39 +59,44 @@ export default function OmPage() {
 			<main className={`${styles.OmPage}`}>
 				<section className={`${styles.banner}`}>
 					<div className={`${styles.banner_section}`}>
-						<Slider {...settings}>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={BannerSlider.src}
-									className="img-responsive"
-									alt="BannerSlider"
-								/>
+						{/* <Slider {...settings}> */}
+						<div className={`${styles.item} pb_40`}>
+							<img src={videoTham.src} className="img-responsive" alt="BannerSlider" />
+							<div className={`${styles.banner_text}`}>
+								<p className="text_18_r">
+									Om's YouTube channel features a selection of videos that make ancient
+									Hindu scriptures accessible and easy to apply in daily life.
+								</p>
 							</div>
-						</Slider>
+						</div>
+						{/* </Slider> */}
 					</div>
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} ptb_80`}>
 						<div className={`${styles.title_section}`}>
-							<h3 className="text_36_b text_uppercase pb_30">bhagavad gita</h3>
+							<h3 className="text_uppercase">bhagavad gita</h3>
 						</div>
 						<div className={`${styles.para_section}`}>
-							<p className="text_18_m pb_20">
+							<p>
 								The Bhagavad Gita is the cornerstone of Hindu thought. It is a text kept
 								in every Hindu home. And yet, many Hindus are disconnected from its
 								profound meaning. 
 							</p>
-							<p className="text_18_m pb_20">
+							<p>
 								Om&apos;s talks on the Bhagavad Gita bring out the life-changing meaning
 								of Bhagawan&apos;s words, couched in modern examples. 
 							</p>
-							<p className="text_18_m pb_20">
+							<p>
 								These concept-by-concept explanations have been appreciated by people of
 								all ages, Hindus across the globe, and many newcomers to Sanatan Vedic
 								Dharma.
 							</p>
 							<div className={`${styles.btn_section} pt_10`}>
-								<a href="#" className="text_16_b text_uppercase">
+								<a
+									href="https://youtube.com/playlist?list=PLSyEwewdBy3IHzoPkem_yDPNgYawvNB80&si=xs19d3a7cwJvUVa2"
+									className="text_uppercase"
+								>
 									+ check out the full playlist
 								</a>
 							</div>
@@ -128,7 +133,10 @@ export default function OmPage() {
 								stories from our Hindu heritage.
 							</p>
 							<div className={`${styles.btn_section} pt_10`}>
-								<a href="#" className="text_16_b text_uppercase">
+								<a
+									href="https://youtube.com/playlist?list=PLSyEwewdBy3LDIPdW67GmXCSErx1kPcJh&si=mzLOGNzkOnJnwU0N"
+									className="text_16_b text_uppercase"
+								>
 									+ check out the full playlist
 								</a>
 							</div>
@@ -146,74 +154,113 @@ export default function OmPage() {
 					</div>
 				</section>
 				<section className={`${styles.podcast} ptb_80`}>
-					<div className="container">
-						<div className={`${styles.podcast_info}`}>
-							<h4 className="text_36_b text_uppercase pb_30">podcast</h4>
-							<p className="text_18_m pb_20">
-								Om is a renowned speaker on Vedic spirituality, regularly invited to top
-								podcasts in India and abroad. 
-							</p>
-							<p className="text_18_m pb_20">
-								His straightforward and accessible approach to spirituality enables
-								listeners to draw practical insights for their own spiritual lives -
-								whether as beginners or advanced spiritualists.
+					{/* <div className="container"> */}
+					<div className={`${styles.podcast_info}`}>
+						<h4>podcast</h4>
+						<p>
+							Om is a renowned speaker on Vedic spirituality, regularly invited to top
+							podcasts in India and abroad. 
+						</p>
+						<p>
+							His straightforward and accessible approach to spirituality enables
+							listeners to draw practical insights for their own spiritual lives -
+							whether as beginners or advanced spiritualists.
+						</p>
+					</div>
+					<div className={`${styles.podcast_section}`}>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://youtu.be/8KoL3XieyQM?si=TYkP7Ha40IWlWmE5">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_16_m pt_10">Ranveer Allahbadia</p>
+						</div>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://youtu.be/eZpEgIT4ssw?si=EAJZKK2vPTjYFnIq">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_16_m pt_10">Humans of Bombay</p>
+						</div>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://youtu.be/SjlJyWZQ5vA?si=-HhtvSNhpqypNiWM">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_16_m pt_10">Radhika Das</p>
+						</div>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://youtu.be/cQOiLy6B4Wo?si=p_nExu0I4xGpOiqx">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_18_m pt_10">Times of India (Hindi)</p>
+						</div>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://www.bbc.com/audio/play/p0h8dz7z">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_18_m pt_10">
+								BBC: BBC Audio | The Documentary Podcast | Heart and Soul: Religion in
+								the 21st Century - Hindus (episode 2 of 3)
 							</p>
 						</div>
-						<div className={`${styles.podcast_section}`}>
-							<div className={`${styles.podcast_item}`}>
-								<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
-									<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-									<img
-										src={playBtn.src}
-										className={`${styles.play_btn} img-responsive`}
-										alt="videoTham"
-									/>
-								</a>
-								<p className="text_16_m pt_10">
-									Lorem ipsum dolor sit amet consectetur
-								</p>
-							</div>
-							<div className={`${styles.podcast_item}`}>
-								<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
-									<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-									<img
-										src={playBtn.src}
-										className={`${styles.play_btn} img-responsive`}
-										alt="videoTham"
-									/>
-								</a>
-								<p className="text_16_m pt_10">
-									Lorem ipsum dolor sit amet consectetur
-								</p>
-							</div>
-							<div className={`${styles.podcast_item}`}>
-								<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
-									<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-									<img
-										src={playBtn.src}
-										className={`${styles.play_btn} img-responsive`}
-										alt="videoTham"
-									/>
-								</a>
-								<p className="text_16_m pt_10">
-									Lorem ipsum dolor sit amet consectetur
-								</p>
-							</div>
-							<div className={`${styles.podcast_item}`}>
-								<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
-									<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-									<img
-										src={playBtn.src}
-										className={`${styles.play_btn} img-responsive`}
-										alt="videoTham"
-									/>
-								</a>
-								<p className="text_18_m pt_10">
-									Lorem ipsum dolor sit amet consectetur
-								</p>
-							</div>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://youtu.be/TtkOHF2qdhs?si=8dNM4qhDv9megFhc">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_18_m pt_10">The Rao Podcast</p>
+						</div>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://youtu.be/B1rET61hkqE?si=m15jun94q6Iacb9U">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_18_m pt_10"> The Rich Show (Hindi)</p>
+						</div>
+						<div className={`${styles.podcast_item}`}>
+							<a data-fancybox href="https://youtu.be/Up09pBny9RU?si=IHLYE2ImCWj_Fd8z">
+								<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="videoTham"
+								/>
+							</a>
+							<p className="text_18_m pt_10"> Arun Pundit (Hindi)</p>
 						</div>
 					</div>
+					{/* </div> */}
 				</section>
 
 				<section className="container">

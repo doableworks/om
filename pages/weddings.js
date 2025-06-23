@@ -1,6 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
 import { useRef, useEffect, useState } from "react";
+import Link from "next/link";
 
 // COMPONENTS //
 import Header from "@/components/Header";
@@ -36,14 +37,33 @@ import event4 from "../public/img/weddings/event_4.jpg";
 import event5 from "../public/img/weddings/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
+import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
 /** Home Page */
 export default function WeddingsPage() {
+	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+	const videoRef = useRef(null);
+
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox]", {});
 	}, []);
+
+	useEffect(() => {
+		if (videoRef.current) {
+			if (isVideoPlaying) {
+				videoRef.current.play();
+			} else {
+				videoRef.current.pause();
+			}
+		}
+	}, [isVideoPlaying]);
+
+	const handleVideoToggle = () => {
+		setIsVideoPlaying((prev) => !prev);
+	};
+
 	var settings = {
 		dots: true,
 		infinite: true,
@@ -64,44 +84,61 @@ export default function WeddingsPage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
-				<section className={`${styles.banner}`}>
-					<div className={`${styles.banner_section}`}>
+				<section className={styles.banner}>
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingBanner.mp4"
+						className="img-responsive"
+						muted
+						autoPlay
+						loop
+					/>
+					<Link href="/" legacyBehavior>
+						<a className={styles.weddingBannerBtn}>
+							<span className={styles.weddingBannerBtnArrow}>
+								<img
+									src={arrows.src}
+									alt="arrow"
+									style={{ width: "100%", height: "auto" }}
+								/>
+							</span>
+							WEDDINGS
+						</a>
+					</Link>
+				</section>
+				<section className={`${styles.slider_section}`}>
+					<div className={styles.slider_container}>
 						<Slider {...settings}>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={BannerSlider.src}
-									className="img-responsive"
-									alt="BannerSlider"
-								/>
-								<div className="container">
-									<p className={`${styles.para_section} text_24_r pt_20`}>
-										“Lorem ipsum dolor sit amet consectetur. Commodo.”
-									</p>
-								</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									"Thank you for being such a guiding light"
+								</p>
 							</div>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={BannerSlider.src}
-									className="img-responsive"
-									alt="BannerSlider"
-								/>
-								<div className="container">
-									<p className={`${styles.para_section} text_24_r pt_20`}>
-										“Lorem ipsum dolor sit amet consectetur. Commodo.”
-									</p>
-								</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									"Every mantra felt like a blessing."
+								</p>
 							</div>
-							<div className={`${styles.item} pb_40`}>
-								<img
-									src={BannerSlider.src}
-									className="img-responsive"
-									alt="BannerSlider"
-								/>
-								<div className="container">
-									<p className={`${styles.para_section} text_24_r pt_20`}>
-										“Lorem ipsum dolor sit amet consectetur. Commodo.”
-									</p>
-								</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									"Om brought divine grace to our wedding."
+								</p>
+							</div>
+							<div className={`${styles.item}`}>
+								<p
+									className={`${styles.para_section} text_24_r`}
+									style={{ textAlign: "end" }}
+								>
+									"The rituals were deeply meaningful and unforgettable."
+								</p>
 							</div>
 						</Slider>
 					</div>
@@ -115,24 +152,56 @@ export default function WeddingsPage() {
 							</p>
 							<p className="text_18_m pb_20">
 								But the depth of the ceremony is often lost in complicated rituals that
-								the couple doesn’t understand, and the guests don’t enjoy. 
+								the couple doesn't understand, and the guests don't enjoy. 
 							</p>
 							<p className="text_18_m pb_20">
-								Om’s ceremony explains each wedding ritual in its modern context, making
+								Om's ceremony explains each wedding ritual in its modern context, making
 								it meaningful for the couple, and inviting their families and the
 								audience to participate.
 							</p>
 						</div>
 					</div>
-					<div className={`${styles.video_section}`}>
-						<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
-							<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-							<img
-								src={playBtn.src}
-								className={`${styles.play_btn} img-responsive`}
+					<div
+						className={`${styles.video_section}`}
+						style={{ position: "relative" }}
+					>
+						{!isVideoPlaying && (
+							<>
+								<img
+									src={videoTham.src}
+									className="img-responsive"
+									alt="videoTham"
+									style={{ width: "100%", height: "100%", display: "block" }}
+								/>
+								<img
+									src={playBtn.src}
+									alt="playBtn"
+									style={{
+										position: "absolute",
+										top: "50%",
+										left: "50%",
+										transform: "translate(-50%, -50%)",
+										width: 100,
+										cursor: "pointer",
+										zIndex: 2,
+									}}
+									onClick={handleVideoToggle}
+								/>
+							</>
+						)}
+						{isVideoPlaying && (
+							<video
+								src={
+									"https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingVideo.mp4"
+								}
+								className="img-responsive"
+								style={{ height: "100%", width: "100%" }}
 								alt="videoTham"
+								playsInline
+								controls
+								ref={videoRef}
 							/>
-						</a>
+						)}
 					</div>
 				</section>
 				<section className={`${styles.testimonials} pb_80`}>
@@ -143,52 +212,17 @@ export default function WeddingsPage() {
 					/>
 					<div className="container">
 						<div className={`${styles.testimonials_section} pt_40`}>
-							<Slider {...settings}>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Lorem ipsum dolor sit amet consectetur. Non eget convallis mi mauris.
-										Egestas duis vulputate elit non odio arcu pellentesque accumsan. 1
-									</p>
-								</div>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Lorem ipsum dolor sit amet consectetur. Non eget convallis mi mauris.
-										Egestas duis vulputate elit non odio arcu pellentesque accumsan. 2
-									</p>
-								</div>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Lorem ipsum dolor sit amet consectetur. Non eget convallis mi mauris.
-										Egestas duis vulputate elit non odio arcu pellentesque accumsan. 3
-									</p>
-								</div>
-								<div className={`${styles.item} pb_40`}>
-									<img
-										src={hindiText1.src}
-										className="img-responsive"
-										alt="hindiText1"
-									/>
-									<p className="text_24_r pt_10">
-										Lorem ipsum dolor sit amet consectetur. Non eget convallis mi mauris.
-										Egestas duis vulputate elit non odio arcu pellentesque accumsan. 4
-									</p>
-								</div>
-							</Slider>
+							<div className={`${styles.item} pb_40`}>
+								<img
+									src={hindiText1.src}
+									className="img-responsive pb_20"
+									alt="hindiText1"
+								/>
+								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
+									THIS THREAD THAT BINDS US IS A COMMITMENT FOR LIFE. MAY THIS KNOT OF
+									MARRIAGE BRING AUSPICIOUSNESS FOR A HUNDRED YEARS.
+								</p>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -204,12 +238,10 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">John & julie</h5>
+										<h5 className="text_18_m text_uppercase">Shruti & Rahul</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">
-											“Lorem ipsum dolor sit amet consectetur...
-										</h6>
+										<h6 className="text_16_r">Mumbai</h6>
 									</div>
 								</div>
 							</div>
@@ -219,12 +251,10 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">John & julie</h5>
+										<h5 className="text_18_m text_uppercase">Ying & Vishal</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">
-											“Lorem ipsum dolor sit amet consectetur...
-										</h6>
+										<h6 className="text_16_r">Mumbai</h6>
 									</div>
 								</div>
 							</div>
@@ -236,12 +266,10 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">John & julie</h5>
+										<h5 className="text_18_m text_uppercase">Kabir & Priya</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">
-											“Lorem ipsum dolor sit amet consectetur...
-										</h6>
+										<h6 className="text_16_r">Miami</h6>
 									</div>
 								</div>
 							</div>
@@ -251,12 +279,10 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">John & julie</h5>
+										<h5 className="text_18_m text_uppercase">Harsh & Mahima</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">
-											“Lorem ipsum dolor sit amet consectetur...
-										</h6>
+										<h6 className="text_16_r">Gujurat</h6>
 									</div>
 								</div>
 							</div>
@@ -266,12 +292,10 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">John & julie</h5>
+										<h5 className="text_18_m text_uppercase">Kabir & Priya </h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">
-											“Lorem ipsum dolor sit amet consectetur...
-										</h6>
+										<h6 className="text_16_r">Bali</h6>
 									</div>
 								</div>
 							</div>

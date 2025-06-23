@@ -1,0 +1,101 @@
+@import "../helpers/helpers.scss";
+.speaking_Page{
+    padding-top: 80px;
+    .banner{
+        height: calc(100vh - 80px);
+        .banner_section{
+            .item{
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    height: calc(100vh - 80px - 80px);
+                }
+                .para_section{
+                    width: 70%;
+                    margin-left: auto;
+                }
+            }
+        }
+        :global(.slick-dots){
+            left: -35vw !important;
+            bottom: 30px !important;
+        }
+        :global(.slick-dots li button:before){
+            background-color: #DBCEB9;
+        }
+    }
+    .speaking_section{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .speaking_img{
+            width: 46%;
+        }
+        .speaking_info{
+            width: 46%;
+        }
+    }
+    .weddings_work{
+        display: flex;
+        justify-content: space-between;
+        .left_box{
+            width: 49%;
+            .box{
+                .box_img{
+                    overflow: hidden;
+                    img{
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                   
+                }
+                .name_title{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .right_box{
+            width: 49%;
+            .box{
+                .box_img{
+                    overflow: hidden;
+                    img{
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                   
+                }
+                .name_title{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .connect_section{
+        display: flex;
+        grid-gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+        .btn_section{
+            width: 383px;
+            .btn{
+                a{
+                    padding: 10px 20px;
+                    letter-spacing: 4px;
+                    border: 2px solid var(--color_primary);
+                }
+            }
+        }
+    }
+}
