@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 // SECTIONS //
 
 // PLUGINS //
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
@@ -25,23 +25,25 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/Weddings.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/weddings/banner.jpg";
 import videoTham from "../public/img/weddings/video_tham.jpg";
-import playBtn from "../public/img/weddings/play_btn.svg";
-import testAnimation from "../public/img/weddings/animation_img.png";
-import hindiText1 from "../public/img/weddings/hindi_text_1.png";
-import event1 from "../public/img/weddings/event_1.jpg";
-import event2 from "../public/img/weddings/event_2.jpg";
-import event3 from "../public/img/weddings/event_3.jpg";
-import event4 from "../public/img/weddings/event_4.jpg";
-import event5 from "../public/img/weddings/event_5.jpg";
+// import playBtn from "../public/img/weddings/play_btn.svg";
+// import testAnimation from "../public/img/weddings/animation_img.png";
+// import hindiText1 from "../public/img/weddings/hindi_text_1.png";
+// import event1 from "../public/img/weddings/event_1.jpg";
+// import event2 from "../public/img/weddings/event_2.jpg";
+// import event3 from "../public/img/weddings/event_3.jpg";
+// import event4 from "../public/img/weddings/event_4.jpg";
+// import event5 from "../public/img/weddings/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
-/** Home Page */
+/**
+ * Creative consulting page for Om.
+ * @returns {JSX.Element}
+ */
 export default function CreativePage() {
 	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 	const videoRef = useRef(null);
@@ -60,22 +62,22 @@ export default function CreativePage() {
 		}
 	}, [isVideoPlaying]);
 
-	const handleVideoToggle = () => {
-		setIsVideoPlaying((prev) => !prev);
-	};
+	// const handleVideoToggle = () => {
+	// 	setIsVideoPlaying((prev) => !prev);
+	// };
 
-	var settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		// fade: true,
-		arrows: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		pauseOnHover: false,
-	};
+	// var settings = {
+	// 	dots: true,
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	// fade: true,
+	// 	arrows: false,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 3000,
+	// 	pauseOnHover: false,
+	// };
 	return (
 		<div>
 			{/* Metatags */}
@@ -179,7 +181,7 @@ export default function CreativePage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

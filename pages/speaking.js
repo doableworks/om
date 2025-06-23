@@ -1,4 +1,8 @@
 /* eslint-disable no-irregular-whitespace */
+/**
+ * SpeakingPage component renders the Speaking page with event details, video, and testimonials.
+ * @returns {JSX.Element}
+ */
 // MODULES //
 import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
@@ -25,20 +29,12 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/Speaking.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/weddings/banner.jpg";
+
 import videoTham from "../public/img/weddings/video_tham.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
-import testAnimation from "../public/img/weddings/animation_img.png";
-import hindiText1 from "../public/img/weddings/hindi_text_1.png";
-import event1 from "../public/img/weddings/event_1.jpg";
-import event2 from "../public/img/weddings/event_2.jpg";
-import event3 from "../public/img/weddings/event_3.jpg";
-import event4 from "../public/img/weddings/event_4.jpg";
-import event5 from "../public/img/weddings/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import arrows from "../public/img/arrows.svg";
-import speakingImg from "../public/img/speaking/speaking_img.jpg";
 
 // DATA //
 
@@ -61,6 +57,9 @@ export default function SpeakingPage() {
 		}
 	}, [isVideoPlaying]);
 
+	/**
+	 * Toggles the video play/pause state.
+	 */
 	const handleVideoToggle = () => {
 		setIsVideoPlaying((prev) => !prev);
 	};
@@ -111,22 +110,24 @@ export default function SpeakingPage() {
 						<Slider {...settings}>
 							<div className={`${styles.item}`}>
 								<p className={`${styles.para_section}`} style={{ textAlign: "end" }}>
-									"Om's words carry not just knowledge, but lived experience."
+									&quot;Om&apos;s words carry not just knowledge, but lived
+									experience.&quot;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
 								<p className={`${styles.para_section}`} style={{ textAlign: "end" }}>
-									"He spoke to the mind, but touched the soul."
+									&quot;He spoke to the mind, but touched the soul.&quot;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
 								<p className={`${styles.para_section}`} style={{ textAlign: "end" }}>
-									"Om left us feeling grounded yet uplifted."
+									&quot;Om left us feeling grounded yet uplifted.&quot;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
 								<p className={`${styles.para_section}`} style={{ textAlign: "end" }}>
-									"Omji reminded us of the strength and divinity of everyday life."
+									&quot;Omji reminded us of the strength and divinity of everyday
+									life.&quot;
 								</p>
 							</div>
 						</Slider>
@@ -137,9 +138,9 @@ export default function SpeakingPage() {
 						<h3 className="text_36_b gradient_text pb_30">SPEAKING</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="pb_20">
-								Hindu wisdom is timeless. That is why it is called ‘Sanatan’ or
-								‘eternal’. But this wisdom can be difficult to understand, unless
-								explained in its modern context.
+								Hindu wisdom is timeless. That is why it is called &apos;Sanatan&apos;
+								or &apos;eternal&apos;. But this wisdom can be difficult to understand,
+								unless explained in its modern context.
 							</p>
 							<p>
 								Whether at public events, corporate seminars, or family gatherings, Om
@@ -294,7 +295,7 @@ export default function SpeakingPage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

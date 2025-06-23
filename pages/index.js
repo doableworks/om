@@ -1,6 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
-import { useRef, useEffect, useState } from "react";
 
 // COMPONENTS //
 import Header from "@/components/Header";
@@ -18,14 +17,8 @@ import Slider from "react-slick";
 import styles from "@/styles/pages/Home.module.scss";
 
 // IMAGES //
-import Banner from "../public/img/home/banner.jpg";
 import BannerText from "../public/img/home/banner_text.png";
-import Om from "../public/img/home/om.jpg";
 import Weddings from "../public/img/home/weddings.jpg";
-import ceremonies from "../public/img/home/ceremonies.jpg";
-import speaking from "../public/img/home/speaking.jpg";
-import OneON from "../public/img/home/one-on-one.jpg";
-import creative from "../public/img/home/creative.jpg";
 import business from "../public/img/home/BUSINESS.jpg";
 import testAnimation from "../public/img/home/test_animation.png";
 
@@ -73,7 +66,7 @@ export default function HomePage() {
 							</div>
 							<div className={`${styles.info}`}>
 								<p className="text_16_m pb_20">
-									Om Dhumatkar is a strategist & coach to India’s leading Founders,
+									Om Dhumatkar is a strategist & coach to India&apos;s leading Founders,
 									Investors, and Execs.
 								</p>
 								<p className="text_16_m pb_20">
@@ -196,7 +189,7 @@ export default function HomePage() {
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-										As the bride’s father, I was deeply moved by how Om wove grace,
+										As the bride&apos;s father, I was deeply moved by how Om wove grace,
 										warmth, and meaning into every sacred moment
 									</p>
 								</div>
@@ -208,13 +201,14 @@ export default function HomePage() {
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
 										Om, your guidance has reshaped my world in ways I never imagined
-										possible. Thank you for the profound impact you've had on my journey
+										possible. Thank you for the profound impact you&apos;ve had on my
+										journey
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
 										Through our sessions, I discovered a newfound sense of calmness and
-										equilibrium, alleviating years of struggle
+										equilibrium, alleviating years of struggle
 									</p>
 								</div>
 							</Slider>

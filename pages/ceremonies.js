@@ -41,7 +41,10 @@ import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
-/** Home Page */
+/**
+ * Ceremonies page for Om.
+ * @returns {JSX.Element}
+ */
 export default function CeremoniesPage() {
 	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 	const videoRef = useRef(null);
@@ -60,6 +63,9 @@ export default function CeremoniesPage() {
 		}
 	}, [isVideoPlaying]);
 
+	/**
+	 * Toggles the video play/pause state.
+	 */
 	const handleVideoToggle = () => {
 		setIsVideoPlaying((prev) => !prev);
 	};
@@ -113,7 +119,7 @@ export default function CeremoniesPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Spiritual grounding on such an important day."
+									&ldquo;Spiritual grounding on such an important day.&rdquo;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -121,7 +127,8 @@ export default function CeremoniesPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Your calm guidance and devotion brought peace and positivity."
+									&ldquo;Your calm guidance and devotion brought peace and
+									positivity.&rdquo;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -129,7 +136,8 @@ export default function CeremoniesPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Each chant felt like a bridge between the seen and the unseen."
+									&ldquo;Each chant felt like a bridge between the seen and the
+									unseen.&rdquo;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -137,7 +145,8 @@ export default function CeremoniesPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Created a space that felt both protected and profoundly blessed."
+									&ldquo;Created a space that felt both protected and
+									profoundly blessed.&rdquo;
 								</p>
 							</div>
 						</Slider>
@@ -152,9 +161,9 @@ export default function CeremoniesPage() {
 								beginnings to life-changing events.
 							</p>
 							<p className="text_18_m pb_20">
-								Om's ceremonies bring out these profound nuggets of wisdom - allowing
-								participants to fully understand and immerse themselves in the beauty of
-								Hindu worship.
+								Om&apos;s ceremonies bring out these profound nuggets of wisdom -
+								allowing participants to fully understand and immerse themselves in the
+								beauty of Hindu worship.
 							</p>
 						</div>
 					</div>
@@ -291,7 +300,7 @@ export default function CeremoniesPage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

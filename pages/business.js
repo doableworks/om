@@ -11,7 +11,6 @@ import Footer from "@/components/Footer";
 // SECTIONS //
 
 // PLUGINS //
-import Slider from "react-slick";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
@@ -25,23 +24,17 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/Weddings.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/weddings/banner.jpg";
 import videoTham from "../public/img/weddings/video_tham.jpg";
-import playBtn from "../public/img/weddings/play_btn.svg";
-import testAnimation from "../public/img/weddings/animation_img.png";
-import hindiText1 from "../public/img/weddings/hindi_text_1.png";
-import event1 from "../public/img/weddings/event_1.jpg";
-import event2 from "../public/img/weddings/event_2.jpg";
-import event3 from "../public/img/weddings/event_3.jpg";
-import event4 from "../public/img/weddings/event_4.jpg";
-import event5 from "../public/img/weddings/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import arrows from "../public/img/arrows.svg";
 
 // DATA //
 
-/** Home Page */
+/**
+ * Business consulting page for Om.
+ * @returns {JSX.Element}
+ */
 export default function CreativePage() {
 	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 	const videoRef = useRef(null);
@@ -60,22 +53,22 @@ export default function CreativePage() {
 		}
 	}, [isVideoPlaying]);
 
-	const handleVideoToggle = () => {
-		setIsVideoPlaying((prev) => !prev);
-	};
+	// const handleVideoToggle = () => {
+	// 	setIsVideoPlaying((prev) => !prev);
+	// };
 
-	var settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		// fade: true,
-		arrows: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		pauseOnHover: false,
-	};
+	// var settings = {
+	// 	dots: true,
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	// fade: true,
+	// 	arrows: false,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 3000,
+	// 	pauseOnHover: false,
+	// };
 	return (
 		<div>
 			{/* Metatags */}
@@ -156,21 +149,21 @@ export default function CreativePage() {
 						</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="text_18_m pb_20">
-								Dharma isn’t only tradition - it is a strategy for a thriving life. Our
-								culture is sacred yet smart. Our mantras, philosophies and rituals
-								weren’t crafted for worship alone - they were also built to help you win
-								and achieve your professional goals.
+								Dharma isn&apos;t only tradition - it is a strategy for a thriving life.
+								Our culture is sacred yet smart. Our mantras, philosophies and rituals
+								weren&apos;t crafted for worship alone - they were also built to help
+								you win and achieve your professional goals.
 							</p>
 							<p className="text_18_m pb_20">
-								At GD Partners, we fuse dharmic wisdom with today's realities to build
-								the next generation of Bharatiya Business. We blend commercial acumen
-								with Indian ethos, marrying ancient wisdom with global best practices.
-								We see capital not as money, but in its timeless Sanskrit meaning
-								“Artha” which is the source of abundance & impact.
+								At GD Partners, we fuse dharmic wisdom with today&apos;s realities to
+								build the next generation of Bharatiya Business. We blend commercial
+								acumen with Indian ethos, marrying ancient wisdom with global best
+								practices. We see capital not as money, but in its timeless Sanskrit
+								meaning Artha; which is the source of abundance & impact.
 							</p>
 							<p className="text_18_m pb_20">
-								We approach our clients as partners, so our success lies
-								in your success.
+								We approach our clients as partners, so our success lies in your
+								success.
 							</p>
 						</div>
 					</div>
@@ -182,7 +175,7 @@ export default function CreativePage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

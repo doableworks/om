@@ -1,6 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
 // MODULES //
-import { useRef, useEffect, useState } from "react";
+import { useEffect } from "react";
+import Link from "next/link";
 
 // COMPONENTS //
 import Header from "@/components/Header";
@@ -10,11 +11,6 @@ import Footer from "@/components/Footer";
 // SECTIONS //
 
 // PLUGINS //
-import Slider from "react-slick";
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-thumbnail.css";
-import "lightgallery/css/lg-video.css";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
@@ -53,14 +49,20 @@ export default function BlogPage() {
 						<div className={`${styles.podcast_section}`}>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/1">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/1" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>What is the symbolism of the mangalsutra</h5>
@@ -74,14 +76,20 @@ export default function BlogPage() {
 
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/2">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/2" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>What is the significance of saptapadi</h5>
@@ -95,42 +103,54 @@ export default function BlogPage() {
 							</div>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/3">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/3" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>The importance of agni during Hindu weddings</h5>
 									<p>
 										Agni (sacred fire) is not only symbolic but also necessary for Hindu
 										weddings. It is the centrepiece of the ceremony, and in this blog,
-										let's decode the importance of Agni in Hindu weddings.
+										let&apos;s decode the importance of Agni in Hindu weddings.
 									</p>
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/4">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/4" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
-									<h5>The Truth About Kanyadaan: It's Not What You Think</h5>
+									<h5>The Truth About Kanyadaan: It&apos;s Not What You Think</h5>
 									<p>
 										What is the first thought that pops into your head upon hearing the
-										word "Kanyadaan?" It probably conjures the meaning, "giving away the
-										daughter."
+										word &quot;Kanyadaan?&quot; It probably conjures the meaning,
+										&quot;giving away the daughter.&quot;
 									</p>
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
@@ -151,9 +171,9 @@ export default function BlogPage() {
 						<h5>Is Kanyadaan regressive? </h5>
 						<p>
 							Hindu weddings are synonymous with rituals, customs, and traditions. One
-							ritual that's widely criticised and misunderstood is kanyadaan. It
-							roughly translates to, "Giving yoru daughter away." However, there's more
-							to it than meets the eye.
+							ritual that&apos;s widely criticised and misunderstood is kanyadaan. It
+							roughly translates to, &quot;Giving yoru daughter away.&quot; However,
+							there&apos;s more to it than meets the eye.
 						</p>
 						{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 						{/* </div> */}
@@ -167,14 +187,20 @@ export default function BlogPage() {
 						<div className={`${styles.podcast_section}`}>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/6">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/6" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>Why do you need an English-speaking Pundit? </h5>
@@ -190,36 +216,48 @@ export default function BlogPage() {
 
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/7">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/7" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>Does the Hindu wedding ceremony fit in the modern world? </h5>
 									<p>
-										It's simple to forget that a Hindu wedding is a sacred rite of passage
-										rather than merely a celebration in an era when extravagant sangeets,
-										staged baraats, and designer décor frequently characterise Indian
-										weddings.
+										It&apos;s simple to forget that a Hindu wedding is a sacred rite of
+										passage rather than merely a celebration in an era when extravagant
+										sangeets, staged baraats, and designer décor frequently characterise
+										Indian weddings.
 									</p>
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/8">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/8" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>Whom do we pray to during the wedding? </h5>
@@ -236,14 +274,20 @@ export default function BlogPage() {
 							</div>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/9">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/9" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>Why do we need a baraat in a wedding? </h5>
@@ -260,14 +304,20 @@ export default function BlogPage() {
 							</div>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/10">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/10" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>Can you drink before the wedding ceremony?</h5>
@@ -284,23 +334,29 @@ export default function BlogPage() {
 							</div>
 							<div className={`${styles.podcast_item}`}>
 								<div className={`${styles.video_wrapper}`}>
-									<a href="/blog/11">
-										<img src={videoTham.src} className="img-responsive" alt="videoTham" />
-										<img
-											src={playBtn.src}
-											className={`${styles.play_btn} img-responsive`}
-											alt="videoTham"
-										/>
-									</a>
+									<Link href="/blog/11" legacyBehavior>
+										<a>
+											<img
+												src={videoTham.src}
+												className="img-responsive"
+												alt="videoTham"
+											/>
+											<img
+												src={playBtn.src}
+												className={`${styles.play_btn} img-responsive`}
+												alt="videoTham"
+											/>
+										</a>
+									</Link>
 								</div>
 								<div className={`${styles.podcast_text}`}>
 									<h5>Demystifying Hindu Weddings: Are There 7 Pheras?</h5>
 									<p>
-										When you think of a Hindu wedding, what's the first thing that pops
-										up? Chances are, it's an image of the bride and groom walking around
-										the Agni or holy fire. This is known as a phera and it signifies
-										aspects of life and commitment. It is one of the most iconic rituals
-										of the ceremony.
+										When you think of a Hindu wedding, what&apos;s the first thing that
+										pops up? Chances are, it&apos;s an image of the bride and groom
+										walking around the Agni or holy fire. This is known as a phera and it
+										signifies aspects of life and commitment. It is one of the most iconic
+										rituals of the ceremony.
 									</p>
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
@@ -315,7 +371,7 @@ export default function BlogPage() {
 						</div>
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
-								<a href="#" className="text_24_m">
+								<a href="contact-us" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>

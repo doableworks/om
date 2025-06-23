@@ -1,4 +1,8 @@
 /* eslint-disable no-irregular-whitespace */
+/**
+ * WeddingsPage component renders the Weddings page with event details, video, and testimonials.
+ * @returns {JSX.Element}
+ */
 // MODULES //
 import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
@@ -25,7 +29,6 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/Weddings.module.scss";
 
 // IMAGES //
-import BannerSlider from "../public/img/weddings/banner.jpg";
 import videoTham from "../public/img/weddings/video_tham.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import testAnimation from "../public/img/weddings/animation_img.png";
@@ -60,6 +63,9 @@ export default function WeddingsPage() {
 		}
 	}, [isVideoPlaying]);
 
+	/**
+	 * Toggles the video play/pause state.
+	 */
 	const handleVideoToggle = () => {
 		setIsVideoPlaying((prev) => !prev);
 	};
@@ -113,7 +119,7 @@ export default function WeddingsPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Thank you for being such a guiding light"
+									&quot;Thank you for being such a guiding light&quot;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -121,7 +127,7 @@ export default function WeddingsPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Every mantra felt like a blessing."
+									&quot;Every mantra felt like a blessing.&quot;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -129,7 +135,7 @@ export default function WeddingsPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"Om brought divine grace to our wedding."
+									&quot;Om brought divine grace to our wedding.&quot;
 								</p>
 							</div>
 							<div className={`${styles.item}`}>
@@ -137,7 +143,7 @@ export default function WeddingsPage() {
 									className={`${styles.para_section} text_24_r`}
 									style={{ textAlign: "end" }}
 								>
-									"The rituals were deeply meaningful and unforgettable."
+									&quot;The rituals were deeply meaningful and unforgettable.&quot;
 								</p>
 							</div>
 						</Slider>
@@ -152,11 +158,11 @@ export default function WeddingsPage() {
 							</p>
 							<p className="text_18_m pb_20">
 								But the depth of the ceremony is often lost in complicated rituals that
-								the couple doesn't understand, and the guests don't enjoy. 
+								the couple doesn&apos;t understand, and the guests don&apos;t enjoy.
 							</p>
 							<p className="text_18_m pb_20">
-								Om's ceremony explains each wedding ritual in its modern context, making
-								it meaningful for the couple, and inviting their families and the
+								Om&apos;s ceremony explains each wedding ritual in its modern context,
+								making it meaningful for the couple, and inviting their families and the
 								audience to participate.
 							</p>
 						</div>
