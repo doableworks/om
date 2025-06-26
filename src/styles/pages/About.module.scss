@@ -18,22 +18,23 @@
             padding:0% 5%;
             padding-top: 20px;
             padding-bottom: 180px;
+            margin-right: 5px;
             justify-content: center;
             align-items: flex-start;
             .counter_box{
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 justify-content: flex-start;
                 height: 12vh;
-                width: 24vw;
-                padding: 2px 3.5rem;
+                width: 28vw;
+                padding: 2px 2rem;
                 border-right: 2px solid var(--color_primary);
                 &:last-child{
                     border: 0;
                 }
                 h3{
-                    font-size: 30px;
+                    font-size: 25px;
                     font-weight: 700;
                     letter-spacing: 2px;
                 }
@@ -123,10 +124,10 @@
         align-items: center;
         justify-content: space-between;
         .btn_section{
-            width: 383px;
+            // width: 383px;
             .btn{
                 a{
-                    padding: 10px 20px;
+                    padding: 10px;
                     letter-spacing: 4px;
                     border: 2px solid var(--color_primary);
                 }

@@ -227,7 +227,7 @@ export default function Form() {
 						</label>
 						<textarea
 							id="additionalInfo"
-							placeholder="Please include as many details as possible. (Text and numbers only, 200 words max)"
+							placeholder="Please include as many details as possible. (Text and numbers only)"
 							className={styles.input}
 							rows={4}
 							{...register("additionalInfo", {

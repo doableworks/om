@@ -82,7 +82,7 @@ export default function HomePage() {
 									modern times.
 								</p>
 								<div className={`${styles.btn}`}>
-									<a href="#">+ learn more</a>
+									<a href="about-us">+ learn more</a>
 								</div>
 							</div>
 						</div>
@@ -108,8 +108,9 @@ export default function HomePage() {
 							<a href="ceremonies" className="text_16_m text_center text_uppercase">
 								<img
 									src={"img/home/Ceremonies2025.jpg"}
-									className="img-responsove"
+									className="img-responsive"
 									alt="Weddings"
+									style={{objectFit: "cover"}}
 								/>
 								<div className={`${styles.work_info} text_center`}>
 									<h3 className="text_center text_24_b text_uppercase pb_10">
@@ -152,7 +153,7 @@ export default function HomePage() {
 							>
 								<img
 									src={"/img/creativeImage.jpg"}
-									className="img-responsove"
+									className="img-responsive"
 									alt="Weddings"
 								/>
 								<div className={`${styles.work_info} text_center`}>
@@ -194,32 +195,31 @@ export default function HomePage() {
 							<Slider {...settings}>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-										Om held space for our love with such devotion that every mantra felt
-										like a blessing etched into our minds and hearts forever
+									&quot;Om held space for our love with such devotion that every mantra felt like a blessing etched into our minds and hearts forever.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-										As the bride&apos;s father, I was deeply moved by how Om wove grace,
-										warmth, and meaning into every sacred moment
+									&quot;As the bride&apos;s father, I was deeply moved by how Om wove grace,
+										warmth, and meaning into every sacred moment&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-										Being coached Om means feeling seen, heard, and understood
+									&quot;Being coached Om means feeling seen, heard, and understood.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-										Om, your guidance has reshaped my world in ways I never imagined
+									&quot;Om, your guidance has reshaped my world in ways I never imagined
 										possible. Thank you for the profound impact you&apos;ve had on my
-										journey
+										journey.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-										Through our sessions, I discovered a newfound sense of calmness and
-										equilibrium, alleviating years of struggle
+									&quot;Through our sessions, I discovered a newfound sense of calmness and
+										equilibrium, alleviating years of struggle.&quot;
 									</p>
 								</div>
 							</Slider>

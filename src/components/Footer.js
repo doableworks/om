@@ -17,6 +17,7 @@ import footerLogo from "../../public/img/footer_logo.svg";
 import insta from "../../public/img/home/insta.svg";
 import you from "../../public/img/home/you.svg";
 import link from "../../public/img/home/link.svg";
+import SpotifyIcon from "../../public/img/home/spotify-icon.svg";
 
 // DATA //
 
@@ -61,14 +62,14 @@ export default function Footer() {
 						</ul>
 					</div>
 					<div className={`${styles.link_box}`}>
-						<h4 className="text_16_b pb_10">
+						<h4 className="text_16_b pb_10" style={{paddingBottom:"1.7rem"}}>
 							<a href="learn-with-om">LEARN WITH OM</a>
 						</h4>
-						<h4 className="text_16_b pb_10">
+						<h4 className="text_16_b pb_10" style={{paddingBottom:"1.7rem"}}>
 							<a href="about-us">ABOUT</a>
 						</h4>
-						<h4 className="text_16_b pb_10">
-							<a href="blog">BLOG</a>
+						<h4 className="text_16_b pb_10" style={{paddingBottom:"1.7rem"}}>
+							<a href="about-us">GD PARTNERS</a>
 						</h4>
 						<h4 className="text_16_b pb_10">
 							<a href="connect">CONNECT</a>
@@ -77,6 +78,11 @@ export default function Footer() {
 					<div className={`${styles.link_box}`}>
 						<ul>
 							<li>
+								<h4 className="text_16_b pb_10">
+									<a href="blog">BLOG</a>
+								</h4>
+							</li>
+							<li style={{marginBottom:"1rem"}}>
 								<a href="#" className="text_15_r">
 									Privacy Policy
 								</a>
@@ -95,18 +101,23 @@ export default function Footer() {
 					<ul>
 						<li>FOLLOW :</li>
 						<li>
-							<a href="#">
+							<a href="https://www.instagram.com/om.dhumatkar/?hl=en">
 								<img src={insta.src} className="img-responsive" alt="insta" />
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<img src={you.src} className="img-responsive" alt="insta" />
+							<a href="https://www.youtube.com/@omdhumatkar">
+								<img src={you.src} className="img-responsive" alt="youtube" />
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<img src={link.src} className="img-responsive" alt="insta" />
+							<a href="https://www.linkedin.com/in/omdhumatkar/">
+								<img src={link.src} className="img-responsive" alt="linkedin" />
+							</a>
+						</li>
+						<li>
+							<a href="https://open.spotify.com/user/1140740667">
+								<img src={SpotifyIcon.src} className="img-responsive" alt="spotify" />
 							</a>
 						</li>
 					</ul>
@@ -115,10 +126,6 @@ export default function Footer() {
 					<a href="mailto:team@omdhumatkar.com" className="text_16_r">
 						Write to us at team@omdhumatkar.com
 					</a>{" "}
-					|{" "}
-					<a href="tel:+91 98765 54321" className="text_16_r">
-						Call us : +91 98765 54321
-					</a>
 				</div>
 			</div>
 			{/* </div> */}
