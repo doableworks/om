@@ -29,6 +29,7 @@ import videoTham from "../public/img/weddings/video_tham.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
+import AudioCover from "../public/img/AudioCover.jpg";
 
 // DATA //
 
@@ -196,19 +197,19 @@ export default function OmPage() {
 					</div>
 					<div className={`${styles.podcast_section}`}>
 						<div className={`${styles.podcast_item}`}>
-							<iframe width="534" height="301" src="https://www.youtube.com/embed/8KoL3XieyQM?si=U_JvzUFGbX_Z7hpx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+							<iframe width="593" height="334" src="https://www.youtube.com/embed/8KoL3XieyQM?si=U_JvzUFGbX_Z7hpx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 							<p className="text_16_m pt_10">BeerBiceps</p>
 						</div>
 						<div className={`${styles.podcast_item}`}>
-							<iframe width="534" height="301" src="https://www.youtube.com/embed/eZpEgIT4ssw?si=UpgixTsm94oLbWcp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+							<iframe width="593" height="334" src="https://www.youtube.com/embed/eZpEgIT4ssw?si=UpgixTsm94oLbWcp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 							<p className="text_16_m pt_10">Humans of Bombay</p>
 						</div>
 						<div className={`${styles.podcast_item}`}>
-							<iframe width="534" height="301" src="https://www.youtube.com/embed/SjlJyWZQ5vA?si=eGSYRTPwLOKq8ZTk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+							<iframe width="593" height="334" src="https://www.youtube.com/embed/SjlJyWZQ5vA?si=eGSYRTPwLOKq8ZTk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 							<p className="text_16_m pt_10">Radhika Das</p>
 						</div>
 						<div className={`${styles.podcast_item}`}>
-							<iframe width="534" height="301" src="https://www.youtube.com/embed/cQOiLy6B4Wo?si=bMw0n37AadDH1Ad7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+							<iframe width="593" height="334" src="https://www.youtube.com/embed/cQOiLy6B4Wo?si=bMw0n37AadDH1Ad7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 							<p className="text_18_m pt_10">Times of India (Hindi)</p>
 						</div>
 						<div className={`${styles.podcast_item}`}>
@@ -230,14 +231,25 @@ export default function OmPage() {
 									}
 								}}
 							>
-								<img src={videoTham.src} className="img-responsive" alt="BBC Podcast" />
+								<img src={AudioCover.src} className="img-responsive" alt="BBC Podcast" style={{width:"100%"}}/>
 								{!isPlaying && (
-									<img
-										src={playBtn.src}
-										className={`${styles.play_btn} img-responsive`}
-										alt="Play audio"
-										style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
-									/>
+									<div className={`${styles.play_btn} img-responsive`}>
+										<svg
+											width="70"
+											height="70"
+											viewBox="0 0 20 20"
+											fill="white"
+											style={{
+												display: "block",
+												margin: "0 auto",
+												backgroundColor: "red",
+												borderRadius: "100%",
+												padding: "16%"
+											}}
+										>
+											<path d="M10 14a4 4 0 004-4V6a4 4 0 10-8 0v4a4 4 0 004 4zm1 2.93V18a1 1 0 11-2 0v-1.07A7.001 7.001 0 013 11a1 1 0 112 0 5 5 0 0010 0 1 1 0 112 0 7.001 7.001 0 01-6 5.93z"/>
+										</svg>
+									</div>
 								)}
 								<audio
 									ref={audioRef}
@@ -264,15 +276,15 @@ export default function OmPage() {
 							</p>
 						</div>
 						<div className={`${styles.podcast_item}`}>
-							<iframe width="534" height="301" src="https://www.youtube.com/embed/TtkOHF2qdhs?si=lrIV2QswT4VDnZlm" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+							<iframe width="593" height="334" src="https://www.youtube.com/embed/TtkOHF2qdhs?si=lrIV2QswT4VDnZlm" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 							<p className="text_18_m pt_10">The Rao Podcast</p>
 						</div>
 						<div className={`${styles.podcast_item}`}>
-							<iframe width="534" height="301" src="https://www.youtube.com/embed/B1rET61hkqE?si=MnHETS5eToX2L8Vh" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+							<iframe width="593" height="334" src="https://www.youtube.com/embed/B1rET61hkqE?si=MnHETS5eToX2L8Vh" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 							<p className="text_18_m pt_10"> The Rich Show (Hindi)</p>
 						</div>
 						<div className={`${styles.podcast_item}`}>
-							<iframe width="534" height="301" src="https://www.youtube.com/embed/Up09pBny9RU?si=-RXdTWT0TFqWqL40" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+							<iframe width="593" height="334" src="https://www.youtube.com/embed/Up09pBny9RU?si=-RXdTWT0TFqWqL40" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 							<p className="text_18_m pt_10"> Arun Pundit (Hindi)</p>
 						</div>
 					</div>
