@@ -78,12 +78,7 @@ export default function OmPage() {
 						alt="Contact Banner"
 					/>
 					<p>
-						&ldquo;I am optimistic on India&apos;s growth prospects; and has a
-						personal mission of{" "}
-						<span style={{ fontWeight: "bolder" }}>
-							&apos;bringing Bhakti to the Boardroom&apos;
-						</span>
-						.&rdquo;
+					Rooted in <span style={{fontWeight:"800"}}>Bhakti</span>, powered by <span style={{fontWeight:"800"}}>Karma</span> and sharpened by <span style={{fontWeight:"800"}}>Jnana</span>, we help you align your inner journey with your outer ambitions.
 					</p>
 					{/* </div> */}
 				</section>

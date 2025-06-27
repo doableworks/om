@@ -6,8 +6,6 @@
 import Header from "@/components/Header";
 import MetaTags from "@/components/MetaTags";
 import Footer from "@/components/Footer";
-import Image from "next/image";
-import Link from "next/link";
 
 // SECTIONS //
 
@@ -20,13 +18,9 @@ import styles from "@/styles/pages/About.module.scss";
 
 // IMAGES //
 // Remove unused image imports if not used in JSX
-import Banner from "../public/img/about/banner.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import Weddings from "../public/img/home/weddings.jpg";
-import ceremonies from "../public/img/home/ceremonies.jpg";
-import speaking from "../public/img/home/speaking.jpg";
-import OneON from "../public/img/home/one-on-one.jpg";
 import creative from "../public/img/home/creative.jpg";
 import business from "../public/img/home/BUSINESS.jpg";
 import Journey from "../public/img/about/journey.png";
@@ -60,34 +54,28 @@ export default function AboutPage() {
 				<section className={`${styles.counter}`}>
 					{/* <div className="container"> */}
 					<div className={`${styles.counter_section}`}>
-						<div className={`${styles.counter_box}`}>
-							<h3 className="text_36_b text_uppercase">18 yrs</h3>
-							<h6 className="text_15_r f_w_m text_uppercase">Study of Shastras</h6>
+						<div className={`${styles.counter_box}`} style={{paddingLeft:"40px"}}>
+							<h3 className="text_32_b text_uppercase">18 yrs</h3>
+							<h6 className="text_15_r f_w_m text_uppercase">OF VEDIC STUDY</h6>
 						</div>
 						<div className={`${styles.counter_box}`}>
-							<h3 className="text_36_b text_uppercase">16 yrs</h3>
+							<h3 className="text_32_b text_uppercase">16 yrs</h3>
 							<h6 className="text_15_r f_w_m text_uppercase">
-								Corporate Life in London
+								OF BANKING STRATEGY IN LONDON
 							</h6>
 						</div>
 						<div className={`${styles.counter_box}`}>
-							<h3 className="text_36_b text_uppercase">10,000</h3>
+							<h3 className="text_32_b text_uppercase">10,000+ hours</h3>
 							<h6 className="text_15_r f_w_m text_uppercase">
-								Hours of leadership coaching 
+								OF LEADERSHIP COACHING 
 							</h6>
 						</div>
 						<div className={`${styles.counter_box}`}>
-							<h3 className="text_36_b text_uppercase">7.1 m</h3>
-							<h6 className="text_15_r f_w_m text_uppercase">Views on YouTube</h6>
+							<h3 className="text_32_b text_uppercase">7,000,000+</h3>
+							<h6 className="text_15_r f_w_m text_uppercase">VIEWS ON YOUTUBE</h6>
 						</div>
-						<div className={`${styles.counter_box}`}>
-							<h3 className="text_36_b text_uppercase">200k</h3>
-							<h6 className="text_15_r f_w_m text_uppercase">
-								Followers on  Instagram
-							</h6>
-						</div>
+						{/* </div> */}
 					</div>
-					{/* </div> */}
 				</section>
 				<section className={`${styles.journey} pb_80`}>
 					<div className="container">
@@ -123,7 +111,7 @@ export default function AboutPage() {
 										ceremonies, explaining the meaning behind each act of worship.
 									</p>
 									<p className="text_18_m pb_20">
-										He is the founding MD of OD Partners Strategic Advisory, with clients
+										He is the founding MD of GD Partners Strategic Advisory, with clients
 										across California, New York, London, Amsterdam, Dubai, and
 										India.&nbsp;
 									</p>
@@ -229,22 +217,24 @@ export default function AboutPage() {
 						</div>
 					</div>
 				</section>
-				<section style={{ backgroundColor: "#fff", padding: "0 10%" }}>
-					<div className={`${styles.connect_section} pt_100 pb_80`}>
-						<div className={`${styles.left_img}`}>
-							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
-						</div>
-						<div className={`${styles.btn_section}`}>
-							<div className={`${styles.btn}`}>
-								<a href="connect" className="text_24_m">
-									+ CONNECT WITH OM
-								</a>
+				<section style={{ backgroundColor: "#fff"}}>
+					<section className="container" >
+						<div className={`${styles.connect_section} pt_100 pb_80`}>
+							<div className={`${styles.left_img}`}>
+								<img src={leftImg.src} className="img-responsive" alt="leftImg" />
+							</div>
+							<div className={`${styles.btn_section}`}>
+								<div className={`${styles.btn}`}>
+									<a href="connect" className="text_24_m">
+										+ CONNECT WITH OM
+									</a>
+								</div>
+							</div>
+							<div className={`${styles.right_img}`}>
+								<img src={rightImg.src} className="img-responsive" alt="leftImg" />
 							</div>
 						</div>
-						<div className={`${styles.right_img}`}>
-							<img src={rightImg.src} className="img-responsive" alt="leftImg" />
-						</div>
-					</div>
+					</section>
 				</section>
 			</main>
 			<Footer />
