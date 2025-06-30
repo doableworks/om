@@ -30,7 +30,7 @@ import styles from "@/styles/pages/Speaking.module.scss";
 
 // IMAGES //
 
-import videoTham from "../public/img/weddings/video_tham.jpg";
+import videoTham from "../public/img/eventVideoThumbnail.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
@@ -86,7 +86,7 @@ export default function SpeakingPage() {
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner}>
 					<video
-						src="https://awsvideostorage.s3.us-east-1.amazonaws.com/Copy+of+Top+Banner+-+Speaking.mp4"
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/speakingHero.mp4"
 						className="img-responsive"
 						muted
 						autoPlay
@@ -180,7 +180,7 @@ export default function SpeakingPage() {
 						{isVideoPlaying && (
 							<video
 								src={
-									"https://awsvideostorage.s3.us-east-1.amazonaws.com/SSYouTube.online_Wedding+Final+Draft_1080p.mp4"
+									"https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingBanner.mp4"
 								}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}
@@ -254,7 +254,7 @@ export default function SpeakingPage() {
 							<div className={`${styles.box} pb_40`}>
 								<div className={`${styles.box_img}`}>
 									<img
-										src={"/img/speaking/placeholder2.jpg"}
+										src={"/img/speakingEvent4.jpg"}
 										className="img-responsive"
 										alt="event1"
 									/>

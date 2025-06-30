@@ -36,6 +36,7 @@ import event3 from "../public/img/ceremonies/event_3.jpg";
 import event4 from "../public/img/ceremonies/event_4.jpg";
 import event5 from "../public/img/ceremonies/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
+import ThumbnailImg from "../public/img/ceremonies/Thumbnail.jpg";
 import rightImg from "../public/img/weddings/right_img.png";
 import arrows from "../public/img/arrows.svg";
 
@@ -92,7 +93,7 @@ export default function CeremoniesPage() {
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner}>
 					<video
-						src="https://awsvideostorage.s3.us-east-1.amazonaws.com/Copy+of+Top+Banner+-+Ceremonies.mp4"
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Copy+of+Top+Banner+-+Ceremonies.mp4"
 						className="img-responsive"
 						muted
 						autoPlay
@@ -174,7 +175,7 @@ export default function CeremoniesPage() {
 						{!isVideoPlaying && (
 							<>
 								<img
-									src={videoTham.src}
+									src={ThumbnailImg.src}
 									className="img-responsive"
 									alt="videoTham"
 									style={{ width: "100%", height: "100%", display: "block" }}
@@ -198,7 +199,7 @@ export default function CeremoniesPage() {
 						{isVideoPlaying && (
 							<video
 								src={
-									"https://awsvideostorage.s3.us-east-1.amazonaws.com/SSYouTube.online_Wedding+Final+Draft_1080p.mp4"
+									"https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingVideo.mp4"
 								}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}

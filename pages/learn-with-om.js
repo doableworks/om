@@ -30,7 +30,8 @@ import playBtn from "../public/img/weddings/play_btn.svg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import AudioCover from "../public/img/AudioCover.jpg";
-
+import Bhagavad_gita from "../public/img/learn-with-om/Bhagavad Gita.jpg";
+import hanuman_chalisa from "../public/img/learn-with-om/Hanuman Chalisa.jpg";
 // DATA //
 
 /** OneInOnePage Page */
@@ -89,7 +90,13 @@ export default function OmPage() {
 					<div className={`${styles.banner_section}`}>
 						{/* <Slider {...settings}> */}
 						<div className={`${styles.item} pb_40`}>
-							<img src={videoTham.src} className="img-responsive" alt="BannerSlider" />
+							<video src={"https://websitetestcontent.s3.us-east-1.amazonaws.com/Learn+With+Om+Banner.mp4"} 
+								className="img-responsive" 
+								alt="BannerSlider"
+								muted
+								autoPlay
+								loop
+							/>
 							<div className={`${styles.banner_text}`}>
 								<p className="text_18_r">
 									Om&apos;s YouTube channel features a selection of videos that make
@@ -131,8 +138,8 @@ export default function OmPage() {
 						</div>
 					</div>
 					<div className={`${styles.video_section}`}>
-						<a data-fancybox href="https://www.youtube.com/playlist?list=PLSyEwewdBy3JnJueSLhT3WH6AWQ3FFQPQ">
-							<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+						<a href="https://www.youtube.com/playlist?list=PLSyEwewdBy3JnJueSLhT3WH6AWQ3FFQPQ">
+							<img src={Bhagavad_gita.src} className="img-responsive" alt="videoTham" />
 							<img
 								src={playBtn.src}
 								className={`${styles.play_btn} img-responsive`}
@@ -171,8 +178,8 @@ export default function OmPage() {
 						</div>
 					</div>
 					<div className={`${styles.video_section}`}>
-						<a data-fancybox href="https://youtu.be/EngW7tLk6R8">
-							<img src={videoTham.src} className="img-responsive" alt="videoTham" />
+						<a href="https://youtu.be/EngW7tLk6R8">
+							<img src={hanuman_chalisa.src} className="img-responsive" alt="videoTham" />
 							<img
 								src={playBtn.src}
 								className={`${styles.play_btn} img-responsive`}
