@@ -40,6 +40,7 @@ import event4 from "../public/img/weddings/event_4.jpg";
 import event5 from "../public/img/weddings/event_5.jpg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
+import WeddingVideoCover from "../public/img/weddings/weddingsVideoCover.jpg";
 import arrows from "../public/img/arrows.svg";
 
 // DATA //
@@ -174,7 +175,7 @@ export default function WeddingsPage() {
 						{!isVideoPlaying && (
 							<>
 								<img
-									src={videoTham.src}
+									src={WeddingVideoCover.src}
 									className="img-responsive"
 									alt="videoTham"
 									style={{ width: "100%", height: "100%", display: "block" }}

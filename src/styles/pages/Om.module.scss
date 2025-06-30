@@ -7,11 +7,22 @@
         .banner_section{
             .item{
                 position: relative;
-                img{
+                video{
                     // height: 100%;
                     width: 100%;
                     object-fit: cover;
                     height: calc(100vh - 80px);
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: calc(100vh - 80px);
+                    background-color: rgba(0, 0, 0, 0.4); // Adjust opacity as needed (0.4 = 40% opacity)
+                    z-index: 1;
+                    pointer-events: none; // Allows clicks to pass through
                 }
                 .banner_text{
                     position: absolute;
