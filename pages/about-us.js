@@ -129,9 +129,21 @@ export default function AboutPage() {
 					</div>
 				</section>
 				<section className={`${styles.work}`}>
-					<h3 className="text_center text_24_m text_uppercase" data-scroll>
-						Work with Om
-					</h3>
+					<section className="container">
+						<div className={`${styles.connect_section} pt_100 pb_80`}>
+							<div className={`${styles.left_img}`} data-scroll>
+								<img src={leftImg.src} className="img-responsive" alt="leftImg" />
+							</div>
+							<div className={`${styles.btn_section}`} data-scroll>
+								<div className={`${styles.btn}`}>
+									<span className="text_24_m">WORK WITH OM</span>
+								</div>
+							</div>
+							<div className={`${styles.right_img}`} data-scroll>
+								<img src={rightImg.src} className="img-responsive" alt="leftImg" />
+							</div>
+						</div>
+					</section>
 					<div className={`${styles.work_section} pt_40`}>
 						<div className={`${styles.work_item}`} data-scroll>
 							<a href="weddings" className="text_16_m text_center text_uppercase">
