@@ -97,14 +97,25 @@ export default function OmPage() {
 								autoPlay
 								loop
 							/>
-							<div className={`${styles.banner_text}`}>
-								<p className="text_18_r">
-									Om&apos;s YouTube channel features a selection of videos that make
-									ancient Hindu scriptures accessible and easy to apply in daily life.
-								</p>
-							</div>
 						</div>
 						{/* </Slider> */}
+					</div>
+				</section>
+				<section className="container">
+					<div className={`${styles.weddings_info} pt_60 pb_60 text_center`}>
+						<h3 className="text_36_b gradient_text">LEARN WITH OM</h3>
+						<div className={`${styles.para_section}`} style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+							<p className="text_18_m pb_20" style={{width:"70%"}}>
+								Om&apos;s YouTube channel features a selection of videos that make
+								ancient Hindu scriptures accessible and easy to apply in daily life.
+							</p>
+							<p className="text_18_m pb_20" tyle={{width:"70%"}}>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+							<p className="text_18_m pb_20" tyle={{width:"70%"}}>
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+							</p>
+						</div>
 					</div>
 				</section>
 				<section className="container">

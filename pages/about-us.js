@@ -55,11 +55,11 @@ export default function AboutPage() {
 					{/* <div className="container"> */}
 					<div className={`${styles.counter_section}`}>
 						<div className={`${styles.counter_box}`} style={{paddingLeft:"40px"}}>
-							<h3 className="text_32_b text_uppercase">18 yrs</h3>
+							<h3 className="text_32_b text_uppercase">18 years</h3>
 							<h6 className="text_15_r f_w_m text_uppercase">OF VEDIC STUDY</h6>
 						</div>
 						<div className={`${styles.counter_box}`}>
-							<h3 className="text_32_b text_uppercase">16 yrs</h3>
+							<h3 className="text_32_b text_uppercase">16 years</h3>
 							<h6 className="text_15_r f_w_m text_uppercase">
 								OF BANKING STRATEGY IN LONDON
 							</h6>

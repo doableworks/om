@@ -225,9 +225,27 @@ export default function CeremoniesPage() {
 									className="img-responsive pb_20"
 									alt="hindiText1"
 								/>
-								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
+								<p className="text_16_r pt_60" style={{ lineHeight: "1.5", width:"60%" }}>
 									ALWAYS PERFORM ACTION IN A SPIRIT OF SACRIFICE. BY PERFORMING ACTION IN
 									THIS WAY, ONE ATTAINS THE SUPREME.
+								</p>
+								<div
+									style={{
+										width: "10px",
+										height: "10px",
+										backgroundColor: "#00A1BC",
+										borderRadius: "15px",
+										margin: "40px auto",
+										display: "block",
+									}}
+								>
+									{" "}
+								</div>
+								<p
+									className="text_16_r"
+									style={{ lineHeight: "1.2", color: "#F9B875" }}
+								>
+									Bhagavad Gita Chapter 3 | Verse 19
 								</p>
 							</div>
 						</div>

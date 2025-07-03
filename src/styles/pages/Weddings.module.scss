@@ -70,7 +70,7 @@
             width:60%;
             .item{
                 .para_section{
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         color: #696969;
                         font-weight: 400;
                 }
@@ -109,12 +109,16 @@
             margin: auto;
         }
         .testimonials_section{
-            width: 80%;
+            width: 100%;
             margin: auto;
             .item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 p{
                     text-align: center;
                     color: var(--color_text_tint);
+                    letter-spacing: 2px;
                 }
             }
         }

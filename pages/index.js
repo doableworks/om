@@ -206,7 +206,7 @@ export default function HomePage() {
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-									&quot;Being coached Om means feeling seen, heard, and understood.&quot;
+									&quot;Being coached by Om means feeling seen, heard, and understood.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
