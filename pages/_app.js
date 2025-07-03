@@ -8,7 +8,8 @@ import Script from "next/script";
 
 // PLUGINS //
 // import { CKEditor } from "@ckeditor/ckeditor5-react";
-// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
+import ScrollOut from "scroll-out";
 
 // UTILS //
 import SmoothScrolling from "@/utils/SmoothScrolling";
@@ -27,6 +28,9 @@ import "@/styles/globals/globals.scss";
 export default function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		SmoothScrolling();
+		ScrollOut({
+			targets: "[data-scroll]",
+		});
 	}, []);
 
 	return (

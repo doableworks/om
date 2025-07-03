@@ -50,24 +50,36 @@
 	font-size: 24px;
 	line-height: 1.2;
 	font-weight: 300;
+	@media (max-width: 767px) {
+		font-size: 22px;
+	}
 }
 
 .text_24_m{
 	font-size: 24px;
 	line-height: 1.2;
 	font-weight: 500;
+	@media (max-width: 767px) {
+		font-size: 22px;
+	}
 }
 
 .text_24_b{
 	font-size: 24px;
 	line-height: 1.2;
 	font-weight: 600;
+	@media (max-width: 767px) {
+		font-size: 22px;
+	}
 }
 
 .text_36_b{
 	font-size: 36px;
 	line-height: 1.2;
 	font-weight: 600;
+	@media (max-width: 767px) {
+		font-size: 32px;
+	}
 }
 
 

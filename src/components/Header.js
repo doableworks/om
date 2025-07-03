@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 // MODULES //
 import { useState, useEffect, useRef } from "react";
 
@@ -69,125 +70,133 @@ export default function Header() {
 				openSidebar ? styles.sidebar_opened : ""
 			}`}
 		>
-			{/* <div className="container"> */}
-			<div className={`${styles.header_inside}`}>
-				{/* Logo wrap */}
-				<div className={`${styles.header_logo}`}>
-					<Link href="/">
-						<div className={styles.image_wrap}>
-							<img src={Logo.src} alt="Logo" className="img-responsive" />
-						</div>
-					</Link>
-				</div>
+			<div className={`container ${styles.header_container}`}>
+				<div className={`${styles.header_inside}`}>
+					{/* Logo wrap */}
+					<div className={`${styles.header_logo}`}>
+						<a href="/">
+							<div className={styles.image_wrap}>
+								<img src={Logo.src} alt="Logo" className="img-responsive" />
+							</div>
+						</a>
+					</div>
 
-				{/* Links Wrap */}
-				<div className={`${styles.links_wrap}`} ref={dropdownRef}>
-					<ul>
-						<li>
-							<a href="about-us" className="text_15_r">
-								ABOUT
-							</a>
-						</li>
-						<li
-							className="text_15_r"
-							style={{
-								position: "relative",
-								display:"flex",
-								flexDirection:"row",
-								columnGap:"8px"
-							}}
-						>
-							{/* <div className={`${styles.left_img}`}>
+					{/* Links Wrap */}
+					<div className={`${styles.links_wrap}`} ref={dropdownRef}>
+						<ul>
+							<li>
+								<a href="about-us" className="text_15_r">
+									ABOUT
+								</a>
+							</li>
+							<li
+								className="text_15_r"
+								style={{
+									position: "relative",
+									display: "flex",
+									flexDirection: "row",
+									columnGap: "8px",
+								}}
+							>
+								{/* <div className={`${styles.left_img}`}>
 								<img src={leftImg.src} className="img-responsive" alt="leftImg" style={{maxWidth:"80px", maxHeight:"20px", objectFit:"cover"}} />
 							</div> */}
-							<span
-								onClick={() => toggleDropdown("workWithOm")}
-								className={`text_15_r ${
-									openDropdown === "workWithOm" ? styles.work_with_om_open : ""
-								}`}
-							>
-								WORK WITH OM
-							</span>
-							{/* <div className={`${styles.right_img}`}>
+								<span
+									onClick={() => toggleDropdown("workWithOm")}
+									className={`text_14_r ${
+										openDropdown === "workWithOm" ? styles.work_with_om_open : ""
+									}`}
+								>
+									WORK WITH OM
+								</span>
+								{/* <div className={`${styles.right_img}`}>
 								<img src={rightImg.src} className="img-responsive" alt="leftImg" style={{maxWidth:"80px", objectFit:"contain"}} />
 							</div> */}
-							{openDropdown === "workWithOm" && (
-								<ul className={`text_20_r ${styles.dropdown_custom_list}`}>
-									<li>
-										<a href="weddings" className="text_15_r" style={{ color: "#F0EAE0" }}>
-											Weddings
-										</a>
-									</li>
-									<li>
-										<a
-											href="ceremonies"
-											className="text_15_r"
-											style={{ color: "#F0EAE0" }}
-										>
-											ceremonies
-										</a>
-									</li>
-									<li>
-										<a href="speaking" className="text_15_r" style={{ color: "#F0EAE0" }}>
-											Speaking
-										</a>
-									</li>
-									<li>
-										<a
-											href="one-on-one"
-											className="text_15_r"
-											style={{ color: "#F0EAE0" }}
-										>
-											One-on-One
-										</a>
-									</li>
-									<li>
-										<a
-											href="creative-consulting"
-											className="text_15_r"
-											style={{ color: "#F0EAE0" }}
-										>
-											Creative Consulting
-										</a>
-									</li>
-									<li>
-										<a
-											href="business-consulting"
-											className="text_15_r"
-											style={{ color: "#F0EAE0" }}
-										>
-											Business Consulting
-										</a>
-									</li>
-								</ul>
-							)}
-						</li>
-						<li>
-							<a href="learn-with-om" className="text_15_r">
-								LEARN WITH OM
-							</a>
-						</li>
-						{/* <li>
+								{openDropdown === "workWithOm" && (
+									<ul className={`text_16_r ${styles.dropdown_custom_list}`}>
+										<li>
+											<a
+												href="weddings"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												Weddings
+											</a>
+										</li>
+										<li>
+											<a
+												href="ceremonies"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												ceremonies
+											</a>
+										</li>
+										<li>
+											<a
+												href="speaking"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												Speaking
+											</a>
+										</li>
+										<li>
+											<a
+												href="one-on-one"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												One-on-One
+											</a>
+										</li>
+										<li>
+											<a
+												href="creative-consulting"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												Creative Consulting
+											</a>
+										</li>
+										<li>
+											<a
+												href="business-consulting"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												Business Consulting
+											</a>
+										</li>
+									</ul>
+								)}
+							</li>
+							<li>
+								<a href="learn-with-om" className="text_15_r">
+									LEARN WITH OM
+								</a>
+							</li>
+							{/* <li>
 							<a href="business-consulting" className="text_15_r">
 								GD PARTNERS
 							</a>
 						</li> */}
-						<li>
-							<a href="connect" className="text_15_r">
-								CONNECT
-							</a>
-						</li>
-					</ul>
-				</div>
+							<li>
+								<a href="connect" className="text_15_r">
+									CONNECT
+								</a>
+							</li>
+						</ul>
+					</div>
 
-				{/* Hamburger icon visible in mobile only */}
-				<div className={styles.hamburger_icon} onClick={toggleSidebar}>
-					<span className={styles.hamburger_line}></span>
-					<span className={styles.hamburger_line}></span>
-					<span className={styles.hamburger_line}></span>
+					{/* Hamburger icon visible in mobile only */}
+					<div className={styles.hamburger_icon} onClick={toggleSidebar}>
+						<span className={styles.hamburger_line}></span>
+						<span className={styles.hamburger_line}></span>
+						<span className={styles.hamburger_line}></span>
+					</div>
 				</div>
 			</div>
-			{/* </div> */}
 		</div>
 	);
 }

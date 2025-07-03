@@ -43,11 +43,11 @@ export default function BlogPage() {
 			<main className={`${styles.BlogPage}`}>
 				<section className={`${styles.podcast} ptb_80`}>
 					<div className="container">
-						<div className={`${styles.podcast_info}`}>
+						<div className={`${styles.podcast_info}`} data-scroll>
 							<h4>Blog</h4>
 						</div>
 						<div className={`${styles.podcast_section}`}>
-							<div className={`${styles.podcast_item}`}>
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/1" legacyBehavior>
 										<a>
@@ -74,7 +74,7 @@ export default function BlogPage() {
 								</div>
 							</div>
 
-							<div className={`${styles.podcast_item}`}>
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/2" legacyBehavior>
 										<a>
@@ -101,7 +101,7 @@ export default function BlogPage() {
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
-							<div className={`${styles.podcast_item}`}>
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/3" legacyBehavior>
 										<a>
@@ -128,7 +128,7 @@ export default function BlogPage() {
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
-							<div className={`${styles.podcast_item}`}>
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/4" legacyBehavior>
 										<a>
@@ -158,7 +158,7 @@ export default function BlogPage() {
 						</div>
 					</div>
 				</section>
-				<section className={`${styles.blog_img_section}`}>
+				<section className={`${styles.blog_img_section}`} data-scroll>
 					<a href="blog/5">
 						<img
 							src={BlogBanner.src}
@@ -185,7 +185,7 @@ export default function BlogPage() {
 							<h4 className="text_36_b text_uppercase">Blog</h4>
 						</div> */}
 						<div className={`${styles.podcast_section}`}>
-							<div className={`${styles.podcast_item}`}>
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/6" legacyBehavior>
 										<a>
@@ -214,7 +214,7 @@ export default function BlogPage() {
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
 
-							<div className={`${styles.podcast_item}`}>
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/7" legacyBehavior>
 										<a>
@@ -242,7 +242,8 @@ export default function BlogPage() {
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
-							<div className={`${styles.podcast_item}`}>
+
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/8" legacyBehavior>
 										<a>
@@ -272,7 +273,8 @@ export default function BlogPage() {
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
-							<div className={`${styles.podcast_item}`}>
+
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/9" legacyBehavior>
 										<a>
@@ -302,7 +304,8 @@ export default function BlogPage() {
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
-							<div className={`${styles.podcast_item}`}>
+
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/10" legacyBehavior>
 										<a>
@@ -332,7 +335,8 @@ export default function BlogPage() {
 								</div>
 								{/* <h6 className="text_16_m ptb_10 f_w_s_b">Author</h6> */}
 							</div>
-							<div className={`${styles.podcast_item}`}>
+
+							<div className={`${styles.podcast_item}`} data-scroll>
 								<div className={`${styles.video_wrapper}`}>
 									<Link href="/blog/11" legacyBehavior>
 										<a>
@@ -365,7 +369,7 @@ export default function BlogPage() {
 					</div>
 				</section>
 				<section className="container">
-					<div className={`${styles.connect_section} pt_20 pb_80`}>
+					<div className={`${styles.connect_section} pt_20 pb_80`} data-scroll>
 						<div className={`${styles.left_img}`}>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>

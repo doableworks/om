@@ -11,6 +11,16 @@
     align-items: center;
 	justify-content: space-between;
 
+	.header_container {
+	@media (min-width: 992px) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	}
 
 	.header_inside {
 		@extend %f_r_a_center;
@@ -21,7 +31,7 @@
 		.header_logo{
 			cursor: pointer;
 			img{
-				width: 80px;
+				width: 70px;
 			}
 		}
 		.image_wrap {
@@ -33,16 +43,42 @@
 			@extend %d_flex;
 			align-self: stretch;
 			padding-inline-start: 0;
+			@media (max-width: 767px) {
+				padding: 0 20px;
+			}
 			ul{
 				display: flex;
-				grid-gap: 75px;
+				grid-gap: 60px;
 				padding-left: 0;
 				align-items: center;
+				@media (max-width: 767px) {
+					display: inline;
+				}
+				@media (min-width: 768px) and (max-width: 992px) {
+					grid-gap: 20px;
+				}
+				@media (min-width: 993px) and (max-width: 1200px) {
+					grid-gap: 40px;
+				}
 				li{
+					list-style: none;
+					@media (max-width: 767px) {
+						padding: 15px 0;
+					}
 					a{
 						color: var(--color_bredCrum);
 						font-weight: 300;
 						font-size: small;
+						font-size: 14px;
+						font-weight: 400;
+						@media (max-width: 767px) {
+							color: #00344A;
+							font-size: 20px;
+							font-weight: 500;
+						}
+						@media (min-width: 768px) and (max-width: 992px) {
+							font-size: 12px;
+						}
 					}
 					span{
 						color: var(--color_bredCrum);
@@ -50,6 +86,16 @@
 						font-size: small;
 						position: relative;
 						cursor: pointer;
+						font-size: 14px;
+						font-weight: 400;
+						@media (max-width: 767px) {
+							color: #00344A;
+							font-size: 20px;
+							font-weight: 500;
+						}
+						@media (min-width: 768px) and (max-width: 992px) {
+							font-size: 15px;
+						}
 					}
 					.work_with_om_open{
 						font-weight: 500;
@@ -61,7 +107,7 @@
 						position: absolute;
 						text-transform: uppercase;
 						font-size: 400;
-						top: 7vh;
+						top: 50px;
 						left: -6px;
 						background-color: #00344A;
 						box-shadow: none;
@@ -71,6 +117,22 @@
 						list-style: none;
 						width: 15vw;
 						align-items: flex-start;
+						@media (max-width: 767px) {
+							top: 15px;
+							width: 100%;
+							gap: 0;
+							position: relative;
+						}
+						li{
+							@media (max-width: 767px) {
+								padding: 10px 0;
+							}
+							a{
+								@media (max-width: 767px) {
+									font-size: 14px;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -83,7 +145,7 @@
 				flex-direction: column;
 				width: 100%;
 				position: absolute;
-				top: 100%;
+				top: 85px;
 				left: 0;
 				height: 100vh;
 			}
@@ -181,7 +243,7 @@
 				display: inline-block;
 				width: 100%;
 				height: 2px;
-				background-color: black;
+				background-color: #fff;
 				transition: ease all 300ms;
 			}
 			@include sm-down {

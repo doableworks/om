@@ -77,7 +77,7 @@ export default function CreativePage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
-				<section className={styles.banner}>
+				<section className={styles.banner} data-scroll>
 					{/* <video
 						src="/Video/weddingBanner.mp4"
 						className="img-responsive"
@@ -144,24 +144,24 @@ export default function CreativePage() {
 				</section> */}
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_60 pb_100 text_center`}>
-						<h3 className="text_36_b gradient_text pt_60 pb_30">
+						<h3 className="text_36_b gradient_text pt_60 pb_30" data-scroll>
 							BUSINESS CONSULTING
 						</h3>
 						<div className={`${styles.para_section}`}>
-							<p className="text_18_m pb_20">
+							<p className="text_18_m pb_20" data-scroll>
 								Dharma isn&apos;t only tradition - it is a strategy for a thriving life.
 								Our culture is sacred yet smart. Our mantras, philosophies and rituals
 								weren&apos;t crafted for worship alone - they were also built to help
 								you win and achieve your professional goals.
 							</p>
-							<p className="text_18_m pb_20">
+							<p className="text_18_m pb_20" data-scroll>
 								At GD Partners, we fuse dharmic wisdom with today&apos;s realities to
 								build the next generation of Bharatiya Business. We blend commercial
 								acumen with Indian ethos, marrying ancient wisdom with global best
 								practices. We see capital not as money, but in its timeless Sanskrit
 								meaning Artha; which is the source of abundance & impact.
 							</p>
-							<p className="text_18_m pb_20">
+							<p className="text_18_m pb_20" data-scroll>
 								We approach our clients as partners, so our success lies in your
 								success.
 							</p>
@@ -170,17 +170,17 @@ export default function CreativePage() {
 				</section>
 				<section className="container">
 					<div className={`${styles.connect_section} pt_20 pb_80`}>
-						<div className={`${styles.left_img}`}>
+						<div className={`${styles.left_img}`} data-scroll>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>
-						<div className={`${styles.btn_section}`}>
+						<div className={`${styles.btn_section}`} data-scroll>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>
 						</div>
-						<div className={`${styles.right_img}`}>
+						<div className={`${styles.right_img}`} data-scroll>
 							<img src={rightImg.src} className="img-responsive" alt="leftImg" />
 						</div>
 					</div>

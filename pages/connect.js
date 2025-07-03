@@ -52,33 +52,42 @@ export default function OmPage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.ContactPage}`}>
-				<section className={styles.form_section}>
-					<div className={styles.left_img_wrapper}>
-						<img
-							src="/img/contactUs.png"
-							className={styles.contact_img}
-							alt="Contact Us"
-						/>
-					</div>
-					<div className={styles.right_content}>
+				<section className={styles.form_section} data-scroll>
+					<div className="container">
 						<div className={styles.writeToUsText}>
 							<span>Write to us at</span>
 							<br />
 							<a href="mailto:team@omdhumatkar.com">team@omdhumatkar.com</a>
 						</div>
-						{/* You can add your Form component here if needed */}
-						<Form />
+						<div className={`${styles.form_section_wrapper} pb_80`}>
+							<div className={styles.left_img_wrapper}>
+								<img
+									src="/img/contactUs.png"
+									className={styles.contact_img}
+									alt="Contact Us"
+								/>
+							</div>
+							<div className={`${styles.right_content} pt_80`}>
+								{/* You can add your Form component here if needed */}
+								<div className={`${styles.form_section}`}>
+									<Form />
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
-				<section className={`${styles.banner_Section}`}>
+				<section className={`${styles.banner_Section}`} data-scroll>
 					{/* <div> */}
 					<img
 						src="/img/contactbanner.png"
 						className="img-responsive"
 						alt="Contact Banner"
 					/>
-					<p>
-					Rooted in <span style={{fontWeight:"800"}}>Bhakti</span>, powered by <span style={{fontWeight:"800"}}>Karma</span> and sharpened by <span style={{fontWeight:"800"}}>Jnana</span>, we help you align your inner journey with your outer ambitions.
+					<p data-scroll>
+						Rooted in <span style={{ fontWeight: "800" }}>Bhakti</span>, powered by{" "}
+						<span style={{ fontWeight: "800" }}>Karma</span> and sharpened by{" "}
+						<span style={{ fontWeight: "800" }}>Jnana</span>, we help you align your
+						inner journey with your outer ambitions.
 					</p>
 					{/* </div> */}
 				</section>

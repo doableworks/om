@@ -15,21 +15,39 @@
         background-color: #FEFBF7;
         .counter_section{
             display: flex;
-            padding:0% 5%;
+            padding: 0% 5%;
             padding-top: 20px;
             padding-bottom: 180px;
             margin-right: 5px;
             justify-content: center;
             align-items: flex-start;
+            @media (max-width: 767px) {
+                flex-wrap: wrap;
+            }
+            @media (min-width: 768px) and (max-width: 1200px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
             .counter_box{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-start;
-                height: 12vh;
-                width: 28vw;
+                // height: 12vh;
+                // width: 28vw;
+                width: 25%;
                 padding: 2px 2rem;
                 border-right: 2px solid var(--color_primary);
+                @media (max-width: 767px) {
+                    width: 100%;
+                    border-right: 0;
+                    padding: 20px 0 !important;
+                    border-bottom: 2px solid var(--color_primary);
+                }
+                @media (min-width: 768px) and (max-width: 1200px) {
+                    width: auto;
+                    padding: 10px 20px;
+                }
                 &:last-child{
                     border: 0;
                 }
@@ -37,11 +55,20 @@
                     font-size: 25px;
                     font-weight: 700;
                     letter-spacing: 2px;
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        font-size: 18px;
+                    }
                 }
                 h6{
                     font-size: 12px;
                     font-weight: 700;
                     padding-top: 15px;
+                    @media (max-width: 767px) {
+                        padding-top: 5px;
+                    }
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        font-size: 10px;
+                    }
                 }
             }
         }
@@ -52,18 +79,31 @@
         .journey_section{
             .journey_img{
                 margin: -125px auto;
+                @media (max-width: 767px) {
+                    width: 70%;
+                }
             }
             h3{
                 padding-top: 180px;
                 font-weight: 700;
                 font-size: 2rem;
                 letter-spacing: 2px;
+                @media (max-width: 767px) {
+                    font-size: 28px;
+                }
             }
             .info_section{
                 display: flex;
                 justify-content: space-between;
+                @media (max-width: 767px) {
+                    flex-wrap: wrap;
+                    padding-top: 20px;
+                }
                 .box{
                     width: 48%;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
                     p{
                         line-height: 28px;
                     }
@@ -74,6 +114,9 @@
     .work{
         padding-top: 5%;
         background-color: #fff;
+        @media (max-width: 767px) {
+            padding-top: 45px;
+        }
         .work_section{
             grid-gap: 3px;
             display: flex;
@@ -84,6 +127,12 @@
                 width: 33.15%;
                 position: relative;
                 overflow: hidden;
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+                @media (min-width: 768px) and (max-width: 1200px) {
+                    width: 33%;
+                }
                 a {
                     display: block;
                     width: 100%;
@@ -109,6 +158,9 @@
                     position: absolute;
                     transform: translateX(-50%);
                     text-align: center;
+                    @media (max-width: 1200px) {
+                        bottom: 30px;
+                    }
                     .knowMorePlus {
                         display: inline-block;
                         transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
@@ -123,14 +175,55 @@
         grid-gap: 30px;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 767px) {
+            grid-gap: 10px;
+            padding-top: 60px;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+            grid-gap: 20px;
+            padding-top: 80px;
+        }
+        .left_img{
+            width: 28%;
+            @media (max-width: 767px) {
+                width: 20%;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 25%;
+            }
+        }
+
         .btn_section{
-            // width: 383px;
+            width: 40%;
+            text-align: center;
+            @media (max-width: 767px) {
+                width: 60%;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 50%;
+            }
             .btn{
                 a{
                     padding: 10px;
                     letter-spacing: 4px;
                     border: 2px solid var(--color_primary);
+                    @media (max-width: 767px) {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                    }
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        font-size: 18px;
+                    }
                 }
+            }
+        }
+        .right_img{
+            width: 28%;
+            @media (max-width: 767px) {
+                width: 20%;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 25%;
             }
         }
     }
