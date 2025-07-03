@@ -17,6 +17,8 @@ import Slider from "react-slick";
 import styles from "@/styles/pages/Home.module.scss";
 
 // IMAGES //
+import leftImg from "../public/img/weddings/left_img.png";
+import rightImg from "../public/img/weddings/right_img.png";
 import BannerText from "../public/img/home/banner_text.png";
 import Weddings from "../public/img/home/weddings.jpg";
 import business from "../public/img/home/BUSINESS.jpg";
@@ -89,9 +91,21 @@ export default function HomePage() {
 					</div>
 				</section>
 				<section className={`${styles.work}`}>
-					<h3 className="text_center text_24_b pb_30 text_uppercase" data-scroll>
-						Work with Om
-					</h3>
+					<section className="container">
+						<div className={`${styles.connect_section} pt_100 pb_80`}>
+							<div className={`${styles.left_img}`} data-scroll>
+								<img src={leftImg.src} className="img-responsive" alt="leftImg" />
+							</div>
+							<div className={`${styles.btn_section}`} data-scroll>
+								<div className={`${styles.btn}`}>
+									<span className="text_24_m">WORK WITH OM</span>
+								</div>
+							</div>
+							<div className={`${styles.right_img}`} data-scroll>
+								<img src={rightImg.src} className="img-responsive" alt="leftImg" />
+							</div>
+						</div>
+					</section>
 					<div className={`${styles.work_section} pt_40`}>
 						<div className={`${styles.work_item}`} data-scroll>
 							<a href="weddings" className="text_16_m text_center text_uppercase">
@@ -207,7 +221,8 @@ export default function HomePage() {
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-									&quot;Being coached by Om means feeling seen, heard, and understood.&quot;
+										&quot;Being coached by Om means feeling seen, heard, and
+										understood.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>

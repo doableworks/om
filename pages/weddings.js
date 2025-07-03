@@ -117,7 +117,7 @@ export default function WeddingsPage() {
 						<Slider {...settings}>
 							<div className={`${styles.item}`}>
 								<p
-									className={`${styles.para_section} text_24_r`}
+									className={`${styles.para_section} text_18_r`}
 									style={{ textAlign: "end" }}
 								>
 									&quot;Thank you for being such a guiding light&quot;
@@ -125,7 +125,7 @@ export default function WeddingsPage() {
 							</div>
 							<div className={`${styles.item}`}>
 								<p
-									className={`${styles.para_section} text_24_r`}
+									className={`${styles.para_section} text_18_r`}
 									style={{ textAlign: "end" }}
 								>
 									&quot;Every mantra felt like a blessing.&quot;
@@ -133,7 +133,7 @@ export default function WeddingsPage() {
 							</div>
 							<div className={`${styles.item}`}>
 								<p
-									className={`${styles.para_section} text_24_r`}
+									className={`${styles.para_section} text_18_r`}
 									style={{ textAlign: "end" }}
 								>
 									&quot;Om brought divine grace to our wedding.&quot;
@@ -141,7 +141,7 @@ export default function WeddingsPage() {
 							</div>
 							<div className={`${styles.item}`}>
 								<p
-									className={`${styles.para_section} text_24_r`}
+									className={`${styles.para_section} text_18_r`}
 									style={{ textAlign: "end" }}
 								>
 									&quot;The rituals were deeply meaningful and unforgettable.&quot;
