@@ -228,7 +228,7 @@ export default function WeddingsPage() {
 									className="img-responsive pb_20"
 									alt="hindiText1"
 								/>
-								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
+								<p className="text_16_r pt_60" style={{ lineHeight: "1.5", width:"65%" }}>
 									THIS THREAD THAT BINDS US IS A COMMITMENT FOR LIFE. MAY THIS KNOT OF
 									MARRIAGE BRING AUSPICIOUSNESS FOR A HUNDRED YEARS.
 								</p>
@@ -279,7 +279,7 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Kabir & Priya</h5>
+										<h5 className="text_18_m text_uppercase">Priya & Kabir</h5>
 									</div>
 									<div className={`${styles.title}`}>
 										<h6 className="text_16_r">Miami</h6>
@@ -292,10 +292,10 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Harsh & Mahima</h5>
+										<h5 className="text_18_m text_uppercase">Mahima & Harsh</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">Gujurat</h6>
+										<h6 className="text_16_r">Gujarat</h6>
 									</div>
 								</div>
 							</div>
@@ -305,7 +305,7 @@ export default function WeddingsPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Kabir & Priya </h5>
+										<h5 className="text_18_m text_uppercase">Priya & Kabir </h5>
 									</div>
 									<div className={`${styles.title}`}>
 										<h6 className="text_16_r">Bali</h6>

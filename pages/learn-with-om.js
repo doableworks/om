@@ -32,6 +32,14 @@ import rightImg from "../public/img/weddings/right_img.png";
 import AudioCover from "../public/img/AudioCover.jpg";
 import Bhagavad_gita from "../public/img/learn-with-om/Bhagavad Gita.jpg";
 import hanuman_chalisa from "../public/img/learn-with-om/Hanuman Chalisa.jpg";
+import BBC_Audio from "../public/img/learn-with-om/BBC Audio.webp";
+import Ranveer_Allahbadia from "../public/img/learn-with-om/Ranveer Allahbadia.jpg";
+import Humans_of_Bombay from "../public/img/learn-with-om/Humans of Bombay.jpg";
+import Radhika_Das from "../public/img/learn-with-om/Radhika Das.jpg";
+import Times_of_India from "../public/img/learn-with-om/Times of India (Hindi).jpg";
+import The_Rao_Podcast from "../public/img/learn-with-om/The Rao Podcast.jpg";
+import The_Rich_Show from "../public/img/learn-with-om/The Rich Show (Hindi).jpg";
+import Arun_Pandit from "../public/img/learn-with-om/Arun Pundit (Hindi).jpg";
 // DATA //
 
 /** OneInOnePage Page */
@@ -100,18 +108,42 @@ export default function OmPage() {
 								autoPlay
 								loop
 							/>
-							<div className={`${styles.banner_text}`} data-scroll>
-								<p className="text_18_r">
-									Om&apos;s YouTube channel features a selection of videos that make
-									ancient Hindu scriptures accessible and easy to apply in daily life.
-								</p>
-							</div>
 						</div>
 						{/* </Slider> */}
 					</div>
 				</section>
 				<section className="container">
-					<div className={`${styles.weddings_info} ptb_80`}>
+					<div className={`${styles.weddings_info} pt_60 pb_60 text_center`}>
+						<h3 className="text_36_b gradient_text">LEARN WITH OM</h3>
+						<div
+							className={`${styles.para_section}`}
+							style={{
+								display: "flex",
+								flexDirection: "column",
+								alignItems: "center",
+							}}
+						>
+							<p className="text_18_m pb_20" style={{ width: "90%" }}>
+								Om&apos;s YouTube channel features a selection of videos that make
+								ancient Hindu scriptures accessible and easy to apply in daily life.
+							</p>
+							<p className="text_18_m pb_20" style={{ width: "90%" }}>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+							<p
+								className="text_18_m pb_20"
+								style={{ width: "90%", lineHeight: "1.5" }}
+							>
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+								illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+								explicabo.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section className="container">
+					<div className={`${styles.weddings_info} pb_80`}>
 						<div className={`${styles.title_section}`} data-scroll>
 							<h3 className="text_uppercase">bhagavad gita</h3>
 						</div>
@@ -214,172 +246,189 @@ export default function OmPage() {
 						</p>
 					</div>
 					<div className={`${styles.podcast_section}`}>
+						{/* BeerBiceps */}
 						<div className={`${styles.podcast_item}`} data-scroll>
-							<iframe
-								width="100%"
-								height="334"
-								src="https://www.youtube.com/embed/8KoL3XieyQM?si=U_JvzUFGbX_Z7hpx"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-							<p className="text_16_m pt_10">BeerBiceps</p>
-						</div>
-						<div className={`${styles.podcast_item}`} data-scroll>
-							<iframe
-								width="100%"
-								height="334"
-								src="https://www.youtube.com/embed/eZpEgIT4ssw?si=UpgixTsm94oLbWcp"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-							<p className="text_16_m pt_10">Humans of Bombay</p>
-						</div>
-						<div className={`${styles.podcast_item}`} data-scroll>
-							<iframe
-								width="100%"
-								height="334"
-								src="https://www.youtube.com/embed/SjlJyWZQ5vA?si=eGSYRTPwLOKq8ZTk"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-							<p className="text_16_m pt_10">Radhika Das</p>
-						</div>
-						<div className={`${styles.podcast_item}`} data-scroll>
-							<iframe
-								width="100%"
-								height="334"
-								src="https://www.youtube.com/embed/cQOiLy6B4Wo?si=bMw0n37AadDH1Ad7"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-							<p className="text_18_m pt_10">Times of India (Hindi)</p>
-						</div>
-						<div className={`${styles.podcast_item}`} data-scroll>
-							<div
-								style={{ position: "relative", cursor: "pointer" }}
-								onClick={() => {
-									if (!isPlaying && audioRef.current) {
-										audioRef.current.play();
-										setIsPlaying(true);
-									}
-								}}
-								aria-label="Play BBC Podcast audio"
-								role="button"
-								tabIndex={0}
-								onKeyPress={(e) => {
-									if (
-										(e.key === "Enter" || e.key === " ") &&
-										!isPlaying &&
-										audioRef.current
-									) {
-										audioRef.current.play();
-										setIsPlaying(true);
-									}
-								}}
+							<a
+								href="https://www.youtube.com/watch?v=8KoL3XieyQM"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
 							>
 								<img
-									src={AudioCover.src}
+									src={Ranveer_Allahbadia.src}
 									className="img-responsive"
-									alt="BBC Podcast"
+									alt="BeerBiceps"
 									style={{ width: "100%" }}
 								/>
-								{!isPlaying && (
-									<div className={`${styles.play_btn} img-responsive`}>
-										<svg
-											width="70"
-											height="70"
-											viewBox="0 0 20 20"
-											fill="white"
-											style={{
-												display: "block",
-												margin: "0 auto",
-												backgroundColor: "red",
-												borderRadius: "100%",
-												padding: "16%",
-											}}
-										>
-											<path d="M10 14a4 4 0 004-4V6a4 4 0 10-8 0v4a4 4 0 004 4zm1 2.93V18a1 1 0 11-2 0v-1.07A7.001 7.001 0 013 11a1 1 0 112 0 5 5 0 0010 0 1 1 0 112 0 7.001 7.001 0 01-6 5.93z" />
-										</svg>
-									</div>
-								)}
-								<audio
-									ref={audioRef}
-									onEnded={handleAudioEnded}
-									onPause={handleAudioPause}
-									controls={isPlaying}
-									style={{
-										position: "absolute",
-										bottom: isPlaying ? "10px" : "-100px",
-										left: "50%",
-										transform: "translateX(-50%)",
-										width: isPlaying ? "90%" : "0",
-										opacity: isPlaying ? 1 : 0,
-										transition: "all 0.3s ease",
-										zIndex: 2,
-									}}
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="Play"
+								/>
+							</a>
+							<p className="text_16_m pt_10">BeerBiceps</p>
+						</div>
+						{/* Humans of Bombay */}
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<a
+								href="https://www.youtube.com/watch?v=eZpEgIT4ssw"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
+							>
+								<img
+									src={Humans_of_Bombay.src}
+									className="img-responsive"
+									alt="Humans of Bombay"
+									style={{ width: "100%" }}
+								/>
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="Play"
+								/>
+							</a>
+							<p className="text_16_m pt_10">Humans of Bombay</p>
+						</div>
+						{/* Radhika Das */}
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<a
+								href="https://www.youtube.com/watch?v=SjlJyWZQ5vA"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
+							>
+								<img
+									src={Radhika_Das.src}
+									className="img-responsive"
+									alt="Radhika Das"
+									style={{ width: "100%" }}
+								/>
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="Play"
+								/>
+							</a>
+							<p className="text_16_m pt_10">Radhika Das</p>
+						</div>
+						{/* Times of India (Hindi) */}
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<a
+								href="https://www.youtube.com/watch?v=cQOiLy6B4Wo"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
+							>
+								<img
+									src={Radhika_Das.src}
+									className="img-responsive"
+									alt="Times of India (Hindi)"
+									style={{ width: "100%" }}
+								/>
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="Play"
+								/>
+							</a>
+							<p className="text_18_m pt_10">Times of India (Hindi)</p>
+						</div>
+						{/* The Rao Podcast */}
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<a
+								href="https://www.youtube.com/watch?v=TtkOHF2qdhs"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
+							>
+								<img
+									src={The_Rao_Podcast.src}
+									className="img-responsive"
+									alt="The Rao Podcast"
+									style={{ width: "100%" }}
+								/>
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="Play"
+								/>
+							</a>
+							<p className="text_18_m pt_10">The Rao Podcast</p>
+						</div>
+						{/* The Rich Show (Hindi) */}
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<a
+								href="https://www.youtube.com/watch?v=B1rET61hkqE"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
+							>
+								<img
+									src={The_Rich_Show.src}
+									className="img-responsive"
+									alt="The Rich Show (Hindi)"
+									style={{ width: "100%" }}
+								/>
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="Play"
+								/>
+							</a>
+							<p className="text_18_m pt_10"> The Rich Show (Hindi)</p>
+						</div>
+						{/* Arun Pundit (Hindi) */}
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<a
+								href="https://www.youtube.com/watch?v=Up09pBny9RU"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
+							>
+								<img
+									src={Arun_Pandit.src}
+									className="img-responsive"
+									alt="Arun Pundit (Hindi)"
+									style={{ width: "100%" }}
+								/>
+								<img
+									src={playBtn.src}
+									className={`${styles.play_btn} img-responsive`}
+									alt="Play"
+								/>
+							</a>
+							<p className="text_18_m pt_10"> Arun Pundit (Hindi)</p>
+						</div>
+						{/* BBC Podcast (use cover image instead of SVG) */}
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<a
+								href="https://www.bbc.com/audio/play/p0h8dz7z"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ position: "relative", display: "block" }}
+							>
+								<img
+									src={BBC_Audio.src}
+									className="img-responsive"
+									alt="BBC Audio"
+									style={{ width: "100%" }}
+								/>
+								<div
+									className={`${styles.play_btn} img-responsive`}
+									style={{ pointerEvents: "none" }}
 								>
-									<source
-										src="https://awsvideostorage.s3.us-east-1.amazonaws.com/BbcPodcast.mp3"
-										type="audio/mpeg"
+									<img
+										src={playBtn.src}
+										className={`${styles.play_btn} img-responsive`}
+										alt="Play"
 									/>
-									Your browser does not support the audio element.
-								</audio>
-							</div>
+								</div>
+							</a>
 							<p className="text_18_m pt_10">
 								BBC: BBC Audio | The Documentary Podcast | Heart and Soul: Religion in
 								the 21st Century - Hindus (episode 2 of 3)
 							</p>
-						</div>
-						<div className={`${styles.podcast_item}`} data-scroll>
-							<iframe
-								width="100%"
-								height="334"
-								src="https://www.youtube.com/embed/TtkOHF2qdhs?si=lrIV2QswT4VDnZlm"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-							<p className="text_18_m pt_10">The Rao Podcast</p>
-						</div>
-						<div className={`${styles.podcast_item}`} data-scroll>
-							<iframe
-								width="100%"
-								height="334"
-								src="https://www.youtube.com/embed/B1rET61hkqE?si=MnHETS5eToX2L8Vh"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-							<p className="text_18_m pt_10"> The Rich Show (Hindi)</p>
-						</div>
-						<div className={`${styles.podcast_item}`} data-scroll>
-							<iframe
-								width="100%"
-								height="334"
-								src="https://www.youtube.com/embed/Up09pBny9RU?si=-RXdTWT0TFqWqL40"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-							<p className="text_18_m pt_10"> Arun Pundit (Hindi)</p>
 						</div>
 					</div>
 					{/* </div> */}

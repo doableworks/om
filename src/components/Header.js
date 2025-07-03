@@ -16,6 +16,8 @@ import styles from "@/styles/components/Header.module.scss";
 
 // IMAGES //
 import Logo from "../../public/img/header_logo.svg";
+import leftImg from "../../public/img/weddings/left_img.png";
+import rightImg from "../../public/img/weddings/right_img.png";
 
 // DATA //
 
@@ -68,7 +70,7 @@ export default function Header() {
 				openSidebar ? styles.sidebar_opened : ""
 			}`}
 		>
-			<div className="container">
+			<div className={`container ${styles.header_container}`}>
 				<div className={`${styles.header_inside}`}>
 					{/* Logo wrap */}
 					<div className={`${styles.header_logo}`}>
@@ -91,18 +93,27 @@ export default function Header() {
 								className="text_15_r"
 								style={{
 									position: "relative",
+									display: "flex",
+									flexDirection: "row",
+									columnGap: "8px",
 								}}
 							>
+								{/* <div className={`${styles.left_img}`}>
+								<img src={leftImg.src} className="img-responsive" alt="leftImg" style={{maxWidth:"80px", maxHeight:"20px", objectFit:"cover"}} />
+							</div> */}
 								<span
 									onClick={() => toggleDropdown("workWithOm")}
-									className={`text_15_r ${
+									className={`text_14_r ${
 										openDropdown === "workWithOm" ? styles.work_with_om_open : ""
 									}`}
 								>
 									WORK WITH OM
 								</span>
+								{/* <div className={`${styles.right_img}`}>
+								<img src={rightImg.src} className="img-responsive" alt="leftImg" style={{maxWidth:"80px", objectFit:"contain"}} />
+							</div> */}
 								{openDropdown === "workWithOm" && (
-									<ul className={`text_20_r ${styles.dropdown_custom_list}`}>
+									<ul className={`text_16_r ${styles.dropdown_custom_list}`}>
 										<li>
 											<a
 												href="weddings"
@@ -165,11 +176,11 @@ export default function Header() {
 									LEARN WITH OM
 								</a>
 							</li>
-							<li>
-								<a href="business-consulting" className="text_15_r">
-									GD PARTNERS
-								</a>
-							</li>
+							{/* <li>
+							<a href="business-consulting" className="text_15_r">
+								GD PARTNERS
+							</a>
+						</li> */}
 							<li>
 								<a href="connect" className="text_15_r">
 									CONNECT

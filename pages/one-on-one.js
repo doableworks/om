@@ -223,10 +223,10 @@ export default function OneInOnePage() {
 									className="img-responsive pb_20"
 									alt="hindiText1"
 								/>
-								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
+								<p className="text_16_r pt_60" style={{ lineHeight: "1.2" }}>
 									Lift yourself by yourself
 								</p>
-								<p className="text_24_r pt_60" style={{ lineHeight: "1.2" }}>
+								<p className="text_16_r pt_20" style={{ lineHeight: "1.5",  width:"60%"}}>
 									Do not lower yourself. For this self alone is your friend; and this
 									self also can be your enemy.
 								</p>
@@ -243,10 +243,10 @@ export default function OneInOnePage() {
 									{" "}
 								</div>
 								<p
-									className="text_24_r"
+									className="text_16_r"
 									style={{ lineHeight: "1.2", color: "#F9B875" }}
 								>
-									Bhagvad Gita Chapter 6 | Verse 5
+									Bhagavad Gita Chapter 6 | Verse 5
 								</p>
 							</div>
 						</div>
