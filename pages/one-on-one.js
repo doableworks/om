@@ -22,7 +22,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // UTILS //
 
 // STYLES //
-import styles from "@/styles/pages/OneInOne.module.scss";
+import styles from "@/styles/pages/Weddings.module.scss";
 
 // IMAGES //
 import videoTham from "../public/img/weddings/video_tham.jpg";
@@ -80,7 +80,7 @@ export default function OneInOnePage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
-				<section className={styles.banner}>
+				<section className={styles.banner} data-scroll>
 					{/* <video
 						src="/Video/weddingBanner.mp4"
 						className="img-responsive"
@@ -108,7 +108,7 @@ export default function OneInOnePage() {
 					</Link>
 				</section>
 				<section className={`${styles.slider_section}`}>
-					<div className={styles.slider_container}>
+					<div className={styles.slider_container} data-scroll>
 						<Slider {...settings}>
 							<div className={`${styles.item}`}>
 								<p
@@ -149,8 +149,10 @@ export default function OneInOnePage() {
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_60 pb_100 text_center`}>
-						<h3 className="text_36_b gradient_text pb_30">ONE-ON-ONE</h3>
-						<div className={`${styles.para_section}`}>
+						<h3 className="text_36_b gradient_text pb_30" data-scroll>
+							ONE-ON-ONE
+						</h3>
+						<div className={`${styles.para_section}`} data-scroll>
 							<p className="text_18_m pb_20">
 								As a 1-1 coach Om regularly helps investors, CEOs, and senior executives
 								achieve balance and purpose. Using timeless concepts such as Karma Yoga,
@@ -166,6 +168,7 @@ export default function OneInOnePage() {
 					<div
 						className={`${styles.video_section}`}
 						style={{ position: "relative" }}
+						data-scroll
 					>
 						{/* {!isVideoPlaying && ( */}
 						<>
@@ -206,7 +209,7 @@ export default function OneInOnePage() {
 						)} */}
 					</div>
 				</section>
-				<section className={`${styles.testimonials} pb_80`}>
+				<section className={`${styles.testimonials} pb_80`} data-scroll>
 					<img
 						src={testAnimation.src}
 						className={`${styles.testAnimation} img-responsive pb_20`}
@@ -214,7 +217,7 @@ export default function OneInOnePage() {
 					/>
 					<div className="container">
 						<div className={`${styles.testimonials_section} pt_40`}>
-							<div className={`${styles.item} pb_40`}>
+							<div className={`${styles.item} pb_40`} data-scroll>
 								<img
 									src={"/img/HindiOneOnOne.png"}
 									className="img-responsive pb_20"
@@ -288,7 +291,10 @@ export default function OneInOnePage() {
 					</div>
 				</section> */}
 				<section className="container">
-					<div className={`${styles.connect_section} pt_80 pb_80`}>
+					<div
+						className={`${styles.connect_section} ${styles.one_connect_section} pt_80 pb_80`}
+						data-scroll
+					>
 						<div className={`${styles.left_img}`}>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>

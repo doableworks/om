@@ -214,3 +214,15 @@ section {
 	-webkit-text-fill-color: transparent;
 	display: inline-block;
   }
+
+[data-scroll] {
+	opacity: 0;
+	transform: translateY(150px);
+	transition: all 1s ease;
+}
+
+[data-scroll="in"] {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 1s ease;
+}

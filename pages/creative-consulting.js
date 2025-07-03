@@ -86,7 +86,7 @@ export default function CreativePage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
-				<section className={styles.banner}>
+				<section className={styles.banner} data-scroll>
 					{/* <video
 						src="/Video/weddingBanner.mp4"
 						className="img-responsive"
@@ -153,21 +153,21 @@ export default function CreativePage() {
 				</section> */}
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_60 pb_100 text_center`}>
-						<h3 className="text_36_b gradient_text pt_60 pb_30">
+						<h3 className="text_36_b gradient_text pt_60 pb_30" data-scroll>
 							CREATIVE CONSULTING
 						</h3>
 						<div className={`${styles.para_section}`}>
-							<p className="text_18_m pb_20">
+							<p className="text_18_m pb_20" data-scroll>
 								Om is regularly approached by filmmakers and creative artists to
 								understand the spiritual meaning behind Hinduisms rich storytelling
 								traditions.
 							</p>
-							<p className="text_18_m pb_20">
+							<p className="text_18_m pb_20" data-scroll>
 								His ability to bridge mystical Hindu history, with practical everyday
 								insights appeals to those who know these stories, and those who are new
 								to Hinduism. 
 							</p>
-							<p className="text_18_m pb_20">
+							<p className="text_18_m pb_20" data-scroll>
 								Om is a credited writer for Dashavtar, a film production with a
 								six-month run at the Nita Mukesh Ambani Cultural Centre (NMACC).
 							</p>
@@ -175,7 +175,7 @@ export default function CreativePage() {
 					</div>
 				</section>
 				<section className="container">
-					<div className={`${styles.connect_section} pt_20 pb_80`}>
+					<div className={`${styles.connect_section} pt_20 pb_80`} data-scroll>
 						<div className={`${styles.left_img}`}>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>

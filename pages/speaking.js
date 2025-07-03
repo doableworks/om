@@ -26,7 +26,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 // UTILS //
 
 // STYLES //
-import styles from "@/styles/pages/Speaking.module.scss";
+import styles from "@/styles/pages/Weddings.module.scss";
 
 // IMAGES //
 
@@ -84,7 +84,7 @@ export default function SpeakingPage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
-				<section className={styles.banner}>
+				<section className={styles.banner} data-scroll>
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/speakingHero.mp4"
 						className="img-responsive"
@@ -106,7 +106,7 @@ export default function SpeakingPage() {
 					</Link>
 				</section>
 				<section className={`${styles.slider_section}`}>
-					<div className={styles.slider_container}>
+					<div className={styles.slider_container} data-scroll>
 						<Slider {...settings}>
 							<div className={`${styles.item}`}>
 								<p className={`${styles.para_section}`} style={{ textAlign: "end" }}>
@@ -135,8 +135,10 @@ export default function SpeakingPage() {
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_40 text_center`}>
-						<h3 className="text_36_b gradient_text pb_30">SPEAKING</h3>
-						<div className={`${styles.para_section}`}>
+						<h3 className="text_36_b gradient_text pb_30" data-scroll>
+							SPEAKING
+						</h3>
+						<div className={`${styles.para_section}`} data-scroll>
 							<p className="pb_20">
 								Hindu wisdom is timeless. That is why it is called &apos;Sanatan&apos;
 								or &apos;eternal&apos;. But this wisdom can be difficult to understand,
@@ -152,6 +154,7 @@ export default function SpeakingPage() {
 					<div
 						className={`${styles.video_section}`}
 						style={{ position: "relative" }}
+						data-scroll
 					>
 						{!isVideoPlaying && (
 							<>
@@ -193,12 +196,15 @@ export default function SpeakingPage() {
 					</div>
 				</section>
 				<section className="container">
-					<h4 className="text_24_m text_uppercase text_center pt_80 pb_30">
+					<h4
+						className="text_24_m text_uppercase text_center pt_80 pb_30"
+						data-scroll
+					>
 						Events over the years
 					</h4>
 					<div className={`${styles.weddings_work}  pb_40`}>
 						<div className={`${styles.left_box}`}>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img
 										src={"/img/speakingEvent1.jpg"}
@@ -215,7 +221,7 @@ export default function SpeakingPage() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img
 										src={"/img/speakingEvent2.jpg"}
@@ -234,7 +240,7 @@ export default function SpeakingPage() {
 							</div>
 						</div>
 						<div className={`${styles.right_box}`}>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img
 										src={"/img/speakingEvent3.jpg"}
@@ -251,7 +257,7 @@ export default function SpeakingPage() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img
 										src={"/img/speakingEvent4.jpg"}
@@ -268,7 +274,7 @@ export default function SpeakingPage() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img
 										src={"/img/speaking/placeholder1.jpg"}
@@ -289,7 +295,7 @@ export default function SpeakingPage() {
 					</div>
 				</section>
 				<section className="container">
-					<div className={`${styles.connect_section} pt_20 pb_80`}>
+					<div className={`${styles.connect_section} pt_20 pb_80`} data-scroll>
 						<div className={`${styles.left_img}`}>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>

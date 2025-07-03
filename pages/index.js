@@ -43,7 +43,7 @@ export default function HomePage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
-				<section className={styles.banner_section}>
+				<section className={styles.banner_section} data-scroll>
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/topBanner.mp4"
 						className={`${styles.banner_img} img-responsive`}
@@ -61,11 +61,11 @@ export default function HomePage() {
 				<section className={`${styles.about} ptb_80`}>
 					<div className="container">
 						<div className={`${styles.about_section}`}>
-							<div className={`${styles.image}`}>
+							<div className={`${styles.image}`} data-scroll>
 								<img src={"/img/omD.jpg"} className="img-responsive" alt="Om" />
 								{/* <video src="/topBanner.mp4" className="img-responsive" /> */}
 							</div>
-							<div className={`${styles.info}`}>
+							<div className={`${styles.info}`} data-scroll>
 								<p className="text_16_m pb_20">
 									Om Dhumatkar is a strategist & coach to India&apos;s leading Founders,
 									Investors, and Execs.
@@ -89,11 +89,11 @@ export default function HomePage() {
 					</div>
 				</section>
 				<section className={`${styles.work}`}>
-					<h3 className="text_center text_24_b pb_30 text_uppercase">
+					<h3 className="text_center text_24_b pb_30 text_uppercase" data-scroll>
 						Work with Om
 					</h3>
 					<div className={`${styles.work_section} pt_40`}>
-						<div className={`${styles.work_item}`}>
+						<div className={`${styles.work_item}`} data-scroll>
 							<a href="weddings" className="text_16_m text_center text_uppercase">
 								<img src={Weddings.src} className="img-responsove" alt="Weddings" />
 								<div className={`${styles.work_info} text_center`}>
@@ -104,13 +104,13 @@ export default function HomePage() {
 								</div>
 							</a>
 						</div>
-						<div className={`${styles.work_item}`}>
+						<div className={`${styles.work_item}`} data-scroll>
 							<a href="ceremonies" className="text_16_m text_center text_uppercase">
 								<img
 									src={"img/home/Ceremonies2025.jpg"}
 									className="img-responsive"
 									alt="Weddings"
-									style={{objectFit: "cover"}}
+									style={{ objectFit: "cover" }}
 								/>
 								<div className={`${styles.work_info} text_center`}>
 									<h3 className="text_center text_24_b text_uppercase pb_10">
@@ -120,7 +120,7 @@ export default function HomePage() {
 								</div>
 							</a>
 						</div>
-						<div className={`${styles.work_item}`}>
+						<div className={`${styles.work_item}`} data-scroll>
 							<a href="speaking" className="text_16_m text_center text_uppercase">
 								<img
 									src={"/img/home/Speaking2025.jpg"}
@@ -135,7 +135,7 @@ export default function HomePage() {
 								</div>
 							</a>
 						</div>
-						<div className={`${styles.work_item}`}>
+						<div className={`${styles.work_item}`} data-scroll>
 							<a href="one-on-one" className="text_16_m text_center text_uppercase">
 								<img src={business.src} className="img-responsove" alt="Weddings" />
 								<div className={`${styles.work_info} text_center`}>
@@ -146,7 +146,7 @@ export default function HomePage() {
 								</div>
 							</a>
 						</div>
-						<div className={`${styles.work_item}`}>
+						<div className={`${styles.work_item}`} data-scroll>
 							<a
 								href="creative-consulting"
 								className="text_16_m text_center text_uppercase"
@@ -164,7 +164,7 @@ export default function HomePage() {
 								</div>
 							</a>
 						</div>
-						<div className={`${styles.work_item}`}>
+						<div className={`${styles.work_item}`} data-scroll>
 							<a
 								href="business-consulting"
 								className="text_16_m text_center text_uppercase"
@@ -184,7 +184,7 @@ export default function HomePage() {
 						</div>
 					</div>
 				</section>
-				<section className={`${styles.testimonials} pb_80`}>
+				<section className={`${styles.testimonials} pb_80`} data-scroll>
 					<img
 						src={testAnimation.src}
 						className="img-responsive"
@@ -195,31 +195,33 @@ export default function HomePage() {
 							<Slider {...settings}>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-									&quot;Om held space for our love with such devotion that every mantra felt like a blessing etched into our minds and hearts forever.&quot;
+										&quot;Om held space for our love with such devotion that every mantra
+										felt like a blessing etched into our minds and hearts forever.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-									&quot;As the bride&apos;s father, I was deeply moved by how Om wove grace,
-										warmth, and meaning into every sacred moment&quot;
+										&quot;As the bride&apos;s father, I was deeply moved by how Om wove
+										grace, warmth, and meaning into every sacred moment&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-									&quot;Being coached Om means feeling seen, heard, and understood.&quot;
+										&quot;Being coached Om means feeling seen, heard, and
+										understood.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-									&quot;Om, your guidance has reshaped my world in ways I never imagined
+										&quot;Om, your guidance has reshaped my world in ways I never imagined
 										possible. Thank you for the profound impact you&apos;ve had on my
 										journey.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
 									<p className="text_24_r">
-									&quot;Through our sessions, I discovered a newfound sense of calmness and
-										equilibrium, alleviating years of struggle.&quot;
+										&quot;Through our sessions, I discovered a newfound sense of calmness
+										and equilibrium, alleviating years of struggle.&quot;
 									</p>
 								</div>
 							</Slider>

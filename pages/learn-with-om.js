@@ -86,18 +86,21 @@ export default function OmPage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.OmPage}`}>
-				<section className={`${styles.banner}`}>
+				<section className={`${styles.banner}`} data-scroll>
 					<div className={`${styles.banner_section}`}>
 						{/* <Slider {...settings}> */}
 						<div className={`${styles.item} pb_40`}>
-							<video src={"https://websitetestcontent.s3.us-east-1.amazonaws.com/Learn+With+Om+Banner.mp4"} 
-								className="img-responsive" 
+							<video
+								src={
+									"https://websitetestcontent.s3.us-east-1.amazonaws.com/Learn+With+Om+Banner.mp4"
+								}
+								className="img-responsive"
 								alt="BannerSlider"
 								muted
 								autoPlay
 								loop
 							/>
-							<div className={`${styles.banner_text}`}>
+							<div className={`${styles.banner_text}`} data-scroll>
 								<p className="text_18_r">
 									Om&apos;s YouTube channel features a selection of videos that make
 									ancient Hindu scriptures accessible and easy to apply in daily life.
@@ -109,18 +112,18 @@ export default function OmPage() {
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} ptb_80`}>
-						<div className={`${styles.title_section}`}>
+						<div className={`${styles.title_section}`} data-scroll>
 							<h3 className="text_uppercase">bhagavad gita</h3>
 						</div>
-						<div className={`${styles.para_section}`}>
+						<div className={`${styles.para_section}`} data-scroll>
 							<p>
 								The Bhagavad Gita is the cornerstone of Hindu thought. It is a text kept
 								in every Hindu home. And yet, many Hindus are disconnected from its
-								profound meaning. 
+								profound meaning.
 							</p>
 							<p>
 								Om&apos;s talks on the Bhagavad Gita bring out the life-changing meaning
-								of Bhagawan&apos;s words, couched in modern examples. 
+								of Bhagawan&apos;s words, couched in modern examples.
 							</p>
 							<p>
 								These concept-by-concept explanations have been appreciated by people of
@@ -137,9 +140,13 @@ export default function OmPage() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.video_section}`}>
+					<div className={`${styles.video_section}`} data-scroll>
 						<a href="https://www.youtube.com/playlist?list=PLSyEwewdBy3JnJueSLhT3WH6AWQ3FFQPQ">
-							<img src={Bhagavad_gita.src} className="img-responsive" alt="videoTham" />
+							<img
+								src={Bhagavad_gita.src}
+								className="img-responsive"
+								alt="videoTham"
+							/>
 							<img
 								src={playBtn.src}
 								className={`${styles.play_btn} img-responsive`}
@@ -150,17 +157,17 @@ export default function OmPage() {
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} ptb_80`}>
-						<div className={`${styles.title_section}`}>
+						<div className={`${styles.title_section}`} data-scroll>
 							<h3 className="text_36_b text_uppercase pb_30">hanuman chalisa</h3>
 						</div>
-						<div className={`${styles.para_section}`}>
+						<div className={`${styles.para_section}`} data-scroll>
 							<p className="text_18_m pb_20">
 								Om&apos;s talks on the Hanuman Chalisa have been viewed by millions
-								across the globe. 
+								across the globe.
 							</p>
 							<p className="text_18_m pb_20">
 								His detailed word-by-word explanation of this profound hymn conveys its
-								mystical and devotional aspects. 
+								mystical and devotional aspects.
 							</p>
 							<p className="text_18_m pb_20">
 								Over 24 bite-sized videos, Om has covered the meaning and philosophy of
@@ -177,9 +184,13 @@ export default function OmPage() {
 							</div>
 						</div>
 					</div>
-					<div className={`${styles.video_section}`}>
+					<div className={`${styles.video_section}`} data-scroll>
 						<a href="https://youtu.be/EngW7tLk6R8">
-							<img src={hanuman_chalisa.src} className="img-responsive" alt="videoTham" />
+							<img
+								src={hanuman_chalisa.src}
+								className="img-responsive"
+								alt="videoTham"
+							/>
 							<img
 								src={playBtn.src}
 								className={`${styles.play_btn} img-responsive`}
@@ -190,11 +201,11 @@ export default function OmPage() {
 				</section>
 				<section className={`${styles.podcast} ptb_80`}>
 					{/* <div className="container"> */}
-					<div className={`${styles.podcast_info}`}>
+					<div className={`${styles.podcast_info}`} data-scroll>
 						<h4>podcasts</h4>
 						<p>
 							Om is a renowned speaker on Vedic spirituality, regularly invited to top
-							podcasts in India and abroad. 
+							podcasts in India and abroad.
 						</p>
 						<p>
 							His straightforward and accessible approach to spirituality enables
@@ -203,23 +214,59 @@ export default function OmPage() {
 						</p>
 					</div>
 					<div className={`${styles.podcast_section}`}>
-						<div className={`${styles.podcast_item}`}>
-							<iframe width="593" height="334" src="https://www.youtube.com/embed/8KoL3XieyQM?si=U_JvzUFGbX_Z7hpx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<iframe
+								width="100%"
+								height="334"
+								src="https://www.youtube.com/embed/8KoL3XieyQM?si=U_JvzUFGbX_Z7hpx"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
 							<p className="text_16_m pt_10">BeerBiceps</p>
 						</div>
-						<div className={`${styles.podcast_item}`}>
-							<iframe width="593" height="334" src="https://www.youtube.com/embed/eZpEgIT4ssw?si=UpgixTsm94oLbWcp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<iframe
+								width="100%"
+								height="334"
+								src="https://www.youtube.com/embed/eZpEgIT4ssw?si=UpgixTsm94oLbWcp"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
 							<p className="text_16_m pt_10">Humans of Bombay</p>
 						</div>
-						<div className={`${styles.podcast_item}`}>
-							<iframe width="593" height="334" src="https://www.youtube.com/embed/SjlJyWZQ5vA?si=eGSYRTPwLOKq8ZTk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<iframe
+								width="100%"
+								height="334"
+								src="https://www.youtube.com/embed/SjlJyWZQ5vA?si=eGSYRTPwLOKq8ZTk"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
 							<p className="text_16_m pt_10">Radhika Das</p>
 						</div>
-						<div className={`${styles.podcast_item}`}>
-							<iframe width="593" height="334" src="https://www.youtube.com/embed/cQOiLy6B4Wo?si=bMw0n37AadDH1Ad7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<iframe
+								width="100%"
+								height="334"
+								src="https://www.youtube.com/embed/cQOiLy6B4Wo?si=bMw0n37AadDH1Ad7"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
 							<p className="text_18_m pt_10">Times of India (Hindi)</p>
 						</div>
-						<div className={`${styles.podcast_item}`}>
+						<div className={`${styles.podcast_item}`} data-scroll>
 							<div
 								style={{ position: "relative", cursor: "pointer" }}
 								onClick={() => {
@@ -231,14 +278,23 @@ export default function OmPage() {
 								aria-label="Play BBC Podcast audio"
 								role="button"
 								tabIndex={0}
-								onKeyPress={e => {
-									if ((e.key === "Enter" || e.key === " ") && !isPlaying && audioRef.current) {
+								onKeyPress={(e) => {
+									if (
+										(e.key === "Enter" || e.key === " ") &&
+										!isPlaying &&
+										audioRef.current
+									) {
 										audioRef.current.play();
 										setIsPlaying(true);
 									}
 								}}
 							>
-								<img src={AudioCover.src} className="img-responsive" alt="BBC Podcast" style={{width:"100%"}}/>
+								<img
+									src={AudioCover.src}
+									className="img-responsive"
+									alt="BBC Podcast"
+									style={{ width: "100%" }}
+								/>
 								{!isPlaying && (
 									<div className={`${styles.play_btn} img-responsive`}>
 										<svg
@@ -251,10 +307,10 @@ export default function OmPage() {
 												margin: "0 auto",
 												backgroundColor: "red",
 												borderRadius: "100%",
-												padding: "16%"
+												padding: "16%",
 											}}
 										>
-											<path d="M10 14a4 4 0 004-4V6a4 4 0 10-8 0v4a4 4 0 004 4zm1 2.93V18a1 1 0 11-2 0v-1.07A7.001 7.001 0 013 11a1 1 0 112 0 5 5 0 0010 0 1 1 0 112 0 7.001 7.001 0 01-6 5.93z"/>
+											<path d="M10 14a4 4 0 004-4V6a4 4 0 10-8 0v4a4 4 0 004 4zm1 2.93V18a1 1 0 11-2 0v-1.07A7.001 7.001 0 013 11a1 1 0 112 0 5 5 0 0010 0 1 1 0 112 0 7.001 7.001 0 01-6 5.93z" />
 										</svg>
 									</div>
 								)}
@@ -271,27 +327,58 @@ export default function OmPage() {
 										width: isPlaying ? "90%" : "0",
 										opacity: isPlaying ? 1 : 0,
 										transition: "all 0.3s ease",
-										zIndex: 2
+										zIndex: 2,
 									}}
 								>
-									<source src="https://awsvideostorage.s3.us-east-1.amazonaws.com/BbcPodcast.mp3" type="audio/mpeg" />
+									<source
+										src="https://awsvideostorage.s3.us-east-1.amazonaws.com/BbcPodcast.mp3"
+										type="audio/mpeg"
+									/>
 									Your browser does not support the audio element.
 								</audio>
 							</div>
 							<p className="text_18_m pt_10">
-								BBC: BBC Audio | The Documentary Podcast | Heart and Soul: Religion in the 21st Century - Hindus (episode 2 of 3)
+								BBC: BBC Audio | The Documentary Podcast | Heart and Soul: Religion in
+								the 21st Century - Hindus (episode 2 of 3)
 							</p>
 						</div>
-						<div className={`${styles.podcast_item}`}>
-							<iframe width="593" height="334" src="https://www.youtube.com/embed/TtkOHF2qdhs?si=lrIV2QswT4VDnZlm" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<iframe
+								width="100%"
+								height="334"
+								src="https://www.youtube.com/embed/TtkOHF2qdhs?si=lrIV2QswT4VDnZlm"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
 							<p className="text_18_m pt_10">The Rao Podcast</p>
 						</div>
-						<div className={`${styles.podcast_item}`}>
-							<iframe width="593" height="334" src="https://www.youtube.com/embed/B1rET61hkqE?si=MnHETS5eToX2L8Vh" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<iframe
+								width="100%"
+								height="334"
+								src="https://www.youtube.com/embed/B1rET61hkqE?si=MnHETS5eToX2L8Vh"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
 							<p className="text_18_m pt_10"> The Rich Show (Hindi)</p>
 						</div>
-						<div className={`${styles.podcast_item}`}>
-							<iframe width="593" height="334" src="https://www.youtube.com/embed/Up09pBny9RU?si=-RXdTWT0TFqWqL40" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+						<div className={`${styles.podcast_item}`} data-scroll>
+							<iframe
+								width="100%"
+								height="334"
+								src="https://www.youtube.com/embed/Up09pBny9RU?si=-RXdTWT0TFqWqL40"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
 							<p className="text_18_m pt_10"> Arun Pundit (Hindi)</p>
 						</div>
 					</div>
@@ -300,17 +387,17 @@ export default function OmPage() {
 
 				<section className="container">
 					<div className={`${styles.connect_section} pt_80 pb_80`}>
-						<div className={`${styles.left_img}`}>
+						<div className={`${styles.left_img}`} data-scroll>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>
-						<div className={`${styles.btn_section}`}>
+						<div className={`${styles.btn_section}`} data-scroll>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
 									+ CONNECT WITH OM
 								</a>
 							</div>
 						</div>
-						<div className={`${styles.right_img}`}>
+						<div className={`${styles.right_img}`} data-scroll>
 							<img src={rightImg.src} className="img-responsive" alt="leftImg" />
 						</div>
 					</div>

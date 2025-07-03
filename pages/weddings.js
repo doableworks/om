@@ -91,7 +91,7 @@ export default function WeddingsPage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
-				<section className={styles.banner}>
+				<section className={styles.banner} data-scroll>
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingBanner.mp4"
 						className="img-responsive"
@@ -113,7 +113,7 @@ export default function WeddingsPage() {
 					</Link>
 				</section>
 				<section className={`${styles.slider_section}`}>
-					<div className={styles.slider_container}>
+					<div className={styles.slider_container} data-scroll>
 						<Slider {...settings}>
 							<div className={`${styles.item}`}>
 								<p
@@ -152,8 +152,10 @@ export default function WeddingsPage() {
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_40 pb_60 text_center`}>
-						<h3 className="text_36_b gradient_text pb_30">WEDDINGS</h3>
-						<div className={`${styles.para_section}`}>
+						<h3 className="text_36_b gradient_text pb_30" data-scroll>
+							WEDDINGS
+						</h3>
+						<div className={`${styles.para_section}`} data-scroll>
 							<p className="text_18_m pb_20">
 								Hindu weddings are profound, life-changing events.{" "}
 							</p>
@@ -171,6 +173,7 @@ export default function WeddingsPage() {
 					<div
 						className={`${styles.video_section}`}
 						style={{ position: "relative" }}
+						data-scroll
 					>
 						{!isVideoPlaying && (
 							<>
@@ -211,7 +214,7 @@ export default function WeddingsPage() {
 						)}
 					</div>
 				</section>
-				<section className={`${styles.testimonials} pb_80`}>
+				<section className={`${styles.testimonials} pb_80`} data-scroll>
 					<img
 						src={testAnimation.src}
 						className={`${styles.testAnimation} img-responsive pb_20`}
@@ -234,12 +237,15 @@ export default function WeddingsPage() {
 					</div>
 				</section>
 				<section className="container">
-					<h4 className="text_24_m text_uppercase text_center pt_80 pb_30">
+					<h4
+						className="text_24_m text_uppercase text_center pt_80 pb_30"
+						data-scroll
+					>
 						weddings over the years
 					</h4>
 					<div className={`${styles.weddings_work}  pb_40`}>
 						<div className={`${styles.left_box}`}>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img src={event1.src} className="img-responsive" alt="event1" />
 								</div>
@@ -252,7 +258,7 @@ export default function WeddingsPage() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img src={event2.src} className="img-responsive" alt="event1" />
 								</div>
@@ -267,7 +273,7 @@ export default function WeddingsPage() {
 							</div>
 						</div>
 						<div className={`${styles.right_box}`}>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img src={event3.src} className="img-responsive" alt="event1" />
 								</div>
@@ -280,7 +286,7 @@ export default function WeddingsPage() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img src={event4.src} className="img-responsive" alt="event1" />
 								</div>
@@ -293,7 +299,7 @@ export default function WeddingsPage() {
 									</div>
 								</div>
 							</div>
-							<div className={`${styles.box} pb_40`}>
+							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img src={event5.src} className="img-responsive" alt="event1" />
 								</div>
@@ -310,7 +316,7 @@ export default function WeddingsPage() {
 					</div>
 				</section>
 				<section className="container">
-					<div className={`${styles.connect_section} pt_20 pb_80`}>
+					<div className={`${styles.connect_section} pt_20 pb_80`} data-scroll>
 						<div className={`${styles.left_img}`}>
 							<img src={leftImg.src} className="img-responsive" alt="leftImg" />
 						</div>

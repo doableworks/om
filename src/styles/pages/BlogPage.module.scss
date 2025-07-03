@@ -6,6 +6,9 @@
             width: 80%;
             margin: auto;
             text-align: center;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
             h4{
                 font-size: 2rem;
                 font-weight: 700;
@@ -22,16 +25,31 @@
             justify-content: space-between;
             .podcast_item{
                 width: 48%;
-                height: 95vh;
-                margin: auto;
-                margin-bottom: 5%;
+                // height: 95vh;
+                // margin: auto;
+                // margin-bottom: 5%;
                 color: #000000;
+                @media (max-width: 1200px) {
+                    width: 100%;
+                    height: auto;
+                }
+                @media (min-width: 768px) and (max-width: 1200px) {
+                    width: 47%;
+                    margin: 0;
+                }
                 .video_wrapper{
                     position: relative;
+                    @media (max-width: 1200px) {
+                        height: 300px;
+                    }
                     img{
                         width: 100%;
-                        height: 75vh;
+                        height: 100%;
                         // object-fit: cover;
+                        @media (max-width: 1200px) {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     .play_btn{
                         top: 50%;
@@ -67,6 +85,10 @@
             padding-left:8%;
             padding-top: 5%;
             color: #000000;
+            @media (max-width: 767px) {
+                width: 100%;
+                padding: 0 15px;
+            }
             h5{
                 font-size: 1.5rem;
                 font-weight: 500;
@@ -82,18 +104,65 @@
         }
     }
     .connect_section{
+        // background-color: #fff;
         display: flex;
         grid-gap: 30px;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 767px) {
+            grid-gap: 10px;
+            padding-top: 0;
+        }
+        @media (min-width: 768px) and (max-width: 1200px) {
+            grid-gap: 20px;
+            padding-top: 80px;
+        }
+        &.one_connect_section{
+            @media (max-width: 767px) {
+                padding-top: 60px;
+            }  
+        }
+        .left_img{
+            width: 28%;
+            @media (max-width: 767px) {
+                width: 20%;
+            }
+            @media (min-width: 768px) and (max-width: 1200px) {
+                width: 25%;
+            }
+        }
+
         .btn_section{
-            width: 383px;
+            width: 40%;
+            text-align: center;
+            @media (max-width: 767px) {
+                width: 60%;
+            }
+            @media (min-width: 768px) and (max-width: 1200px) {
+                width: 50%;
+            }
             .btn{
                 a{
-                    padding: 10px 20px;
+                    padding: 10px;
                     letter-spacing: 4px;
                     border: 2px solid var(--color_primary);
+                    @media (max-width: 767px) {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        font-size: 18px;
+                    }
                 }
+            }
+        }
+        .right_img{
+            width: 28%;
+            @media (max-width: 767px) {
+                width: 20%;
+            }
+            @media (min-width: 768px) and (max-width: 1200px) {
+                width: 25%;
             }
         }
     }
