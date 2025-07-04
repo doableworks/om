@@ -151,7 +151,7 @@ export default function Form() {
 					letterSpacing: "0.4rem",
 				}}
 			>
-				<h2>Connect with OM</h2>
+				<h2>CONNECT WITH US</h2>
 			</div>
 
 			<form

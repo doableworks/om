@@ -208,32 +208,32 @@ export default function HomePage() {
 						<div className={`${styles.testimonials_section} pt_40`}>
 							<Slider {...settings}>
 								<div className={`${styles.item} pb_40`}>
-									<p className="text_24_r">
+									<p className="text_18_r">
 										&quot;Om held space for our love with such devotion that every mantra
 										felt like a blessing etched into our minds and hearts forever.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
-									<p className="text_24_r">
+									<p className="text_18_r">
 										&quot;As the bride&apos;s father, I was deeply moved by how Om wove
 										grace, warmth, and meaning into every sacred moment&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
-									<p className="text_24_r">
+									<p className="text_18_r">
 										&quot;Being coached by Om means feeling seen, heard, and
 										understood.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
-									<p className="text_24_r">
+									<p className="text_18_r">
 										&quot;Om, your guidance has reshaped my world in ways I never imagined
 										possible. Thank you for the profound impact you&apos;ve had on my
 										journey.&quot;
 									</p>
 								</div>
 								<div className={`${styles.item} pb_40`}>
-									<p className="text_24_r">
+									<p className="text_18_r">
 										&quot;Through our sessions, I discovered a newfound sense of calmness
 										and equilibrium, alleviating years of struggle.&quot;
 									</p>
