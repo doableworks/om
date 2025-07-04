@@ -128,16 +128,16 @@ export default function OmPage() {
 								ancient Hindu scriptures accessible and easy to apply in daily life.
 							</p>
 							<p className="text_18_m pb_20" style={{ width: "90%" }}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								He breaks things down into simple and practical concepts. Instead of
+								jargon and gate keeping, there are thoughtful conversations on dharma,
+								life, purpose and more.
 							</p>
 							<p
 								className="text_18_m pb_20"
 								style={{ width: "90%", lineHeight: "1.5" }}
 							>
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-								illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-								explicabo.
+								From the Vedas to the Gita, you will find timeless wisdom that is
+								surprisingly relatable.
 							</p>
 						</div>
 					</div>
