@@ -321,7 +321,7 @@ export default function OmPage() {
 								style={{ position: "relative", display: "block" }}
 							>
 								<img
-									src={Radhika_Das.src}
+									src={Times_of_India.src}
 									className="img-responsive"
 									alt="Times of India (Hindi)"
 									style={{ width: "100%" }}
