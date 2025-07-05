@@ -60,6 +60,7 @@
 				@media (min-width: 993px) and (max-width: 1200px) {
 					grid-gap: 40px;
 				}
+				
 				li{
 					list-style: none;
 					@media (max-width: 767px) {
@@ -92,13 +93,20 @@
 							color: #00344A;
 							font-size: 20px;
 							font-weight: 500;
+							position: absolute;
 						}
 						@media (min-width: 768px) and (max-width: 992px) {
-							font-size: 15px;
+							font-size: 12px;
 						}
 					}
 					.work_with_om_open{
 						font-weight: 500;
+					}
+					&:nth-child(2){
+						// margin-bottom: 20px;
+						@media (max-width: 767px) {
+							margin-bottom: 20px;
+						}
 					}
 					.dropdown_custom_list {
 						display: flex;
@@ -118,9 +126,10 @@
 						width: 15vw;
 						align-items: flex-start;
 						@media (max-width: 767px) {
-							top: 15px;
+							top: 35px;
 							width: 100%;
 							gap: 0;
+							left: 0;
 							position: relative;
 						}
 						li{
@@ -131,6 +140,9 @@
 								@media (max-width: 767px) {
 									font-size: 14px;
 								}
+							}
+							&:nth-child(2){
+								margin-bottom: 0;
 							}
 						}
 					}
