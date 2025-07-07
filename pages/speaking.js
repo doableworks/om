@@ -30,11 +30,12 @@ import styles from "@/styles/pages/Weddings.module.scss";
 
 // IMAGES //
 
-import videoTham from "../public/img/eventVideoThumbnail.jpg";
+import videoTham from "../public/img/speaking/eventThumbnail.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import arrows from "../public/img/arrows.svg";
+import event_6 from "../public/img/speaking/event_6.jpg";
 
 // DATA //
 
@@ -277,7 +278,7 @@ export default function SpeakingPage() {
 							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
 									<img
-										src={"/img/speaking/placeholder1.jpg"}
+										src={event_6.src}
 										className="img-responsive"
 										alt="event1"
 									/>

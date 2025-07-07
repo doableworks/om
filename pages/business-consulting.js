@@ -78,19 +78,19 @@ export default function CreativePage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner} data-scroll>
-					{/* <video
-						src="/Video/weddingBanner.mp4"
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Business+Consulting+Banner.mp4"
 						className="img-responsive"
 						muted
 						autoPlay
 						loop
-					/> */}
-					<img
+					/>
+					{/* <img
 						src={videoTham.src}
 						className="img-responsive"
 						alt="videoTham"
 						style={{ width: "100%", height: "100%", display: "block" }}
-					/>
+					/> */}
 					<Link href="/" legacyBehavior>
 						<a className={styles.weddingBannerBtn}>
 							<span className={styles.weddingBannerBtnArrow}>
