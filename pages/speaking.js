@@ -184,7 +184,7 @@ export default function SpeakingPage() {
 						{isVideoPlaying && (
 							<video
 								src={
-									"https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingBanner.mp4"
+									"https://websitetestcontent.s3.us-east-1.amazonaws.com/a23ff480-38f9-4fd2-bbb0-1a517216c06b.mp4"
 								}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}
