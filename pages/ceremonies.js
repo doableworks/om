@@ -202,7 +202,7 @@ export default function CeremoniesPage() {
 						{isVideoPlaying && (
 							<video
 								src={
-									"https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingVideo.mp4"
+									"https://websitetestcontent.s3.us-east-1.amazonaws.com/8151ace7-df7f-44aa-9c52-72304f1abe06.mp4"
 								}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}

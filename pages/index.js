@@ -21,7 +21,7 @@ import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import BannerText from "../public/img/home/banner_text.png";
 import Weddings from "../public/img/home/weddings.jpg";
-import business from "../public/img/home/BUSINESS.jpg";
+import business from "../public/img/home/one-on-one-grid.jpg";
 import testAnimation from "../public/img/home/test_animation.png";
 
 // DATA //

@@ -22,7 +22,7 @@ import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import Weddings from "../public/img/home/weddings.jpg";
 import creative from "../public/img/home/creativeConsulting.jpg";
-import business from "../public/img/home/BUSINESS.jpg";
+import business from "../public/img/home/One-on-One-grid.jpg";
 import Journey from "../public/img/about/journey.png";
 
 // DATA //
@@ -50,6 +50,16 @@ export default function AboutPage() {
 						autoPlay
 						loop
 					/>
+					<div className={styles.banner_overlay}></div>
+					<div className={`${styles.banner_text} img-responsive ${styles.banner_text_row}`}>
+						<p className={styles.banner_text_item}>STRATEGIST</p>
+						<span className={styles.banner_text_sep}>|</span>
+						<p className={styles.banner_text_item}>SPEAKER</p>
+						<span className={styles.banner_text_sep}>|</span>
+						<p className={styles.banner_text_item}>PUNDIT</p>
+						<span className={styles.banner_text_sep}>|</span>
+						<p className={styles.banner_text_item}>COACH</p>
+					</div>
 				</section>
 				<section className={`${styles.counter}`}>
 					{/* <div className="container"> */}

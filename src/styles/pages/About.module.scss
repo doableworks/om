@@ -10,6 +10,83 @@
             height: 100%;
             object-fit: cover;
         }
+        .banner_overlay {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 70%);
+        }
+        .banner_text{
+            top: 85%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-weight: 700;
+            font-size: 2.5rem;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            @media (max-width: 992px) {
+                font-size: 1.2rem;
+                font-weight: 600;
+                width: 90%;
+            }
+            @media (max-width: 600px) {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+        .banner_text_row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5em;
+        }
+        .banner_text_item {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            @media (max-width: 1020px) {
+                padding-left: 0.2rem;
+            padding-right: 0.2rem;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            @media (max-width: 700px) {
+                padding-left: 0.2rem;
+                padding-right: 0.2rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            @media (max-width: 400px) {
+                padding-left: 0.2rem;
+                padding-right: 0.2rem;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+        }
+        .banner_text_sep {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            vertical-align: middle;
+            user-select: none;
+            @media (max-width: 1010px) {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            @media (max-width: 700px) {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
     }
     .counter{
         background-color: #FEFBF7;
