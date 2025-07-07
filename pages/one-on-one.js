@@ -56,9 +56,13 @@ export default function OneInOnePage() {
 		}
 	}, [isVideoPlaying]);
 
-	// const handleVideoToggle = () => {
-	// 	setIsVideoPlaying((prev) => !prev);
-	// };
+	/**
+	 * Toggles the video play state between playing and paused.
+	 * Uses the previous state to switch isVideoPlaying.
+	 */
+	const handleVideoToggle = () => {
+		setIsVideoPlaying((prev) => !prev);
+	};
 
 	var settings = {
 		dots: true,
@@ -81,19 +85,19 @@ export default function OneInOnePage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner} data-scroll>
-					{/* <video
-						src="/Video/weddingBanner.mp4"
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/One-On-One+Banner.mp4"
 						className="img-responsive"
 						muted
 						autoPlay
 						loop
-					/> */}
-					<img
+					/>
+					{/* <img
 						src={videoTham.src}
 						className="img-responsive"
 						alt="videoTham"
 						style={{ width: "100%", height: "100%", display: "block" }}
-					/>
+					/> */}
 					<Link href="/" legacyBehavior>
 						<a className={styles.weddingBannerBtn}>
 							<span className={styles.weddingBannerBtnArrow}>
@@ -170,34 +174,34 @@ export default function OneInOnePage() {
 						style={{ position: "relative" }}
 						data-scroll
 					>
-						{/* {!isVideoPlaying && ( */}
-						<>
-							<img
-								src={videoTham.src}
-								className="img-responsive"
-								alt="videoTham"
-								style={{ width: "100%", height: "100%", display: "block" }}
-							/>
-							<img
-								src={playBtn.src}
-								alt="playBtn"
-								style={{
-									position: "absolute",
-									top: "50%",
-									left: "50%",
-									transform: "translate(-50%, -50%)",
-									width: 100,
-									cursor: "pointer",
-									zIndex: 2,
-								}}
-								// onClick={handleVideoToggle}
-							/>
-						</>
-						{/* )} */}
-						{/* {isVideoPlaying && (
+						{!isVideoPlaying && (
+							<>
+								<img
+									src={videoTham.src}
+									className="img-responsive"
+									alt="videoTham"
+									style={{ width: "100%", height: "100%", display: "block" }}
+								/>
+								<img
+									src={playBtn.src}
+									alt="playBtn"
+									style={{
+										position: "absolute",
+										top: "50%",
+										left: "50%",
+										transform: "translate(-50%, -50%)",
+										width: 100,
+										cursor: "pointer",
+										zIndex: 2,
+									}}
+									onClick={handleVideoToggle}
+								/>
+							</>
+						)}
+						{isVideoPlaying && (
 							<video
 								src={
-									"https://awsvideostorage.s3.us-east-1.amazonaws.com/SSYouTube.online_Wedding+Final+Draft_1080p.mp4"
+									"https://websitetestcontent.s3.us-east-1.amazonaws.com/04.+Om+-+Website+-+1-on-1+Draft+03.mp4"
 								}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}
@@ -206,7 +210,7 @@ export default function OneInOnePage() {
 								controls
 								ref={videoRef}
 							/>
-						)} */}
+						)}
 					</div>
 				</section>
 				<section className={`${styles.testimonials} pb_80`} data-scroll>
@@ -226,7 +230,10 @@ export default function OneInOnePage() {
 								<p className="text_16_r pt_60" style={{ lineHeight: "1.2" }}>
 									Lift yourself by yourself
 								</p>
-								<p className="text_16_r pt_20" style={{ lineHeight: "1.5",  width:"60%"}}>
+								<p
+									className="text_16_r pt_20"
+									style={{ lineHeight: "1.5", width: "60%" }}
+								>
 									Do not lower yourself. For this self alone is your friend; and this
 									self also can be your enemy.
 								</p>

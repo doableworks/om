@@ -21,7 +21,7 @@ import styles from "@/styles/pages/About.module.scss";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
 import Weddings from "../public/img/home/weddings.jpg";
-import creative from "../public/img/home/creative.jpg";
+import creative from "../public/img/home/creativeConsulting.jpg";
 import business from "../public/img/home/BUSINESS.jpg";
 import Journey from "../public/img/about/journey.png";
 
@@ -221,7 +221,7 @@ export default function AboutPage() {
 								className="text_16_m text_center text_uppercase"
 							>
 								<img
-									src={"/img/home/placeholder.jpg"}
+									src={"/img/home/businessConsulting.jpg"}
 									className="img-responsove"
 									alt="Business Consulting"
 								/>

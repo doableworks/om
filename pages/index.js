@@ -166,7 +166,7 @@ export default function HomePage() {
 								className="text_16_m text_center text_uppercase"
 							>
 								<img
-									src={"/img/creativeImage.jpg"}
+									src={"/img/home/creativeConsulting.jpg"}
 									className="img-responsive"
 									alt="Weddings"
 								/>
@@ -184,7 +184,7 @@ export default function HomePage() {
 								className="text_16_m text_center text_uppercase"
 							>
 								<img
-									src={"/img/home/placeholder.jpg"}
+									src={"/img/home/businessConsulting.jpg"}
 									className="img-responsove"
 									alt="Weddings"
 								/>
