@@ -94,7 +94,14 @@ export default function WeddingsPage() {
 				<section className={styles.banner} data-scroll>
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingBanner.mp4"
-						className="img-responsive"
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Top+Banner+-+Wedding+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
 						loop
@@ -228,7 +235,10 @@ export default function WeddingsPage() {
 									className="img-responsive pb_20"
 									alt="hindiText1"
 								/>
-								<p className="text_16_r pt_60" style={{ lineHeight: "1.5", width:"65%" }}>
+								<p
+									className="text_16_r pt_60"
+									style={{ lineHeight: "1.5", width: "65%" }}
+								>
 									THIS THREAD THAT BINDS US IS A COMMITMENT FOR LIFE. MAY THIS KNOT OF
 									MARRIAGE BRING AUSPICIOUSNESS FOR A HUNDRED YEARS.
 								</p>

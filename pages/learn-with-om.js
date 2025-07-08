@@ -94,23 +94,32 @@ export default function OmPage() {
 			<Header />
 			{/* Page Content starts here */}
 			<main className={`${styles.OmPage}`}>
-				<section className={`${styles.banner}`} data-scroll>
-					<div className={`${styles.banner_section}`}>
-						{/* <Slider {...settings}> */}
-						<div className={`${styles.item} pb_40`}>
-							<video
-								src={
-									"https://websitetestcontent.s3.us-east-1.amazonaws.com/Learn+With+Om+Banner.mp4"
-								}
-								className="img-responsive"
-								alt="BannerSlider"
-								muted
-								autoPlay
-								loop
-							/>
-						</div>
-						{/* </Slider> */}
-					</div>
+				<section className={`${styles.banner_section}`} data-scroll>
+					{/* <Slider {...settings}> */}
+					{/* <div className={`${styles.item} pb_40`}> */}
+					<video
+						src={
+							"https://websitetestcontent.s3.us-east-1.amazonaws.com/Learn+With+Om+Banner.mp4"
+						}
+						className={`${styles.videoDesktop} img-responsive`}
+						alt="BannerSlider"
+						muted
+						autoPlay
+						loop
+					/>
+					<video
+						src={
+							"https://websitetestcontent.s3.us-east-1.amazonaws.com/Learn+With+Om+Mobile.mp4"
+						}
+						className={`${styles.videoMobile} img-responsive`}
+						alt="BannerSlider"
+						muted
+						autoPlay
+						loop
+					/>
+					<div className={styles.banner_overlay}></div>
+					{/* </div> */}
+					{/* </Slider> */}
 				</section>
 				<section className="container">
 					<div className={`${styles.weddings_info} pt_60 pb_60 text_center`}>

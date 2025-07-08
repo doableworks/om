@@ -10,6 +10,18 @@
             height: 100%;
             position: relative;
         }
+        .videoDesktop {
+            display: block !important;
+            @media (max-width: 767px) {
+              display: none !important;
+            }
+          }
+        .videoMobile {
+            display: none !important;
+            @media (max-width: 767px) {
+              display: block !important; 
+            }
+        }
         .banner_section{
             .item{
                 position: absolute;

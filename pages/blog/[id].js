@@ -49,7 +49,7 @@ export default function BlogDynamicPage() {
 				{/* Banner Section */}
 				<section className={styles.banner_section}>
 					<img
-						src={BlogBanner.src}
+						src={blog.bannerImageUrl}
 						className={`${styles.banner_img} img-responsive`}
 						alt="Blog Banner"
 					/>

@@ -87,9 +87,18 @@ export default function CreativePage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner} data-scroll>
+					{/* Desktop video */}
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Creative+Consulting+Banner.mp4"
-						className="img-responsive"
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					{/* Mobile video */}
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Creative+Consulting+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
 						loop

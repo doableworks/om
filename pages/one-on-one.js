@@ -87,7 +87,14 @@ export default function OneInOnePage() {
 				<section className={styles.banner} data-scroll>
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/One-On-One+Banner.mp4"
-						className="img-responsive"
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/One-On-One+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
 						loop
