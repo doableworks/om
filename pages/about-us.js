@@ -45,7 +45,14 @@ export default function AboutPage() {
 					/> */}
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/aboutUsBanner.mp4"
-						className={`${styles.banner_img} img-responsive`}
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Top+Banner+-+About+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
 						loop

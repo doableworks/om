@@ -46,9 +46,18 @@ export default function HomePage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
 				<section className={styles.banner_section} data-scroll>
+					{/* Desktop video */}
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/topBanner.mp4"
-						className={`${styles.banner_img} img-responsive`}
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					{/* Mobile video */}
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Top+Banner+-+Homepage+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
 						loop

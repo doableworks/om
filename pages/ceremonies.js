@@ -94,7 +94,14 @@ export default function CeremoniesPage() {
 				<section className={styles.banner} data-scroll>
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Copy+of+Top+Banner+-+Ceremonies.mp4"
-						className="img-responsive"
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Top+Banner+-+Ceremonies+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
 						loop

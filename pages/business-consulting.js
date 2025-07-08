@@ -80,7 +80,14 @@ export default function CreativePage() {
 				<section className={styles.banner} data-scroll>
 					<video
 						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Business+Consulting+Banner.mp4"
-						className="img-responsive"
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Business+Consulting+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
 						loop

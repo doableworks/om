@@ -20,7 +20,8 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/BlogPage.module.scss";
 
 // IMAGES //
-import videoTham from "../public/img/weddings/video_tham.jpg";
+// import videoTham from "../public/img/weddings/video_tham.jpg";
+import videoTham from "../public/img/blog/blog1Cover.png";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
@@ -68,15 +69,15 @@ const BlogItem = ({ blog }) => (
 			<Link href={`/blog/${blog.id}`} legacyBehavior>
 				<a>
 					<img
-						src={videoTham.src}
+						src={blog.coverImageUrl}
 						className="img-responsive"
 						alt={blog.title}
 					/>
-					<img
+					{/* <img
 						src={playBtn.src}
 						className={`${styles.play_btn} img-responsive`}
 						alt="play button"
-					/>
+					/> */}
 				</a>
 			</Link>
 		</div>
@@ -94,8 +95,9 @@ const BannerBlogItem = ({ blog }) => (
 	<section className={`${styles.blog_img_section}`} data-scroll>
 		<a href={`/blog/${blog.id}`}>
 			<img
-				src={BlogBanner.src}
+				src={blog.coverImageUrl}
 				className={`${styles.blog_img} img-responsive`}
+				style={{objectFit:"cover", maxHeight:"800px"}}
 				alt={blog.title}
 			/>
 		</a>
