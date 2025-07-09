@@ -83,12 +83,12 @@ export default function Footer() {
 									</h4>
 								</li>
 								<li style={{ marginBottom: "1rem" }}>
-									<a href="#" className="text_15_r">
+									<a href="policies" className="text_15_r">
 										Privacy Policy
 									</a>
 								</li>
 								<li>
-									<a href="#" className="text_15_r">
+									<a href="policies" className="text_15_r">
 										Terms of Use
 									</a>
 								</li>
@@ -110,13 +110,13 @@ export default function Footer() {
 									<img src={you.src} className="img-responsive" alt="youtube" />
 								</a>
 							</li>
-							<li>
+							{/* <li>
 								<a href="https://www.linkedin.com/in/omdhumatkar/">
 									<img src={link.src} className="img-responsive" alt="linkedin" />
 								</a>
-							</li>
+							</li> */}
 							<li>
-								<a href="https://open.spotify.com/user/1140740667">
+								<a href="https://open.spotify.com/artist/5WTG6aL5krHlBzF3CUvdl7?si=6_4f3WTvT1W4Swi32UuWQg">
 									<img src={SpotifyIcon.src} className="img-responsive" alt="spotify" />
 								</a>
 							</li>

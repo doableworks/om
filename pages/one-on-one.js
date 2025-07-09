@@ -25,7 +25,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/Weddings.module.scss";
 
 // IMAGES //
-import videoTham from "../public/img/weddings/video_tham.jpg";
+import videoTham from "../public/img/one-in-one/one-on-one-video.jpg";
 import playBtn from "../public/img/weddings/play_btn.svg";
 import testAnimation from "../public/img/weddings/animation_img.png";
 import leftImg from "../public/img/weddings/left_img.png";

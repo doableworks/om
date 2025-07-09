@@ -80,7 +80,7 @@ export default function AboutPage() {
 							<h6 className="text_15_r f_w_m text_uppercase">OF VEDIC STUDY</h6>
 						</div>
 						<div className={`${styles.counter_box}`} data-scroll>
-							<h3 className="text_32_b text_uppercase">16 years</h3>
+							<h3 className="text_32_b text_uppercase">17 years</h3>
 							<h6 className="text_15_r f_w_m text_uppercase">
 								OF BANKING STRATEGY IN LONDON
 							</h6>

@@ -222,10 +222,10 @@ export default function SpeakingPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Event</h5>
+										<h5 className="text_18_m text_uppercase">Business Startup Forum</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">Location</h6>
+										<h6 className="text_16_r">Hyderabad</h6>
 									</div>
 								</div>
 							</div>
@@ -239,10 +239,10 @@ export default function SpeakingPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Event</h5>
+										<h5 className="text_18_m text_uppercase">Diwali with Mayor</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">Location</h6>
+										<h6 className="text_16_r">Birmingham (UK)</h6>
 									</div>
 								</div>
 							</div>
@@ -258,10 +258,10 @@ export default function SpeakingPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Event</h5>
+										<h5 className="text_18_m text_uppercase">EO/YPO Wellness event</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">Location</h6>
+										<h6 className="text_16_r">Ahmedabad</h6>
 									</div>
 								</div>
 							</div>
@@ -275,10 +275,10 @@ export default function SpeakingPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Event</h5>
+										<h5 className="text_18_m text_uppercase">Maha Kumbh Mela</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">Location</h6>
+										<h6 className="text_16_r">Prayagraj</h6>
 									</div>
 								</div>
 							</div>
@@ -292,10 +292,10 @@ export default function SpeakingPage() {
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
-										<h5 className="text_18_m text_uppercase">Event</h5>
+										<h5 className="text_18_m text_uppercase">Youth Retreat</h5>
 									</div>
 									<div className={`${styles.title}`}>
-										<h6 className="text_16_r">Location</h6>
+										<h6 className="text_16_r">Mulshi</h6>
 									</div>
 								</div>
 							</div>
