@@ -3,6 +3,11 @@ import { useEffect } from "react";
 import { toast } from "sonner";
 import styles from "@/styles/components/cookieConsent.module.scss"; // Adjust the path as necessary
 
+/**
+ * Custom hook to handle cookie consent functionality.
+ * Shows a toast notification for cookie consent only once per user.
+ * Remembers user's choice in localStorage to avoid showing again.
+ */
 export const useCookieConsent = () => {
 	useEffect(() => {
 		// Check if user has already made a choice
