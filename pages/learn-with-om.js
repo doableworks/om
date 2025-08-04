@@ -151,7 +151,7 @@ export default function OmPage() {
 						</div>
 					</div>
 				</section>
-				<section className="container">
+				<section className="container" id="bhagavad-gita">
 					<div className={`${styles.weddings_info} pb_80`}>
 						<div className={`${styles.title_section}`} data-scroll>
 							<h3 className="text_uppercase">bhagavad gita</h3>
@@ -196,7 +196,7 @@ export default function OmPage() {
 						</a>
 					</div>
 				</section>
-				<section className="container">
+				<section className="container" id="hanuman-chalisa">
 					<div className={`${styles.weddings_info} ptb_80`}>
 						<div className={`${styles.title_section}`} data-scroll>
 							<h3 className="text_36_b text_uppercase pb_30">hanuman chalisa</h3>
@@ -451,7 +451,7 @@ export default function OmPage() {
 						<div className={`${styles.btn_section}`} data-scroll>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
-									CONNECT WITH OM +
+									CONNECT WITH OM 
 								</a>
 							</div>
 						</div>

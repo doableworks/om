@@ -29,6 +29,7 @@ import rightImg from "../../public/img/weddings/right_img.png";
 export default function Header() {
 	const [openSidebar, setOpenSidebar] = useState(false);
 	const [openDropdown, setOpenDropdown] = useState(null);
+	const [rotatingIcon, setRotatingIcon] = useState(null);
 	const dropdownRef = useRef(null);
 
 	/** Open sidebar on click of hamburger */
@@ -41,6 +42,10 @@ export default function Header() {
 	 * @param {string} dropdownKey - The key of the dropdown to toggle.
 	 */
 	const toggleDropdown = (dropdownKey) => {
+		// Trigger rotation animation
+		setRotatingIcon(dropdownKey);
+		setTimeout(() => setRotatingIcon(null), 600); // Remove after animation duration
+		
 		setOpenDropdown((prevOpenDropdown) =>
 			prevOpenDropdown === dropdownKey ? null : dropdownKey
 		);
@@ -57,7 +62,7 @@ export default function Header() {
 	}
 
 	useEffect(() => {
-		if (openDropdown !== "workWithOm") return;
+		if (openDropdown !== "workWithOm" && openDropdown !== "learnWithOm") return;
 		document.addEventListener("mousedown", handleClickOutside);
 		return () => {
 			document.removeEventListener("mousedown", handleClickOutside);
@@ -107,7 +112,7 @@ export default function Header() {
 										openDropdown === "workWithOm" ? styles.work_with_om_open : ""
 									}`}
 								>
-									WORK WITH OM
+									WORK WITH OM <span className={`${styles.mobile_plus} ${rotatingIcon === "workWithOm" ? styles.rotating : ""}`}>+</span>
 								</span>
 								{/* <div className={`${styles.right_img}`}>
 								<img src={rightImg.src} className="img-responsive" alt="leftImg" style={{maxWidth:"80px", objectFit:"contain"}} />
@@ -171,10 +176,54 @@ export default function Header() {
 									</ul>
 								)}
 							</li>
-							<li>
-								<a href="learn-with-om" className="text_15_r">
-									LEARN WITH OM
-								</a>
+							<li
+								className="text_15_r"
+								style={{
+									position: "relative",
+									display: "flex",
+									flexDirection: "row",
+									columnGap: "8px",
+								}}
+							>
+								<span
+									onClick={() => toggleDropdown("learnWithOm")}
+									className={`text_14_r ${
+										openDropdown === "learnWithOm" ? styles.work_with_om_open : ""
+									}`}
+								>
+									LEARN WITH OM <span className={`${styles.mobile_plus} ${rotatingIcon === "learnWithOm" ? styles.rotating : ""}`}>+</span>
+								</span>
+								{openDropdown === "learnWithOm" && (
+									<ul className={`text_16_r ${styles.dropdown_custom_list}`}>
+										<li>
+											<a
+												href="learn-with-om"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												Overview
+											</a>
+										</li>
+										<li>
+											<a
+												href="learn-with-om#bhagavad-gita"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												Bhagavad Gita
+											</a>
+										</li>
+										<li>
+											<a
+												href="learn-with-om#hanuman-chalisa"
+												className="text_15_r"
+												style={{ color: "#F0EAE0" }}
+											>
+												Hanuman Chalisa
+											</a>
+										</li>
+									</ul>
+								)}
 							</li>
 							{/* <li>
 							<a href="business-consulting" className="text_15_r">

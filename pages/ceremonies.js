@@ -333,7 +333,7 @@ export default function CeremoniesPage() {
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
-									CONNECT WITH OM +
+									CONNECT WITH OM 
 								</a>
 							</div>
 						</div>
