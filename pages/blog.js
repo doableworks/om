@@ -160,6 +160,9 @@ export default function BlogPage() {
 
 	// Trigger scroll animations after filtering
 	useEffect(() => {
+		/**
+		 * Trigger scroll animations for elements
+		 */
 		const triggerScrollAnimations = () => {
 			const scrollElements = document.querySelectorAll("[data-scroll]");
 			scrollElements.forEach((element) => {
@@ -214,17 +217,12 @@ export default function BlogPage() {
 					(blog) => blog.categories && blog.categories.includes(selectedCategory)
 			  );
 
-	// DEBUG: Log filtering results
-	console.log("Selected category:", selectedCategory);
-	console.log("Total blogs:", blogData.blogs.length);
-	console.log("Filtered blogs count:", filteredBlogs.length);
-	console.log("First filtered blog:", filteredBlogs[0]);
-
 	const blogSections = groupBlogsIntoSections(filteredBlogs);
 
-	// DEBUG: Log sections
-	console.log("Blog sections:", blogSections);
-
+	/**
+	 * Handle category selection and update URL
+	 * @param {string} category - The selected category
+	 */
 	const handleCategorySelect = (category) => {
 		console.log("Category selected:", category);
 		setSelectedCategory(category);

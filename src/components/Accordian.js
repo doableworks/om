@@ -31,6 +31,10 @@ const AccordionItem = ({ children, uniqueKey }) => {
 
 	/** Close accordion when clicking outside */
 	useEffect(() => {
+		/**
+		 * Handle clicks outside the accordion to close it
+		 * @param {Event} event - The click event
+		 */
 		const handleClickOutside = (event) => {
 			if (accordionRef.current && !accordionRef.current.contains(event.target)) {
 				setIsOpen(false);
@@ -81,6 +85,9 @@ const AccordionTitle = ({ children, isOpen, toggleAccordion }) => {
 };
 /** Accordion Content  */
 const AccordionContent = ({ children, closeAccordion }) => {
+	/**
+	 * Handle clicks on accordion content to close the accordion
+	 */
 	const handleContentClick = () => {
 		if (closeAccordion) {
 			closeAccordion();
