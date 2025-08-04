@@ -4,7 +4,6 @@ import Lenis from "@studio-freight/lenis";
 export default function SmoothScrolling() {
 	const lenis = new Lenis();
 	lenis.on("scroll", () => {
-		// console.log(e);
 	});
 	/** Function For Smooth Scroll */
 	function raf(time) {

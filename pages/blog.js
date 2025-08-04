@@ -203,12 +203,6 @@ export default function BlogPage() {
 
 	const allCategories = extractCategories(blogData.blogs);
 
-	// DEBUG: Log all categories
-	console.log("All available categories:", allCategories);
-
-	// DEBUG: Log some sample blog data
-	console.log("Sample blogs data:", blogData.blogs.slice(0, 3));
-
 	// Filter blogs based on selected category
 	const filteredBlogs =
 		selectedCategory === "All"
@@ -224,7 +218,6 @@ export default function BlogPage() {
 	 * @param {string} category - The selected category
 	 */
 	const handleCategorySelect = (category) => {
-		console.log("Category selected:", category);
 		setSelectedCategory(category);
 
 		// Update URL with query parameter

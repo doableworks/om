@@ -93,7 +93,6 @@ export default function Form() {
 		formData.append("name", data.name || "");
 		formData.append("email", data.email || "");
 		formData.append("additionalInfo", data.additionalInfo || "");
-		console.log(formData);
 		const formUrl =
 			"https://script.google.com/macros/s/AKfycbwnQZcSGBdVWmjeXE4Vid9C8mtruuRm3AfCHE0TmO9GvBDA-byr3mYIAfQu7AejI7zc/exec";
 		fetch(formUrl, {
@@ -101,9 +100,7 @@ export default function Form() {
 			body: formData,
 		})
 			.then((response) => {
-				console.log("Response object:", response);
 				if (response.ok) {
-					console.log("Form submitted successfully");
 					setShowSuccess(true);
 					reset();
 					setWordCount(0);
