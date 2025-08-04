@@ -12,13 +12,14 @@
 				"This makes the mangalsutra more than just a symbol of marital status. It becomes a symbol of synergy—balanced cooperation between partners, with each empowering the other in a lifelong journey."
 			],
 			"publishedDate": "December 15, 2024",
-			"coverImageUrl": "/img/blog/blog1Cover.png",
-			"bannerImageUrl": "/img/blog/blog1Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog1Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog1Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "2",
-			"title": "What is the significance of saptapadi",
-			"description": "A widely prevalent misconception about Hindu weddings is that the bride and groom take seven pheras (circles around the sacred fire). Well, Bollywood and popular TV seem to have promulgated this myth.",
+			"title": "Why are there only 4 pheras? What is the significance of the Saptapadi?",
+			"description": "A widely prevalent misconception about Hindu weddings is that the bride and groom take seven pheras (circles around the sacred fire). Bollywood and popular TV seem to have promulgated this myth.",
 			"content": [
 				"A widely prevalent misconception about Hindu weddings is that the bride and groom take seven pheras (circles around the sacred fire). Well, Bollywood and popular TV seem to have promulgated this myth.",
 				"In Hindu weddings based on Vedic customs, there are only four pheras. So, what is all this hoopla about the seven steps? That's where the saptapadi – literally translating to seven steps – steps into the picture, no pun intended. After the four pheras, the couple walks seven symbolic steps together, known as the saptapadi. With each step, they make a specific promise to each other. These steps are extremely significant because they reflect not only love and commitment, but also the values that will govern the marriage. The truth is more nuanced and deeply rooted in spiritual symbolism. ",
@@ -27,8 +28,9 @@
 				"At its core, the saptapadi is not just ritualistic. It captures the philosophy that marriage is a partnership—equal, thoughtful, and rooted in mutual upliftment. "
 			],
 			"publishedDate": "December 16, 2024",
-			"coverImageUrl": "/img/blog/blog02Cover.png",
-			"bannerImageUrl": "/img/blog/blog02Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog02Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog02Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "3",
@@ -42,8 +44,9 @@
 				"”"
 			],
 			"publishedDate": "December 17, 2024",
-			"coverImageUrl": "/img/blog/blog03Cover.png",
-			"bannerImageUrl": "/img/blog/blog03Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog03Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog03Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "4",
@@ -59,8 +62,9 @@
 				"Finally, Kanyadaan isn't about giving away women. It honours her emotional, spiritual, and generational transformation in marriage. It is a profound and respectful ancient tradition."
 			],
 			"publishedDate": "December 18, 2024",
-			"coverImageUrl": "/img/blog/blog04Cover.png",
-			"bannerImageUrl": "/img/blog/blog04Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog04Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog04Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "5",
@@ -75,8 +79,9 @@
 				"The only way to discover the true meaning of kanyadaan is by taking the time needed to understand its deeper significance. This tradition is neither regressive and patriarchial nor is it about surrender. It is merely an acknowledgment of the sacred transformation women undergo during their wedding. When viewed like this, you will realise it's not about regression but reverence."
 			],
 			"publishedDate": "December 19, 2024",
-			"coverImageUrl": "/img/blog/blog05Cover.png",
-			"bannerImageUrl": "/img/blog/blog05Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog05Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog05Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "6",
@@ -92,8 +97,9 @@
 				"English-speaking pundits help the modern world reconnect with its roots, through clarity and context instead of blind faith."
 			],
 			"publishedDate": "December 20, 2024",
-			"coverImageUrl": "/img/blog/blog06Cover.png",
-			"bannerImageUrl": "/img/blog/blog06Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog06Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog06Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "7",
@@ -108,8 +114,9 @@
 				"In the end, a Hindu wedding is a sacred transition rather than a show. When one approaches it mindfully, it transcends tradition. It turns into a transformation."
 			],
 			"publishedDate": "December 21, 2024",
-			"coverImageUrl": "/img/blog/blog07Cover.png",
-			"bannerImageUrl": "/img/blog/blog07Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog07Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog07Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "8",
@@ -125,8 +132,9 @@
 				"Invoking these deities ensures the couple's new beginning is stable, prosperous, and spiritual. This shows that Hindu weddings are more than social events. They are a sacred rite that follows cosmic principles of continuity, harmony, and prosperity."
 			],
 			"publishedDate": "December 21, 2024",
-			"coverImageUrl": "/img/blog/blog08Cover.png",
-			"bannerImageUrl": "/img/blog/blog08Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog08Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog08Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "9",
@@ -141,12 +149,13 @@
 				"Coming to the question, \"Do we need a baraat in a wedding?\" The answer is technically a no. Weddings can take place without a baraat. However, a well-planned one sets the tone and intention for the sacred ceremony that will take place. When treated as a process of expressing one's gratitude to the divine, it becomes a way of saying, \"Thank you, Bhagavan, for bringing us to this moment.\" And this is something worth dancing about."
 			],
 			"publishedDate": "December 22, 2024",
-			"coverImageUrl": "/img/blog/blog09Cover.png",
-			"bannerImageUrl": "/img/blog/blog09Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog09Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog09Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "10",
-			"title": "Can you drink before the wedding ceremony?",
+			"title": "Can you have a drink before the wedding ceremony?",
 			"description": "As Indian weddings grow increasingly glamorous, so does the culture of pre-wedding partying. The sangeet, cocktail night, and mehendi have become major celebrations—and for many, drinking is part of the fun. But when it comes to the wedding ceremony itself, an important question arises: Can you drink before the wedding?",
 			"content": [
 				"As Indian weddings grow increasingly glamorous, so does the culture of pre-wedding partying. The sangeet, cocktail night, and mehendi have become major celebrations—and for many, drinking is part of the fun. But when it comes to the wedding ceremony itself, an important question arises: Can you drink before the wedding?",
@@ -158,8 +167,9 @@
 				"Choosing not to drink before the wedding isn't about being 'traditional' or restrictive—it's about entering a once-in-a-lifetime ritual with clarity, dignity, and respect."
 			],
 			"publishedDate": "December 23, 2024",
-			"coverImageUrl": "/img/blog/blog10Cover.png",
-			"bannerImageUrl": "/img/blog/blog10Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog10Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog10Banner.png",
+			"categories": ["All", "Hindu Weddings"]
 		},
 		{
 			"id": "11",
@@ -172,21 +182,26 @@
 				"There's a clear distinction between saptapadi and pheras. While the former outlines the seven promises a couple proclaims to abide by the latter reflect a broader and philosophical goal of human life. Pheras are essentially a roadmap that navigates a couple through their journey beyond the physical or emotional aspects of marriage. Having an English-speaking pundit, like Om Dhumatkar makes it easier for everyone at the wedding to understand this difference!"
 			],
 			"publishedDate": "December 25, 2024",
-			"coverImageUrl": "/img/blog/blog11Cover.png",
-			"bannerImageUrl": "/img/blog/blog11Banner.png"
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog11Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog11Banner.png"
 		},
 		{
 			"id": "12",
-			"title": "What is the Symbolism of Ganesha?",
+			"title": "What Lord Ganesha’s form really tells us about life and manifestation",
 			"description": "We regularly hear the word manifestation in different settings. Social media is abuzz with influencers talking about manifestation. One thing most don't realise is that our Hindu puranas also talk about manifestation—not just visualising success but attracting abundance while focusing on inner growth. In this blog, Om Dhumatkar, an English-speaking pundit, helps us decipher what Bhagwan Ganesha's form really tells us about life and manifestation.",
 			"content": [
-				"Bhagwan Shir Ganesha embodies manifestation; every part of his form carries a deep meaning, symbolism, and life lessons. For instance, Ganeshji's big head reminds us to think big and learn. His small eyes symbolise the need to focus, in a world of distractions. His large ears show we should listen more than speak while his mouth is covered. This means we should make our words count and speak only when needed. His trunk symbolises versatility – it is not only dextrous enough to pick up a needle but strong enough to uproot a tree.",
-				"Now, coming to his body. He has a large belly – a symbol of digesting the good and bad that comes our way. He has four hands, each of which holds a different astra (tool) that can guide us on our journey through life. For instance, ankusa (goad) is a tool usually used to steer elephants. This goad represents how Ganeshji can steer us from distractions and help regulate our minds and desires. He holds a parashah (axe) that helps us break free of materialistic attachments, while the pasha (noose) symbolises letting go of negative emotions while keeping us grounded. The modak symbolises a need to enjoy the fruits of our labour stemming from spiritual discipline.",
+				"We regularly hear the word manifestation in different settings. Social media is abuzz with influencers talking about manifestation. One thing most don't realise is that our Hindu Puranas also talk about manifestation not just visualising success but attracting abundance while focusing on inner growth. In this blog, Om Dhumatkar, an English-speaking pundit, helps us decipher what Bhagwan Ganesha's form really tells us about life and manifestation.",
+
+				"Bhagwan Shri Ganesha embodies manifestation; every part of his form carries a deep meaning, symbolism, and life lessons. For instance, Ganeshji's big head reminds us to think big and learn. His small eyes symbolise the need to focus, in a world of distractions. His large ears show we should listen more than speak while his mouth is covered. This means we should make our words count and speak only when needed. His trunk symbolises versatility – it is not only dextrous enough to pick up a needle but strong enough to uproot a tree.",
+
+				"Now, coming to his body. He has a large belly – a symbol of digesting the good and bad that comes our way. He has four hands, each of which holds a different astra (tool) that can guide us on our journey through life. For instance, ankusha (goad) is a tool usually used to steer elephants. This goad represents how Ganeshji can steer us from distractions and help regulate our minds and desires. He holds a parashah (axe) that helps us break free of materialistic attachments, while the pasha (noose) symbolises letting go of negative emotions while keeping us grounded. The modak symbolises a need to enjoy the fruits of our labour stemming from spiritual discipline.",
+
 				"So, the next time you see a murti of Shri Ganesha, pause before seeking blessings. Understand that his form is a roadmap for living and growing. Regardless of your stage of life, there's always a special message waiting for you in his darshan."
 			],
 			"publishedDate": "December 26, 2024",
-			"coverImageUrl": "/img/blog/blog12Cover.png",
-			"bannerImageUrl": "/img/blog/blog12Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog12Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog12Banner.png",
+			"categories": ["All", "Ganesh Puja"],
 			"seoKeywords": [
 				"Symbolism of Ganesha",
 				"Meaning of Lord Ganesha's form",
@@ -222,17 +237,23 @@
 		},
 		{
 			"id": "13",
-			"title": "Why does Ganesha have an elephant head?",
+			"title": "The deeper meaning behind Ganesha’s elephant head",
 			"description": "The world of Sanatana Dharma is vast and one deity who is ever-present and beloved in Bhagwan Ganesha. From Mahabharata – where he was a scribe to Vyasa – to Shiv Purana, his stories are endless. However, one question that always stands out is, 'Why does Ganeshji have an elephant head?' In this blog, Om Dhumatkar, an English-speaking pundit helps us understand the story and symbolism behind this Hindu God.",
 			"content": [
-				"Perhaps the most well-known story comes from the Shiv Purana. According to it, as Shiva meditated, Parvati was often left alone in Kailasha. She created a guardian for herself using sandalwood and turmeric paste and poured life into it. She fondly named him Vinayaka –one without a father (nayak).",
-				"Upon Shiva's return, Vinayaka stops him from entering Parvati's room. A confrontation ensues, and none of Shiva's ganas overcome him. Ultimately, Shiva intervenes and beheads Vinayaka with his Trishul in the heat of the battle. On seeing this, a devastated Parvati declares she will withdraw her shakti or energy from all creation. This prompts Brahma's intervention, reminding Shiva that creation cannot exist without Shakti. Shiva orders his ganas to get the head of the first northern facing being they encounter. This is a baby elephant, and the ganas get its head to Shiva. Once Shiva reattaches this head to Parvati's beheaded gana, Ganapati or Ganesha, as we know, is reborn.",
-				"This story isn't just a myth, and there lies a deep symbolism in the beheading of Vinayaka. Shiva possesses the highest knowledge, and Parvati's creation knows only the material world. Shiva's Trishul is a tool that removes ignorance and ego. By beheading and replacing Vinayaka's head with a greater and more dexterous head, Shiva relinquishes the boy's ego.",
+				"The world of Sanatana Dharma is vast and one deity who is ever-present and beloved is Bhagwan Ganesha. From Mahabharata – where he was a scribe to Vyasa – to Shiv Purana, his stories are endless. However, one question that always stands out is, “Why does Ganeshji have an elephant head?” In this blog, Om Dhumatkar, an English-speaking pundit helps us understand the story and symbolism behind this Hindu God.",
+
+				"Perhaps the most well-known story comes from the Shiv Purana. According to it, as Shiva meditated, Parvati was often left alone in Kailasha. She created a guardian for herself using sandalwood and turmeric paste and poured life into it. She fondly named him Vinayaka – one without a father (nayak).",
+
+				"Upon Shiva’s return, Vinayaka stops him from entering Parvati’s room. A confrontation ensues, and none of Shiva’s ganas overcome him. Ultimately, Shiva intervenes and beheads Vinayaka with his Trishul in the heat of the battle. On seeing this, a devastated Parvati declares she will withdraw her Shakti or energy from all creation. This prompts Brahma’s intervention, reminding Shiva that creation cannot exist without Shakti. Shiva orders his ganas to get the head of the first northern facing being they encounter. This is a baby elephant, and the ganas get its head to Shiva. Once Shiva reattaches this head to Parvati’s beheaded gana, Ganapati or Ganesha, as we know, is reborn.",
+
+				"This story isn’t just a myth, and there lies a deep symbolism in the beheading of Vinayaka. Shiva possesses the highest knowledge, and Parvati’s creation knows only the material world. Shiva’s Trishul is a tool that removes ignorance and ego. By beheading and replacing Vinayaka’s head with a greater and more dexterous head, Shiva relinquishes the boy’s ego.",
+
 				"So, remember, every time we bow our heads in front of Shri Ganesha, we are symbolically repeating this act of relinquishing our ego. This sets us on the path to gaining higher wisdom. In a way, Ganesha is not just the remover of obstacles but also the guardian of our spiritual journey."
 			],
 			"publishedDate": "December 27, 2024",
-			"coverImageUrl": "/img/blog/blog13Cover.png",
-			"bannerImageUrl": "/img/blog/blog13Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog13Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog13Banner.png",
+			"categories": ["All", "Ganesh Puja"],
 			"seoKeywords": [
 				"Why does Ganesha have an elephant head",
 				"Ganesha elephant head story",
@@ -266,10 +287,16 @@
 			"title": "Why is Ganesh puja done prior to starting any other ritual?",
 			"description": "A common practice in Hindu tradition is to always start important rituals with Ganesh puja. If you have ever wondered why we do this? The answer to this is three-fold, it has mythological, spiritual, and philosophical meanings. Read on to understand how this custom came about.",
 			"content": [
-				"The Shiv Puran offers one of the most well-known explanations. As the story goes, Maa Parvati created Ganesha to stand guard while bathing when Shiva was away. Unaware of this, upon Shiva's return Ganesha prevented him from entering. Shiva in his anger severed Ganesha's head. Upon realising his transgression, Shiva replaced the severed boy's head with that of an elephant and brought him back to life.",
-				"Parvati Maa's grief and Ganesha's devotion prompted Shiva to declare Ganesha as Vignaharta (the remover of obstacles) who was to be worshipped before any new task.",
-				"The second explanation conveys a philosophical meaning. It refers to Pranava's Vedic philosophy. Pranava refers to the primordial sound (Om) from which the universe emerged. Ganesha is not only associated with this sound but also known as Pranava in some texts. Praying to Ganesha before beginning any new activity helps to invoke and align the activity with the divine source of the universe.",
-				"The third explanation stems from spirituality. It is about ensuring the right intent and success of the ritual. All Vedic rituals aren't just symbolic but energetically charged. Both devas (divine beings) and asuras (less benevolent ones) performed these rituals. However, the difference was between their intentions. To prevent the misuse of such powerful rituals, a simple rule was created. The rule states that no ritual can be considered complete or successful unless it begins with an invocation to Shri Ganesha.",
+				"A common practice in Hindu tradition is to always start important rituals with Ganesh Puja. If you have ever wondered why we do this? The answer to this is three - fold, it has mythological, spiritual, and philosophical meanings. Read on to understand how this custom came about.",
+
+				"The Shiv Puran offers one of the most well-known explanations. As the story goes, Maa Parvati created Ganesha to stand guard while bathing when Shiva was away. Unaware of this, upon Shiva’s return Ganesha prevented him from entering. Shiva in his anger severed Ganesha’s head. Upon realising his transgression, Shiva replaced the severed boy’s head with that of an elephant and brought him back to life.",
+
+				"Parvati Maa’s grief and Ganesha’s devotion prompted Shiva to declare Ganesha as Vignaharta (the remover of obstacles) who was to be worshipped before any new task.",
+
+				"The second explanation conveys a philosophical meaning. It refers to Pranava’s Vedic philosophy. Pranava refers to the primordial sound (Om) from which the universe emerged. Ganesha is not only associated with this sound but also known as Pranava in some texts. Praying to Ganesha before beginning any new activity helps to invoke and align the activity with the divine source of the universe.",
+
+				"The third explanation stems from spirituality. It is about ensuring the right intent and success of the ritual. All Vedic rituals aren’t just symbolic but energetically charged. Both devas (divine beings) and asuras (less benevolent ones) performed these rituals. However, the difference was between their intentions. To prevent the misuse of such powerful rituals, a simple rule was created. The rule states that no ritual can be considered complete or successful unless it begins with an invocation to Shri Ganesha.",
+
 				"Performing Ganesh puja before any ritual is not about tradition or formality. Instead, it serves as a reminder that all journeys must begin with clarity and pure intention in order to achieve divine alignment."
 			],
 			"publishedDate": "December 28, 2024",
@@ -277,8 +304,9 @@
 				"https://www.youtube.com/shorts/jlVfgjxEKGg",
 				"https://medium.com/@manasa.manohar/why-is-ganesh-puja-done-prior-to-starting-any-other-rituals-puja-d2424ea0be56"
 			],
-			"coverImageUrl": "/img/blog/blog14Cover.png",
-			"bannerImageUrl": "/img/blog/blog14Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog14Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog14Banner.png",
+			"categories": ["All", "Ganesh Puja"],
 			"seoKeywords": [
 				"Ganesh Puja",
 				"Why Ganesh Puja is done first",
@@ -315,17 +343,22 @@
 			"title": "Why is Ganesh Chaturthi celebrated for 10 days?",
 			"description": "Ganesh Chaturthi is more than a festival, it's a celebration. The fervour, joy, and devotion can be seen across India through vibrant decoration, energetic processions, and rhythmic chanting of 'Ganpati Bappa Morya.' But unlike most Hindu festivals, Ganesh Chaturthi is spread across 10 days. If you have ever wondered why, then read on!",
 			"content": [
-				"According to the Ganesh Purana, the origins of the festival go back to the Hindu month of Shravan. It's believed that Goddess Parvati undertook intense penance—chanting Ganesha mantras and meditating throughout Shravan and into the start of Bhadrapada. On the third day of Bhadrapada (Tritiya), she had a divine vision of Lord Shiva, signifying the completion of her devotion. The next day, Chaturthi (the fourth day), came to be seen as the most auspicious day to worship Lord Ganesha—not as his birthday, but as the divine fruit of unwavering devotion.",
-				"Initially, Ganesh Chaturthi was celebrated for one or two days. However, over the years, the celebrations grew and so did the length of the festival. Ganesh Chaturthi is followed by a couple of auspicious occasions such as the Anant Chaturdashi and Gauri puja. This prompted many to hold on to the Ganesh idol for longer periods to align with the timelines of the above-mentioned festivals. Another factor is Pitru Paksha—a period devoted to honouring ancestors. Since new festivities are avoided during this time, many prefer to conclude Ganesh Chaturthi just before it begins, usually on the 10th day.",
-				"Ganesh Chaturthi became a 10-day festival because devotees wanted more time with him. More than religion and rituals, it celebrated this sacred relationship. Ganesh Chaturthi is about invoking Ganeshji's blessings, finding peace and joy in devotion, and celebrating life, whether you celebrate for one day or ten."
+				"Ganesh Chaturthi is more than a festival, it’s a celebration. The fervour, joy, and devotion can be seen across India through vibrant decoration, energetic processions, and rhythmic chanting of “Ganpati Bappa Morya.” But unlike most Hindu festivals, Ganesh Chaturthi is spread across 10 days. If you have ever wondered why, then read on!",
+
+				"According to the Ganesh Purana, the origins of the festival go back to the Hindu month of Shravan. It’s believed that Goddess Parvati undertook intense penance chanting Ganesha mantras and meditating throughout Shravan and into the start of Bhadrapada. On the third day of Bhadrapada (Tritiya), she had a divine vision of Lord Shiva, signifying the completion of her devotion. The next day, Chaturthi (the fourth day), came to be seen as the most auspicious day to worship Lord Ganesha not as his birthday, but as the divine fruit of unwavering devotion.",
+
+				"Initially, Ganesh Chaturthi was celebrated for one or two days. However, over the years, the celebrations grew and so did the length of the festival. Ganesh Chaturthi is followed by a couple of auspicious occasions such as the Anant Chaturdashi and Gauri puja. This prompted many to hold on to the Ganesh idol for longer periods to align with the timelines of the above-mentioned festivals. Another factor is Pitru Paksha - a period devoted to honouring ancestors. Since new festivities are avoided during this time, many prefer to conclude Ganesh Chaturthi just before it begins, usually on the 10th day.",
+
+				"Ganesh Chaturthi became a 10-day festival because devotees wanted more time with him. More than religion and rituals, it celebrated this sacred relationship. Ganesh Chaturthi is about invoking Ganeshji’s blessings, finding peace and joy in devotion, and celebrating life, whether you celebrate for one day or ten."
 			],
 			"publishedDate": "September 7, 2024",
 			"sources": [
 				"https://www.youtube.com/watch?v=eYM2_aOXtJE",
 				"https://www.instagram.com/reel/C_kFFfjSN2r/"
 			],
-			"coverImageUrl": "/img/blog/blog15Cover.png",
-			"bannerImageUrl": "/img/blog/blog15Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog15Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog15Banner.png",
+			"categories": ["All", "Ganesh Puja"],
 			"seoKeywords": [
 				"Ganesh Chaturthi",
 				"Why is Ganesh Puja done first",
@@ -363,15 +396,22 @@
 			"title": "Why is Ganeshji immersed in water?",
 			"description": "Ganesh Chaturthi is a vibrant Hindu festival celebrated with unparalleled joy and enthusiasm across India. However, as it draws to a close, homes that were once filled with daily prayers, rituals, and celebrations prepare for visarjan, the immersion of Ganeshji's idol. One question Om Dhumatkar, an English-speaking pundit, is commonly asked is, 'Why is Ganeshji immersed in water?' Read on to uncover the truth!",
 			"content": [
-				"A sacred ritual known as Udvasana is conducted before visarjan. This is the opposite of the Ahvanam ritual where Ganeshji's divine presence is invited to reside in an idol. During udvasana, this divine energy is lovingly released from the idol and into our hearts. Sans this divine presence, the idol (murti) merely becomes an object sculpted out of mud, turmeric, or sandalwood.",
-				"As per nature's law, everything material is only temporary. Similarly, the idol is temporary, and it, too, goes away. Anything material, like a building, also decays when not taken care of. How many of the Seven Wonders of the World are still standing?  By dissolving the murti in a flowing body of water, we are reminded of this lesson.",
+				"Ganesh Chaturthi is a vibrant Hindu festival celebrated with unparalleled joy and enthusiasm across India. However, as it draws to a close, homes that were once filled with daily prayers, rituals, and celebrations prepare for visarjan, the immersion of Ganeshji’s idol. One question Om Dhumatkar, an English-speaking pundit, is commonly asked is, “Why is Ganeshji immersed in water?” Read on to uncover the truth!",
+
+				"A sacred ritual known as Udvasana is conducted before visarjan. This is the opposite of the Ahvanam ritual where Ganeshji’s divine presence is invited to reside in an idol. During udvasana, this divine energy is lovingly released from the idol and into our hearts. Sans this divine presence, the idol (murti) merely becomes an object sculpted out of mud, turmeric, or sandalwood.",
+
+				"As per nature’s law, everything material is only temporary. Similarly, the idol is temporary, and it, too, goes away. Anything material, like a building, also decays when not taken care of. How many of the Seven Wonders of the World are still standing? By dissolving the murti in a flowing body of water, we are reminded of this lesson.",
+
 				"Flowing water itself is a symbolism of time. Time is ever-flowing and it stops for no one. So, everything materialistic will eventually go with the flow of time. We experience different losses. Even those dearest to us will sooner or later depart. This is the meaning behind visarjan – our beloved deity who was with us will leave too. And as he goes, he teaches us that in this world nothing is permanent.",
+
 				"Visarjan, the name itself, is a combination of two words, Vishesh and Sarjan. Vishesh means special, and Sarjan means dissolution and not immersion. In this context, visarjan symbolises the dissolution of our ego. Letting go of the murti symbolises the act of letting go of our negativity and ego.",
-				"So, the next time on visarjan, know it isn't a farewell but a heartfelt promise – come again, but never truly leave."
+
+				"So, the next time on visarjan, know it isn’t a farewell but a heartfelt promise – come again, but never truly leave."
 			],
 			"publishedDate": "September 17, 2024",
-			"coverImageUrl": "/img/blog/blog16Cover.png",
-			"bannerImageUrl": "/img/blog/blog16Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog16Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog16Banner.png",
+			"categories": ["All", "Ganesh Puja"],
 			"seoKeywords": [
 				"Why is Ganesha immersed in water",
 				"Ganesh Visarjan meaning",
@@ -437,24 +477,24 @@
 			"title": "What is the meaning of Namaste?",
 			"description": "Namaste is often believed to be a synonym for 'Hello.' However, did you know this simple word is not merely a cultural expression but a gesture of mutual respect and spiritual recognition? Read on to learn about the true meaning of namaste.",
 			"content": [
-				"When someone says namaste, they bring their palms together in front of the chest in a gesture called the Anjali Mudra and gently bow their head. This act of joining palms symbolizes the meeting of two beings—the self and the other—in a moment of connection and humility.",
-				"The word namaste comes from the Sanskrit phrase 'namah te', which translates to 'I bow to you.' Digging deeper:",
-				"'Namah' means to bow, honor, or pay respect.",
-				"'Te' means to you.",
-				"At its core, namaste means: 'I bow to the divine in you.' It acknowledges that within each of us lies the same sacred energy, the same universal truth.",
+				"Namaste is often believed to be a synonym for “Hello.” However, did you know this simple word is not merely a cultural expression but a gesture of mutual respect and spiritual recognition? Read on to learn about the true meaning of namaste.",
+
+				"When someone says namaste, they bring their palms together in front of the chest in a gesture called the Anjali Mudra and gently bow their head. This act of joining palms symbolizes the meeting of two beings the self and the other in a moment of connection and humility.",
+
+				"The word namaste comes from the Sanskrit phrase “namah te”, which translates to “I bow to you.” Digging deeper:\n\"Namah\" means to bow, honor, or pay respect.\n\"Te\" means to you.",
+
+				"At its core, namaste means: “I bow to the divine in you.” It acknowledges that within each of us lies the same sacred energy, the same universal truth.",
+
 				"This salutation brings about a sense of oneness. Whether it's between strangers on a bustling street, children greeting their elders, or family members meeting after a long day, namaste is a living expression of respect and shared humanity.",
-				"Over time, namaste has come to be interpreted in several beautiful and evocative ways. Each variation points to the same central truth—that we are not separate, but one:",
-				"I honor the place in you where the entire universe dwells.",
-				"I bow to the place in you that is love, light, and joy.",
-				"When you and I bow to our true nature, we are one.",
-				"My soul recognizes your soul.",
-				"We are the same. We are one.",
-				"I honor the place in you that is the same as it is in me.",
-				"Namaste is not reserved for sacred spaces or formal settings—it's part of daily life. You'll hear it on street corners, in homes, between friends and elders, and even between strangers meeting for the first time. It's a way of saying, 'I see you, not just as a person, but as a soul.' Namaste is more than a greeting it is a gesture of unity. Regardless of our differences, it helps us understand and acknowledge that we are the same and come from a shared source."
+
+				"Over time, namaste has come to be interpreted in several beautiful and evocative ways. Each variation points to the same central truth that we are not separate, but one:\nI honor the place in you where the entire universe dwells.\nI bow to the place in you that is love, light, and joy.\nWhen you and I bow to our true nature, we are one.\nMy soul recognizes your soul.\nWe are the same. We are one.\nI honor the place in you that is the same as it is in me.",
+
+				"Namaste is not reserved for sacred spaces or formal settings it’s part of daily life. You’ll hear it on street corners, in homes, between friends and elders, and even between strangers meeting for the first time. It’s a way of saying, “I see you, not just as a person, but as a soul.” Namaste is more than a greeting, it is a gesture of unity. Regardless of our differences, it helps us understand and acknowledge that we are the same and come from a shared source."
 			],
 			"publishedDate": "September 18, 2024",
-			"coverImageUrl": "/img/blog/blog17Cover.png",
-			"bannerImageUrl": "/img/blog/blog17Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog17Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog17Banner.png",
+			"categories": ["All", "General Hinduism"],
 			"seoKeywords": [
 				"Meaning of Namaste",
 				"What does Namaste mean",
@@ -494,18 +534,19 @@
 			"title": "Does Yoga make me Hindu?",
 			"description": "It's a question that pops up often—especially in the West where yoga has exploded in popularity. With goat yoga, power yoga, and all kinds of fitness-fusion trends making waves, some people start to wonder: If I do yoga, does that make me Hindu? The short answer? Not necessarily. But the full answer is a lot more nuanced—and meaningful.",
 			"content": [
-				"What Does It Mean to Be Hindu?",
-				"Unlike many other religions that require a declaration of faith or belief in a specific doctrine, Hinduism doesn't begin with dogma. There is no formal statement you need to accept to be considered Hindu. Instead, Hinduism sees the divine in everyone. Our essential nature is already divine—and there are many paths to rediscover that divinity.",
-				"Yoga is one of those paths. And it's just that: a path. Practicing yoga doesn't automatically make someone Hindu, just as meditating or chanting doesn't either. But to engage with yoga fully, authentically, and respectfully is to engage with a tradition deeply rooted in Hindu thought.",
-				"Yoga Is More Than Poses",
-				"In modern yoga studios, yoga is often reduced to a series of stretches and postures—asana practice. But asana is only one limb of yoga. Traditional yoga, has eight limbs, including ethical principles (yamas and niyamas), breath control (pranayama), concentration (dharana), and ultimately, meditative absorption (samadhi).",
-				"So when someone engages with yoga solely as a physical workout, divorced from its deeper context, it raises a bigger question—not of religion, but of cultural integrity.",
-				"Practicing yoga doesn't require you to become Hindu. But to engage with yoga meaningfully, it's important to recognize and respect the tradition from which it comes. This can include learning the original names of the postures as each carry symbolic and spiritual meaning or understanding that yoga is more than physical exercise, it's a holistic spiritual discipline.",
-				"Yoga doesn't make you Hindu—but you can't truly honour yoga without acknowledging its Hindu roots. To practice yoga with awareness is to recognize its purpose: not just flexibility of the body, but liberation of the soul."
+				"It’s a question that pops up often especially in the West where yoga has exploded in popularity. With goat yoga, power yoga, and all kinds of fitness - fusion trends making waves, some people start to wonder: If I do yoga, does that make me Hindu?",
+				"The short answer? Not necessarily. But the full answer is a lot more nuanced and meaningful.",
+				"What Does It Mean to Be Hindu?\nUnlike many other religions that require a declaration of faith or belief in a specific doctrine, Hinduism doesn’t begin with dogma. There is no formal statement you need to accept to be considered Hindu. Instead, Hinduism sees the divine in everyone. Our essential nature is already divine and there are many paths to rediscover that divinity.",
+				"Yoga is one of those paths. And it's just that: a path. Practicing yoga doesn't automatically make someone Hindu, just as meditating or chanting doesn’t either. But to engage with yoga fully, authentically, and respectfully is to engage with a tradition deeply rooted in Hindu thought.",
+				"Yoga Is More Than Poses\nIn modern yoga studios, yoga is often reduced to a series of stretches and postures asana practice. But asana is only one limb of yoga. Traditional yoga has eight limbs, including ethical principles (yamas and niyamas), breath control (pranayama), concentration (dharana), and ultimately, meditative absorption (samadhi).",
+				"So when someone engages with yoga solely as a physical workout, divorced from its deeper context, it raises a bigger question not of religion, but of cultural integrity.",
+				"Practicing yoga doesn't require you to become Hindu. But to engage with yoga meaningfully, it’s important to recognize and respect the tradition from which it comes. This can include learning the original names of the postures as each carry symbolic and spiritual meaning or understanding that yoga is more than physical exercise, it’s a holistic spiritual discipline.",
+				"Yoga doesn’t make you Hindu but you can't truly honour yoga without acknowledging its Hindu roots. To practice yoga with awareness is to recognize its purpose: not just flexibility of the body, but liberation of the soul."
 			],
 			"publishedDate": "September 19, 2024",
-			"coverImageUrl": "/img/blog/blog18Cover.png",
-			"bannerImageUrl": "/img/blog/blog18Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog18Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog18Banner.png",
+			"categories": ["All", "General Hinduism"],
 			"seoKeywords": [
 				"Does yoga make me Hindu",
 				"Is yoga a religion",
@@ -542,17 +583,23 @@
 		},
 		{
 			"id": "19",
-			"title": "Why do Hindus wear bindi?",
+			"title": "Why do Hindus wear bindi? ",
 			"description": "The bindi is perhaps one of the most recognisable symbols of Hindu culture. It is a small dot worn on the forehead, especially by women. Did you know that this modest dot has deep spiritual, cultural, and philosophical meanings?",
 			"content": [
-				"In Hindu tradition, there are many ways to connect with the divine—through dana (charity), puja (worship), yoga, etc. These aren't isolated paths, but complementary ones. Among them, puja plays a special role in reminding us that divinity is not just 'out there'—but also within us.",
-				"During a puja, a devotee offers substances like kumkum (vermilion), vibhuti (sacred ash), or chandan (sandalwood paste) to the deity. The devotee applies the leftovers to their forehead after the offering. The bindi's placement on the agnya chakra, also known as the third eye chakra, is very symbolic. Placing the tilak or bindi here isn't just ritual—it's a reminder of our connection to the divine and a way of tuning the mind toward spiritual insight. This small action contributes to the activation of our body's most potent energy center, which is linked to inner vision, clarity, and spiritual awareness.",
-				"While the term bindi is more commonly associated with women today, especially in modern and decorative use, the traditional term for this mark is tilak. Both men and women wear tilaks, especially after performing a puja. It's common for people to apply a tilak daily after their morning prayers, before leaving home. This isn't just a symbol of piety but a quiet declaration of remembrance: I am connected to something higher.",
-				"It is rather unfortunate that this meaning of bindi is either obscured or completely misunderstood. Treating bindi as a fashion accessory strips it of its spiritual significance. Placing a bindi is more of a personal ritual that unites the body, mind, and soul. It is a subtle reminder of our divine nature, inner clarity, and our connection to something much bigger than ourselves."
+				"The Hanuman Chalisa was composed by the saint-poet Goswami Tulsidas over 500 years ago. Every line of this 40-verse composition reverberates with strength, devotion, and ancient wisdom. It is more than a prayer, it’s a guide to lead a meaningful and spiritually connected life that offers resilience, hope, and reflection. In this blog, let’s decode the meaning of the Hanuman Chalisa.",
+
+				"“With the dust of the lotus feet of my Guru, I cleanse the mirror of my mind…” this beautiful invocation is the beginning of the Chalisa. Hindu tradition holds the Guru in high regard, not just as a teacher but the remover of darkness. Guru is a combination of Gu (darkness) and Ru (remover). By submitting to one’s Guru, our hearts change intellectually and spiritually. The lotus feet mentioned refer to how this unconditional submission helps us rise from the muck of the world and rise above life’s challenges.",
+
+				"The Chalisa through its poetic verses helps us understand our mind’s potential of reflecting the ultimate truth and how karma has tarnished it over our lifetimes. The only way to break-free is by following the ideals and teachings of the Guru. It goes on to detail how Bhagvan Ram bestows on us the four core purposes of our existence – Dharma, Artha, Kama, and Moksha. These four refer to righteous obligations, prosperity, and desire respectively.",
+
+				"Apart from this, the Chalisa encourages us to call up Hanuman (Pavan Kumar) to help us recognize our limitations by seeking his blessings. The blessings we seek are Bala (strength to stay our course), Buddhi (the wisdom the choose the right path), and Vidya (true knowledge that’s liberating).",
+
+				"In a way, the Chalisa not only teaches us about Hanuman and how he’s the path between us and Bhagvan but also how to be like him. To truly unleash the power within each verse of the Hanuman Chalisa, it’s important to understand them."
 			],
 			"publishedDate": "September 20, 2024",
-			"coverImageUrl": "/img/blog/blog19Cover.png",
-			"bannerImageUrl": "/img/blog/blog19Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog19Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog19Banner.png",
+			"categories": ["All", "General Hinduism"],
 			"seoKeywords": [
 				"Why do Hindus wear bindi",
 				"Spiritual meaning of bindi",
@@ -597,8 +644,9 @@
 				"In a way, the Chalisa not only teaches us about Hanuman and how he's the path between us and Bhagvan but also how to be like him. To truly unleash the power within each verse of the Hanuman Chalisa, it's important to understand them."
 			],
 			"publishedDate": "September 21, 2024",
-			"coverImageUrl": "/img/blog/blog20Cover.png",
-			"bannerImageUrl": "/img/blog/blog20Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog20Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog20Banner.png",
+			"categories": ["All", "General Hinduism"],
 			"seoKeywords": [
 				"Meaning of Hanuman Chalisa",
 				"Hanuman Chalisa explained",
@@ -636,23 +684,20 @@
 			"title": "Why should we study the Bhagavad Gita?",
 			"description": "The Bhagavad Gita is more than religious scripture. Consisting of 700 verses, it's one of the most powerful and profound dialogues ever recorded. Though widely renowned and revered, this scripture is widely misunderstood and most haven't read it. The Gita is not just about philosophy or poetry. Instead, it's a manual for life. By understanding what the Gita contains, it becomes easy to answer the question, 'Why should we study the Bhagavad Gita?'",
 			"content": [
-				"Within its 700 verses, the Gita helps us answer life's fundamental questions:",
-				"What is the purpose of my life?",
-				"What can I do to face life's challenges?",
-				"What kind of work should I do to fulfill my life's purpose?",
-				"All these questions are answered in a question-and-answer format between Bhagvan Shri Krishna and Arjuna, during the battle of Kurukshetra in the Mahabharata.",
-				"Life often feels like an exam where despite all our preparation, we experience self-doubt, anxiety, and stress. We need to deal with challenges, disappointments, addictions, and confusions. Just like us, even the mighty warrior Arjuna felt disoriented and overwhelmed, while on the battlefield. During this, he turned to his divine charioteer and friend, Bhagavan Shri Krishna. What followed wasn't a pep talk but the Gita which has become the spiritual lifeline for ages to come.",
-				"The Gita isn't mythology but Itihasa (true history). This colossal text, way longer than any other, offers the following:",
-				"A direct vision (darshan) of the Divine.",
-				"Navigate relationships and discover our true purpose.",
-				"Handle stress, anxiety, disappointments, and confusion in life's trying times.",
-				"A guide to fulfilling life's purposes; Dharma, Artha, Kama, and Moksha.",
-				"Transform abstract ideas into actionable wisdom.",
-				"In a way, the Bhagavad Gita offers the guidance most we all seek during different stages of our life. Chances are, once you start reading it, you will see a reflection of yourself in Arjuna's fears and questions. Their answers? They lie in Krishna's answers. From confusion to clarity and fear to fearlessness, by embodying its teachings, we can move toward true liberation."
+				"The Bhagavad Gita is more than religious scripture. Consisting of 700 verses, it’s one of the most powerful and profound dialogues ever recorded. Though widely renowned and revered, this scripture is widely misunderstood and most haven’t read it. The Gita is not just about philosophy or poetry. Instead, it’s a manual for life. By understanding what the Gita contains, it becomes easy to answer the question, “Why should we study the Bhagavad Gita?”",
+
+				"Within its 700 verses, the Gita helps us answer life’s fundamental questions: \nWhat is the purpose of my life? \nWhat can I do to face life’s challenges? \nWhat kind of work should I do to fulfill my life’s purpose? \nAll these questions are answered in a question-and-answer format between Bhagvan Shri Krishna and Arjuna, during the battle of Kurukshetra in the Mahabharata.",
+
+				"Life often feels like an exam where despite all our preparation, we experience self-doubt, anxiety, and stress. We need to deal with challenges, disappointments, addictions, and confusions. Just like us, even the mighty warrior Arjuna felt disoriented and overwhelmed, while on the battlefield. During this, he turned to his divine charioteer and friend, Bhagavan Shri Krishna. What followed wasn’t a pep talk but the Gita which has become the spiritual lifeline for ages to come.",
+
+				"The Gita isn’t mythology but Itihasa (true history). This colossal text, way longer than any other, offers the following: \nA direct vision (darshan) of the Divine.\nNavigate relationships and discover our true purpose. \nHandle stress, anxiety, disappointments, and confusion in life’s trying times. \nA guide to fulfilling life’s purposes; Dharma, Artha, Kama, and Moksha. \nTransform abstract ideas into actionable wisdom.",
+
+				"In a way, the Bhagavad Gita offers the guidance most we all seek during different stages of our life. Chances are, once you start reading it, you will see a reflection of yourself in Arjuna’s fears and questions. Their answers? They lie in Krishna’s answers. From confusion to clarity and fear to fearlessness, by embodying its teachings, we can move toward true liberation."
 			],
 			"publishedDate": "September 22, 2024",
-			"coverImageUrl": "/img/blog/blog21Cover.png",
-			"bannerImageUrl": "/img/blog/blog21Banner.png",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog21Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog21Banner.png",
+			"categories": ["All", "General Hinduism"],
 			"seoKeywords": [
 				"Why should we study the Bhagavad Gita",
 				"Meaning of Bhagavad Gita",
@@ -684,6 +729,483 @@
 				"Bhagavad Gita and fearlessness",
 				"Why read the Bhagavad Gita",
 				"Bhagavad Gita and spiritual clarity"
+			]
+		},
+		{
+			"id": "22",
+			"title": "Are Hindu rituals needed in today’s world? ",
+			"description": "In an age driven by speed, convenience, and technology, many people find themselves asking: Are Hindu rituals still relevant today? The answer, surprisingly, lies not in religion alone, but in the very structure of human life.",
+			"content": [
+				"In an age driven by speed, convenience, and technology, many people find themselves asking: Are Hindu rituals still relevant today? The answer, surprisingly, lies not in religion alone, but in the very structure of human life.",
+				"At its core, a ritual is simply a repeated, intentional act. Whether it's sipping your morning tea, brushing your teeth in a certain order, or tucking your children into bed at night, these small, patterned behaviours anchor our day. They give rhythm to life and create a sense of stability amidst constant change. In that sense, rituals are not outdated, they're essential.",
+				"Hindu rituals go a step further. They are intentional moments designed to reconnect us with something deeper: our true nature, our purpose, or simply the divine. Unlike brushing your teeth or catching up on a TV show, spiritual rituals are interventions. They pull us out of autopilot and remind us of the sacred dimension of life. Practices like meditation, mantra chanting, prayer, or fire ceremonies are not empty traditions; they're tools to ground us in awareness and connection.",
+				"However, over time, many of these rituals became misunderstood. Through generations of colonisation, cultural shifts, and external influences, rituals began to be framed in a fear-based context: Do this or something bad will happen. This was never the original intention. Hindu philosophy doesn't see the divine as punishing or waiting to strike us down. In fact, even when a deity defeats a demon in scriptures, it's often shown with compassion and blessing.",
+				"So, do you need rituals to live your life? Technically, no. But without them, life can become directionless, disconnected, and unanchored. Rituals bring meaning and gravity to the milestones we experience. Take marriage, for example: without vows, witnesses, or symbolic acts, what's to prevent someone from waking up the next day and simply declaring, 'I'm no longer married'? Rituals make the invisible commitment visible and sacred.",
+				"Ultimately, rituals are less about pleasing a divine force and more about anchoring ourselves. They offer a structure in a chaotic world, and a space to remember who we are. In a time where disconnection is the norm, perhaps rituals are not just relevant, they're more needed than ever."
+			],
+			"publishedDate": "August 5, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog22Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog22Banner.png",
+			"categories": ["All", "Puja & Havan"],
+			"seoKeywords": [
+				"Hindu rituals",
+				"Sanatan Dharma",
+				"relevance of rituals",
+				"spiritual practices",
+				"daily rituals meaning",
+				"Hindu traditions",
+				"Vedic rituals",
+				"mantra chanting",
+				"fire ceremonies",
+				"importance of rituals",
+				"sacred rituals",
+				"purpose of rituals",
+				"spiritual grounding",
+				"ritual significance in Hinduism",
+				"Sanatan Dharma rituals",
+				"ancient Indian practices",
+				"Hindu philosophy",
+				"daily spiritual practices",
+				"ritual and spirituality",
+				"modern Hinduism",
+				"spiritual connection",
+				"rituals and mindfulness",
+				"divine connection",
+				"Indian spirituality",
+				"tradition vs modernity",
+				"spiritual discipline",
+				"inner awareness",
+				"sacred Hindu practices",
+				"cultural rituals",
+				"rituals for modern life",
+				"benefits of rituals"
+			]
+		},
+		{
+			"id": "23",
+			"title": "Do “bad things” happen if we don’t do pujas? ",
+			"description": "The question 'If I don't do Pujas, will something bad happen?' arises from either genuine curiosity or fear. Understanding Hindu philosophy will provide the answer to this question. In this blog, we'll learn more about the essence of Pujas.",
+			"content": [
+				"The question 'If I don't do Pujas, will something bad happen?' arises from either genuine curiosity or fear. Understanding Hindu philosophy will provide the answer to this question. In this blog, we'll learn more about the essence of Pujas.",
+				"Hindu philosophy is based on the notion of empowerment and not to disempower its followers by using guilt, fear, or anxiety. So, the thought of 'bad things' happening if someone doesn't perform Puja or rituals goes against the very grain of Hinduism. This distortion is the result of generations of cultural misunderstanding and the alienation of the original spirit of Hindu dharma.",
+				"That said, actions and even inactions have consequences, as suggested by the Newtonian laws. For instance, not taking care of your health can fester illnesses, and not eating for prolonged periods can cause starvation. Likewise, not engaging in spiritual activities can result in a feeling of disconnection and instability. This is where Pujas step into the picture. These sacred rituals help realign our inner selves with intention, gratitude, and purpose. They provide a sense of inner clarity. So, not doing Pujas doesn't mean you will be punished or that anything bad might happen. Instead, you merely lose an opportunity to ground yourself.",
+				"Instead of asking, 'Will anything bad happen?' a better question is, 'What good might happen if I do Pujas?' This question brings us closer to understanding the all-accepting and non-discriminating nature of divinity. The divine doesn't punish us, but it gives us opportunities to live our lives with purpose and integrity. When Pujas and rituals are performed with understanding and awareness, they have the power to transform our energy, body, mind, and soul. They help us live more intentionally. In a way, they aren't a shield but a gateway to clarity and awareness."
+			],
+			"publishedDate": "August 5, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog23Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog23Banner.png",
+			"categories": ["All", "Puja & Havan"],
+			"seoKeywords": [
+				"Hindu puja meaning",
+				"Sanatan Dharma",
+				"do bad things happen without puja",
+				"purpose of puja",
+				"Hindu rituals explained",
+				"spiritual consequences of not doing puja",
+				"importance of puja in Hinduism",
+				"is puja necessary",
+				"Hinduism and fear",
+				"puja and karma",
+				"Hindu philosophy on rituals",
+				"inner clarity through puja",
+				"spiritual grounding",
+				"meaning of rituals",
+				"daily puja benefits",
+				"myth vs truth in Hindu rituals",
+				"puja misconceptions",
+				"non-punishing God in Hinduism",
+				"role of rituals in spirituality",
+				"divine connection through puja",
+				"understanding Hindu worship",
+				"why do we perform puja",
+				"benefits of spiritual practices",
+				"Hindu beliefs and rituals",
+				"mental clarity through rituals",
+				"emotional wellness in Hinduism",
+				"spiritual wellness practices",
+				"puja for inner peace",
+				"Hinduism and empowerment",
+				"transformative power of puja"
+			]
+		},
+		{
+			"id": "24",
+			"title": "Why do we offer coconut in Hindu rituals?",
+			"description": "The coconut is a common sight in Hindu rituals, but its significance goes far beyond being a simple offering. In this blog, we explore the spiritual, symbolic, and practical reasons behind offering coconut in pujas and ceremonies.",
+			"content": [
+				"The coconut is a common sight in Hindu rituals, but its significance goes far beyond being a simple offering. In this blog, we explore the spiritual, symbolic, and practical reasons behind offering coconut in pujas and ceremonies.",
+				"Spiritually, the coconut represents the human ego. The hard shell symbolizes the tough outer ego that must be broken to reveal the pure, inner self. When we offer a coconut, we are symbolically surrendering our ego to the divine, seeking blessings for humility and self-realization.",
+				"The three 'eyes' on the coconut are said to represent the three eyes of Lord Shiva, signifying spiritual awakening and the destruction of ignorance. Breaking the coconut is also seen as a way to remove obstacles, much like Lord Ganesha, who is often worshipped at the start of any ritual.",
+				"Practically, the coconut is a symbol of purity and nourishment. It is one of the few fruits that is untouched by human hands when growing, making it a pure offering. The water inside represents the nectar of life, and sharing the coconut after the ritual signifies sharing blessings and prosperity with the community.",
+				"In summary, offering a coconut in Hindu rituals is a powerful act of devotion, symbolizing the surrender of ego, the quest for spiritual awakening, and the sharing of divine blessings."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog24Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog24Banner.png",
+			"categories": ["All", "Puja & Havan"],
+			"seoKeywords": [
+				"Why offer coconut in Hindu rituals",
+				"Coconut symbolism in Hinduism",
+				"Spiritual meaning of coconut",
+				"Coconut in puja",
+				"Hindu rituals and coconut",
+				"Breaking coconut in rituals",
+				"Coconut and ego symbolism",
+				"Three eyes of coconut meaning",
+				"Coconut and Lord Shiva",
+				"Coconut and Lord Ganesha",
+				"Coconut as pure offering",
+				"Coconut water symbolism",
+				"Sharing coconut blessings",
+				"Coconut in Indian ceremonies",
+				"Coconut and spiritual awakening",
+				"Coconut in Vedic rituals",
+				"Coconut and prosperity",
+				"Coconut and humility",
+				"Coconut and self-realization",
+				"Coconut in Hindu puja explained"
+			]
+		},
+		{
+			"id": "25",
+			"title": "Why do we worship with fire?",
+			"description": "Agni (fire) is one of nature's five elements. In Hinduism, its presence is considered sacred, and it is revered. It plays an important role in most Hindu traditions and rituals. However, why is Agni so special? In this blog, let’s understand the importance of Agni.",
+			"content": [
+				"Agni serves a dual purpose; it purifies and transforms. For instance, several offerings are made to Agni during Havans (sacred fire rituals) such as ghee, grains, or ghee. With every offering, the phrase, ‘idam na mama’ is uttered which literally translates to ‘this is not mine.’ It helps us let go of our ego and embrace humility and surrender to the divine with each offering.",
+				"As mentioned, fire is transformative. Anything that enters it is turned to sacred ash (Vibhuti). In a way, it symbolises how essential it’s to burn away the unnecessary to get to the essence of all that’s pure and lasting. Similarly, if you ever look at fire, it always points upward. Fire rises and this conveys a simple message – we too must rise and to do this, we need to elevate our thoughts and intention. The third symbolism is of the fire’s colour – saffron. It’s no coincidence that saffron is associated with renunciation, knowledge, and inner awakening in Hinduism. This is why spiritual seekers and monks wear saffron-hued robes to signify this transformation.",
+				"An interesting thing about fire is it’s almost always present during all major samskaras (life rites). For instance, it acts as a sacred witness during weddings. The act of a couple circling the flame symbolises their combined journey while shedding their old identities. Agni, quietly but surely, pushes us to focus on transition and growth. By worshipping fire, we aren’t just honouring an element but a divine source that refines and uplifts."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog25Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog25Banner.png",
+			"categories": ["All", "Puja & Havan"],
+			"seoKeywords": [
+				"why do we worship fire in Hinduism",
+				"Agni in Hinduism",
+				"fire in Hindu rituals",
+				"importance of Agni",
+				"sacred fire meaning",
+				"symbolism of fire in Hinduism",
+				"Agni significance",
+				"fire element in Hinduism",
+				"fire in Sanatan Dharma",
+				"purpose of havan fire",
+				"spiritual meaning of fire",
+				"Vedic fire worship",
+				"idam na mama meaning",
+				"fire and ego",
+				"fire as purifier",
+				"fire transformation symbolism",
+				"Vibhuti meaning",
+				"samskaras and fire",
+				"Hindu wedding fire ritual",
+				"fire in Hindu philosophy",
+				"saffron color meaning Hinduism",
+				"monks and saffron robes",
+				"Agni and renunciation",
+				"spiritual growth through fire",
+				"divine witness in rituals",
+				"Hindu fire ceremonies",
+				"sacred elements in Hinduism",
+				"five elements in Hinduism",
+				"fire and inner awakening",
+				"Agni as divine force"
+			]
+		},
+		{
+			"id": "26",
+			"title": "Why do we use flowers during Puja?",
+			"description": "Hinduism typically associates Pujas with flowers. It's crucial to comprehend a basic fact in order to appreciate their significance: Pujas are more than just rituals. Let's examine the role that flowers play in Pujas in this blog.",
+			"content": [
+				"Traditionally, there are four main steps in every Puja. Purvanga (preparation and purification), Avahana (inviting divine presence), Upachara (serving and honouring the divine), and Udasnaa (respectfully releasing the divine).",
+				"The Upachara stage is where the majority of what we recognise as Puja takes place, with various offerings made. These offerings are symbolic, not intended to feed or please a deity, but rather to connect with various elements of the universe and our own inner nature.",
+				"Traditionally, the minimum number of upacharas (offerings) is five, known as Panchopachara. Each offering represents one of nature's five elements:",
+				"Water (Jal), which stands for the element of water, is provided as drinking or washing water.",
+				"Earth (Prithvi) is represented by substances like sandalwood paste and turmeric.",
+				"Flowers are a symbol for space (Akasha).",
+				"Incense represents Air (Vayu) and spreads aroma through the wind.",
+				"The flame of a lamp (deepa) is a representation of fire (Agni).",
+				"So, why do flowers have a connection to space? Space’s nature is that of emergence, transformation, and dissolution. Similarly, flowers also bloom unexpectedly, live briefly, and die. They are the paradox of creation and impermanence, like space.",
+				"Flowers are also symbolic. For instance, hibiscus is a popular offering to Ganesha because it resembles his form. Lotuses are offered to Vishnu and Lakshmi because they bloom in muddy waters while remaining unaffected, similar to these deities who participate in the world but are not bound by it.",
+				"Each offering conveys reverence, intention, and symbolism–not just ritual. A flower is both beautiful and a symbol of space, creating space within us for the divine."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog26Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog26Banner.png",
+			"categories": ["All", "Puja & Havan"],
+			"seoKeywords": [
+				"why flowers are used in puja",
+				"flowers in Hindu rituals",
+				"Hindu puja offerings",
+				"symbolism of flowers in puja",
+				"Sanatan Dharma rituals",
+				"spiritual meaning of flowers",
+				"flower offerings in Hinduism",
+				"Akasha element in puja",
+				"five elements in Hindu worship",
+				"Panchopachara meaning",
+				"upachara in puja",
+				"hibiscus for Ganesha",
+				"lotus flower symbolism Hinduism",
+				"flowers and spirituality",
+				"Hindu deity offerings",
+				"meaning of puja steps",
+				"Purvanga Avahana Upachara Udasnaa",
+				"nature elements in Hindu rituals",
+				"significance of flowers in Sanatan Dharma",
+				"flower symbolism in Hindu tradition",
+				"sacred offerings in Hinduism",
+				"puja elements explained",
+				"Hindu ritual symbolism",
+				"importance of flowers in worship",
+				"traditional Hindu puja",
+				"sacred elements in puja",
+				"flower rituals for gods",
+				"Hindu worship practices",
+				"spiritual use of flowers",
+				"puja with intention and meaning"
+			]
+		},
+		{
+			"id": "27",
+			"title": "Why does Hinduism have multiple Gods?",
+			"description": "Vishnu, Shiva, Lakshmi, Durga, Ganpati, etc are all different deities. There seem to be multiple Gods in Hinduism. Why is this? This is one of the most common questions. In this blog, let’s work our way toward an answer.",
+			"content": [
+				"To answer this, we must acknowledge that Hinduism, or more precisely, Sanatana Dharma, does not neatly fall into either the monotheistic or polytheistic Western categories. Hindu spiritual tradition does not naturally employ these frameworks. To truly understand its depth and intricacy, it’s important to go back to the original source of Hinduism – the Vedas.",
+				"Three main sections make up the Vedas, the oldest texts in Hinduism, are the Upasana (hymns and adoration for different gods), Karmakanda (worship and ceremonial activities), and Janakanda (wisdom in philosophy). These sections taken together demonstrate that the different gods we worship are different manifestations of one indivisible truth rather than distinct or rival deities.",
+				"The philosophical foundation of Hinduism, the Upanishads, affirm: 'Ekam sat, vipra bahudha vadanti' 'The Truth is One, but the wise call it by many names.'",
+				"Hinduism, in other words, views the divine as a single, limitless reality that takes on multiple forms, much like sunlight can reflect differently through different windows.",
+				"As manifestations of the divine powers of nature, deities like Vayu (wind), Agni (fire), and Indra (rain) were eventually worshipped. The great philosopher-saint Adi Shankaracharya later contributed to the Shanmata system, which organised Hindu theology into six primary forms of worship: Shiva, Vishnu, Surya, Devi, Ganapati, and Skanda.",
+				"Based on devotion, tradition, or personal temperament, each of these serves as a gateway to the same ultimate reality. The goal of worshipping various deities is accessibility, not division. Therefore, we are not praying to separate gods when we chant to Hanuman, bow to Lakshmi, or offer prayers to Shiva; rather, we are interacting with various manifestations of the One.",
+				"How we worship with humility, love, and the knowledge that all paths eventually lead back to the same eternal source is more important than who we worship."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog27Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog27Banner.png",
+			"categories": ["All", "Gods & Godesses"],
+			"seoKeywords": [
+				"multiple gods in Hinduism",
+				"why Hinduism has many gods",
+				"Sanatan Dharma deities",
+				"Hinduism monotheism vs polytheism",
+				"Ekam sat vipra bahudha vadanti",
+				"Hindu deities explained",
+				"one God many forms Hinduism",
+				"Vedic understanding of God",
+				"Upanishads philosophy",
+				"Hindu theology simplified",
+				"Adi Shankaracharya Shanmata",
+				"Hindu gods and goddesses",
+				"manifestations of divine Hinduism",
+				"Shiva Vishnu Lakshmi Ganpati",
+				"Hindu spiritual tradition",
+				"Vedas and Hindu gods",
+				"Indra Vayu Agni in Hinduism",
+				"six forms of worship Hinduism",
+				"different names of God Hinduism",
+				"Hinduism ultimate reality",
+				"One Truth many names",
+				"Hinduism divine unity",
+				"why worship many gods",
+				"Hinduism for beginners",
+				"Hindu deity worship",
+				"Hinduism and oneness",
+				"Hindu gods are not separate",
+				"Sanatan Dharma explained",
+				"paths to the same divine",
+				"Om Dhumatkar Hindu blog",
+				"spiritual unity in Hinduism"
+			]
+		},
+		{
+			"id": "28",
+			"title": "Why are Hindu Gods blue?",
+			"description": "If you've ever looked closely at depictions of Hindu deities whether in temples, posters, or illustrated storybooks you’ve probably noticed something curious: many of them are blue. Krishna, Rama, Shiva, Vishnu... all shown with striking blue skin. But why? The colour blue in Hinduism is much more than just an artistic choice. It’s a symbol, a metaphor, and a spiritual concept rolled into one.",
+			"content": [
+				"Knowing what blue means in Hindu philosophy and the natural world aids in understanding this. You can see endless, serene, and deep stretches of blue when you look up at the sky or out at the ocean. Everything serene, infinite, and immeasurable is symbolised by this colour. Like the sky and the sea, blue is intangible. These are all attributes associated with Gods in Hinduism - they too are timeless and all-encompassing like the sky above and the sea around us.",
+				"In Hinduism, a belief is that divinity comes to the rescue of humanity in times of chaos to uphold dharma and restore harmony. So, Vishnu in his avatars like Shri Ram or Krishna is a divine manifestation that’s come to humanity’s rescue out of compassion. Their striking blue skin symbolises this divinity, and their boundless nature.",
+				"The colour has a deeper emotional component as well. Many associate blue with tranquillity and serenity. As mentioned, these qualities are synonymous with the divinity in Hinduism. Even in a chaotic world, they possess the ability to remain grounded, cooperative, and composed. For instance, Krishna offers guidance to Arjuna in the midst of the Kurukshetra battlefield in Mahabharata. This isn't something a mere mortal can do. Therefore, their blue skin symbolises this inner peace and calm.",
+				"In essence, blue represents consciousness rather than skin tone. The blue-hued deities symbolise the vast, timeless energy that exists within and around us. They ask us to look beyond the form to the essence."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog28Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog28Banner.png",
+			"categories": ["All", "Gods & Godesses"],
+			"seoKeywords": [
+				"why are Hindu gods blue",
+				"Hindu gods blue skin meaning",
+				"Krishna blue skin",
+				"Vishnu blue color",
+				"Rama blue body",
+				"symbolism of blue in Hinduism",
+				"Hindu deity colors explained",
+				"Sanatan Dharma symbolism",
+				"Hindu gods and colors",
+				"spiritual meaning of blue",
+				"divine symbolism Hinduism",
+				"blue skin in Hindu mythology",
+				"meaning of Krishna’s color",
+				"why is Vishnu blue",
+				"Shiva blue throat",
+				"Hindu god colors spiritual",
+				"sky and ocean symbolism Hinduism",
+				"dharma and blue gods",
+				"Mahabharata Krishna symbolism",
+				"infinite nature of Hindu gods",
+				"calmness in Hindu deities",
+				"qualities of blue gods",
+				"Hindu philosophy colors",
+				"spiritual essence of blue",
+				"Hindu deities symbolism",
+				"divine energy blue",
+				"Hinduism blue consciousness",
+				"timeless nature of gods",
+				"blue skin spiritual metaphor"
+			]
+		},
+		{
+			"id": "29",
+			"title": "Does Shiva drink alcohol?",
+			"description": "A common question that comes up is “Does Shiva drink alcohol?” As surprising as it sounds, there are instances where alcohol is given as an offering to Shiva. This is confusing because a substance believed to be a taboo is offered to a divine being. The answer isn’t a simple yes or no even though the question is straightforward.",
+			"content": [
+				"It’s important to understand that Shiva is a representation of pure consciousness. He is beyond intoxication and isn’t bound by human needs or habits. This is not because he abstains, it’s because he is above all of it. The idea of intoxication is restricted to the human realm. However, Shiva is pure consciousness, and he is the representation of bliss and transcendence that comes from consuming the cosmos’s energy.",
+				"But then, why are there rituals where alcohol is offered to Shiva? Why do some people believe he drinks it?",
+				"The answer lies in how the Hindu spiritual system views human nature. Unlike rigid moral frameworks that label actions as absolutely good or bad, Hinduism recognises the complexity of human tendencies. It categorises actions into those that accelerate spiritual evolution (punya karma) and those that might slow it down (papa karma). But even actions considered less ideal aren’t treated with condemnation instead, they are redirected.",
+				"For instance, someone may have a strong tendency to drink alcohol due to their upbringing, emotional wounds, or circumstances. Instead of denying that tendency, the tradition says: if you’re going to drink, offer it first to the divine. This isn’t to say the divine needs or enjoys the offering. Rather, it’s a way for even someone caught in their habits to stay connected to something higher.",
+				"In this spirit, Shiva sometimes takes forms that accept such offerings not because he seeks intoxication, but because he seeks inclusion. No one is left out of the spiritual journey, not even those struggling with difficult patterns. By making an offering, even of alcohol, the individual transforms a personal act into a bridge toward inner growth."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog29Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog29Banner.png",
+			"categories": ["All", "Gods & Godesses"],
+			"seoKeywords": [
+				"does Shiva drink alcohol",
+				"alcohol offering to Shiva",
+				"Shiva and intoxication",
+				"taboo offerings in Hinduism",
+				"Hindu deities and alcohol",
+				"Shiva symbolism",
+				"Shiva pure consciousness",
+				"Shiva and human tendencies",
+				"alcohol in Hindu rituals",
+				"spiritual meaning of alcohol offering",
+				"Hinduism and moral complexity",
+				"offering alcohol in tantra",
+				"Shiva inclusivity",
+				"divine acceptance in Hinduism",
+				"spiritual growth in Hinduism",
+				"Hindu philosophy on habits",
+				"transcendence and Shiva",
+				"unconventional offerings to gods",
+				"Lord Shiva and bliss",
+				"offering to Bhairava",
+				"Kapalika tradition",
+				"Shiva and human flaws",
+				"spiritual redirection Hinduism",
+				"Shiva and karma",
+				"papa karma and punya karma",
+				"is alcohol allowed in Hinduism",
+				"Shiva as cosmic consciousness",
+				"Hindu deities symbolism",
+				"Shiva worship rituals",
+				"non-judgmental Hindu spirituality"
+			]
+		},
+		{
+			"id": "30",
+			"title": "Why was Krishna born in jail?",
+			"description": "Ancient Hindu scriptures have different origin stories for each of the Gods who presented themselves. One story that stands out is that of Krishna. How come a God was born in jail? In this blog, let’s learn more about this.",
+			"content": [
+				"Ancient texts go on to describe a divine akashvani (celestial voice) that foretold the death of tyrant King Kamsa at the hands of his sister's (Devaki) eighth-born child. Gripped by the desire to escape his fate and fear, Kamsa imprisoned Devaki and her husband, Vasudeva, in a prison cell. Despite all the gloom, their eight born child, Krishna was born. This story of Krishna’s birth in jail is a powerful symbolism that’s relevant even today.",
+				"The prison itself symbolises all the limitations we are born in. Call it karma, family conditions, or societal injustices, these limitations shape us. The tale of Krishna's jail birth serves as a reminder that even in the darkest places, light can shine through the invisible chains that imprison us.",
+				"Despite being born in captivity, Krishna was never really subject to it. His presence was never limited by the physical space around him. From the moment of his birth, nature itself conspired to set him free—doors unlocked, guards fell asleep, and the river parted to let Vasudeva carry him to safety. These events aren't just miracles; they are metaphors for the way life makes way for truth and purpose, even amidst chaos.",
+				"The divine didn’t choose a palace for Krishna’s birth. It chose a prison to show us that divinity is not distant or exclusive, but close, accessible, and compassionate enough to meet us exactly where we are.",
+				"Regardless of all of life's trials, Krishna's wisdom, composure, and playfulness never wavered. Similarly, the lesson for us here is to remember that regardless of our beginnings, we aren't defined by them. We too can overcome and change our circumstances, just like Krishna."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog30Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog30Banner.png",
+			"categories": ["All", "Gods & Godesses"],
+			"seoKeywords": [
+				"why was Krishna born in jail",
+				"Krishna birth story",
+				"Lord Krishna prison birth",
+				"Krishna and Kamsa",
+				"Devaki and Vasudeva",
+				"Krishna Janmashtami story",
+				"Krishna symbolism",
+				"birth of Krishna in Hinduism",
+				"Krishna divine birth",
+				"Krishna and karma",
+				"Krishna and destiny",
+				"Krishna mythology",
+				"Krishna overcoming darkness",
+				"meaning of Krishna’s jail birth",
+				"Krishna inspirational story",
+				"Sanatan Dharma Krishna",
+				"Hindu gods birth stories",
+				"Krishna spiritual symbolism",
+				"Krishna and freedom",
+				"divine birth symbolism",
+				"Akashvani and Kamsa",
+				"Krishna life lessons",
+				"Krishna and dharma",
+				"Krishna in Hindu scriptures",
+				"Krishna and human suffering",
+				"Krishna story explained",
+				"Krishna as hope and light",
+				"Krishna and overcoming obstacles",
+				"Krishna Janm Katha",
+				"Krishna and divine intervention"
+			]
+		},
+		{
+			"id": "31",
+			"title": "Is Durga superior or Shiva?",
+			"description": "A question of popular debate among Hindu devotees is, “Who is greater, Durga or Shiva?” The answer to this is anything but straightforward and requires a basic understanding that there is no comparison here. So, let’s clear this misunderstanding in this blog.",
+			"content": [
+				"To begin with, Hinduism has multiple Gods. Vedas, sacred and ancient Hindu scriptures, delve in each of their unique traits and cosmic roles. The deeper we dig, the clearer the truth begins – it’s not about forms but their essence. Divinity isn’t a person or a personality. Instead, it is the Brahman itself, it’s the formless all-pervasive truth. Regardless of the name given, it transcends everything.",
+				"This brings up another question. If there is only one Brahman, then why do we have so many Gods?",
+				"The answer is rather obvious – we are all different and have different temperaments, are at different life stages, and have varying needs. The Divine expresses itself in ways that best serve those needs. Some might be drawn to the meditative stillness of Shiva while others to the fierce protective love of Durga. A basic tenet of Hindu philosophy is it doesn’t compare and instead shows that all Gods are complementary expressions of the same source and power.",
+				"Have you ever seen a beam of light hit a prism? The light refracts into different colours. Regardless of the colour you are drawn to, their source is the same. Using this analogy, all Gods are the same and they are complementary forces instead of competing entities.",
+				"At times, how we connect with the Divine energy also changes. For instance, you might feel a spiritual inclination to one God and that changes over time. This is nothing but evolution. The Divine will always reveal itself in a form that will help you connect and grow.",
+				"Coming back to the question, “Who is superior?” The answer becomes obvious. Regardless of their form or manifestation, they are a pathway to seeking the ultimate consciousness and truth. Remember, Divinity never makes us choose. Instead, all it asks if for sincere devotion and surrender to unlock the true power."
+			],
+			"publishedDate": "August 6, 2025",
+			"coverImageUrl": "https://d299alzxgdp6.cloudfront.net/blog31Cover.png",
+			"bannerImageUrl": "https://d299alzxgdp6.cloudfront.net/blog31Banner.png",
+			"categories": ["All", "Gods & Godesses"],
+			"seoKeywords": [
+				"Durga vs Shiva",
+				"who is greater Durga or Shiva",
+				"Durga and Shiva comparison",
+				"Hindu gods superiority",
+				"Shiva or Durga who is supreme",
+				"Sanatan Dharma philosophy",
+				"Brahman in Hinduism",
+				"formless divinity Hinduism",
+				"Vedic view on gods",
+				"one truth many forms",
+				"Hinduism many gods one source",
+				"Durga and Shiva relationship",
+				"Hindu divine feminine and masculine",
+				"Hindu deities explained",
+				"is Shiva more powerful than Durga",
+				"Hindu god comparison",
+				"Durga Shakti and Shiva",
+				"essence of divinity Hinduism",
+				"spiritual symbolism in Hinduism",
+				"Brahman vs deities",
+				"unity of Hindu gods",
+				"multiple gods one truth",
+				"Hinduism divine expressions",
+				"prism analogy Hinduism",
+				"choosing between Hindu gods",
+				"evolution of devotion",
+				"connecting with the divine",
+				"spiritual growth in Hinduism",
+				"worship of Durga and Shiva",
+				"divine energy in Hinduism"
 			]
 		}
 	]

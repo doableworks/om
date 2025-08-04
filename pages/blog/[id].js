@@ -4,7 +4,6 @@ import MetaTags from "@/components/MetaTags";
 import Footer from "@/components/Footer";
 import styles from "@/styles/pages/Blog1.module.scss";
 import blogData from "@/data/blogData.json";
-import BlogBanner from "../../public/img/blog/blog_banner_img.jpg";
 
 /**
  * Blog dynamic page for displaying individual blog posts.
@@ -41,8 +40,9 @@ export default function BlogDynamicPage() {
 			<MetaTags
 				Title={blog.title}
 				Desc={blog.description}
-				OgImg={""}
+				OgImg={blog.bannerImageUrl}
 				Url={`/blog/${id}`}
+				Keywords={blog.keywords}
 			/>
 			<Header />
 			<main className={styles.Blog1Page}>

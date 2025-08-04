@@ -86,14 +86,14 @@ export default function OneInOnePage() {
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner} data-scroll>
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/One-On-One+Banner.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/One-On-One+Banner.mp4"
 						className={`${styles.videoDesktop} img-responsive`}
 						muted
 						autoPlay
 						loop
 					/>
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/One-On-One+Mobile.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/One-On-One+Mobile.mp4"
 						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
@@ -208,7 +208,7 @@ export default function OneInOnePage() {
 						{isVideoPlaying && (
 							<video
 								src={
-									"https://websitetestcontent.s3.us-east-1.amazonaws.com/04.+Om+-+Website+-+1-on-1+Draft+03.mp4"
+									"https://d299alzxgdp6.cloudfront.net/04.+Om+-+Website+-+1-on-1+Draft+03.mp4"
 								}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}
@@ -315,7 +315,7 @@ export default function OneInOnePage() {
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
-									CONNECT WITH OM 
+									CONNECT WITH OM
 								</a>
 							</div>
 						</div>

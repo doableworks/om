@@ -12,28 +12,42 @@
 		.arrow_icon {
 			min-width: 20px;
 			max-width: 20px;
-			transition: var(--transition);
+			transition: transform 0.3s ease;
 			@extend %f_r_a_center;
+
+			span {
+				font-size: 18px;
+				font-weight: bold;
+				display: inline-block;
+				transition: transform 0.3s ease;
+			}
+
+			&.rotated {
+				span {
+					transform: rotate(90deg);
+				}
+			}
 		}
 	}
 	// Accordian Content
 	.accordian_content_wrap {
 		overflow: hidden;
-		padding: 0px 10px;
-		padding-bottom: 10px;
-		padding-right: 40px;
-		transition: max-height 600ms ease;
+		max-height: 0;
+		transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+		opacity: 0;
+		// padding: 0px 10px;
+		// padding-bottom: 10px;
+		// padding-right: 40px;
 	}
 
 	// Active State
 	&.active {
 		.accordian_title_wrap {
-			.arrow_icon {
-				transform: rotate(180deg);
-			}
+			border-bottom: 2px solid var(--color_primary);
 		}
 		.accordian_content_wrap {
 			max-height: 210vh;
+			opacity: 1;
 		}
 	}
 }

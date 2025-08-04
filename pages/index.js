@@ -48,7 +48,7 @@ export default function HomePage() {
 				<section className={styles.banner_section} data-scroll>
 					{/* Desktop video */}
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/topBanner.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/topBanner.mp4"
 						className={`${styles.videoDesktop} img-responsive`}
 						muted
 						autoPlay
@@ -56,7 +56,8 @@ export default function HomePage() {
 					/>
 					{/* Mobile video */}
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Top+Banner+-+Homepage+Mobile.mp4"
+						src="https://d299alzxgdp6.cloudfront.net
+/Top+Banner+-+Homepage+Mobile.mp4"
 						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay

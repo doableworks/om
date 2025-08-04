@@ -87,14 +87,14 @@ export default function SpeakingPage() {
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner} data-scroll>
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/speakingHero.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/speakingHero.mp4"
 						className={`${styles.videoDesktop} img-responsive`}
 						muted
 						autoPlay
 						loop
 					/>
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Top+Banner+-+Speaking+Mobile.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/Top+Banner+-+Speaking+Mobile.mp4"
 						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
@@ -191,7 +191,7 @@ export default function SpeakingPage() {
 						{isVideoPlaying && (
 							<video
 								src={
-									"https://websitetestcontent.s3.us-east-1.amazonaws.com/a23ff480-38f9-4fd2-bbb0-1a517216c06b.mp4"
+									"https://d299alzxgdp6.cloudfront.net/a23ff480-38f9-4fd2-bbb0-1a517216c06b.mp4"
 								}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}
@@ -284,11 +284,7 @@ export default function SpeakingPage() {
 							</div>
 							<div className={`${styles.box} pb_40`} data-scroll>
 								<div className={`${styles.box_img}`}>
-									<img
-										src={event_6.src}
-										className="img-responsive"
-										alt="event1"
-									/>
+									<img src={event_6.src} className="img-responsive" alt="event1" />
 								</div>
 								<div className={`${styles.name_title} pt_20`}>
 									<div className={`${styles.name}`}>
@@ -310,7 +306,7 @@ export default function SpeakingPage() {
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
-									CONNECT WITH OM 
+									CONNECT WITH OM
 								</a>
 							</div>
 						</div>

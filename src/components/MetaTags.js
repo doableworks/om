@@ -13,12 +13,12 @@ import Head from "next/head";
 
 // IMAGES //
 import OgImage from "public/img/og-image.jpg";
-import Favicon from "public/img/header_logo.svg";
+import Favicon from "public/img/favicon.svg";
 
 // DATA //
 
 /** Meta Tags */
-export default function MetaTags({ Title, Desc, OgImg, Url }) {
+export default function MetaTags({ Title, Desc, OgImg, Url, Keywords }) {
 	// Metas for all page
 	const defaultMetas = {
 		title: "Title",
@@ -33,11 +33,14 @@ export default function MetaTags({ Title, Desc, OgImg, Url }) {
 	const desc = Desc ? Desc : defaultMetas.desc;
 	const ogImg = OgImg ? OgImg : defaultMetas.ogImg;
 	const url = Url ? Url : defaultMetas.url;
+	const keywords =
+		Keywords && Array.isArray(Keywords) ? Keywords.join(", ") : null;
 
 	return (
 		<Head>
 			<title>{title}</title>
 			<meta name="description" content={desc} />
+			{keywords && <meta name="keywords" content={keywords} />}
 			<meta name="theme-color" content="#000" />
 
 			{/* OG Tags  */}

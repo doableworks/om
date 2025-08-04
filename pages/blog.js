@@ -1,12 +1,20 @@
 /* eslint-disable no-irregular-whitespace */
+
 // MODULES //
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 // COMPONENTS //
 import Header from "@/components/Header";
 import MetaTags from "@/components/MetaTags";
 import Footer from "@/components/Footer";
+import {
+	Accordion,
+	AccordionItem,
+	AccordionTitle,
+	AccordionContent,
+} from "@/components/Accordian";
 
 // SECTIONS //
 
@@ -20,23 +28,18 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import styles from "@/styles/pages/BlogPage.module.scss";
 
 // IMAGES //
-// import videoTham from "../public/img/weddings/video_tham.jpg";
-import videoTham from "../public/img/blog/blog1Cover.png";
-import playBtn from "../public/img/weddings/play_btn.svg";
 import leftImg from "../public/img/weddings/left_img.png";
 import rightImg from "../public/img/weddings/right_img.png";
-import BlogBanner from "../public/img/blog/blog_banner_img.jpg";
-
 // DATA //
 import blogData from "@/data/blogData.json";
 
-/** 
+/**
  * Function to group blogs into sections
-*/
+ */
 const groupBlogsIntoSections = (blogs) => {
 	const sections = [];
 	let currentSection = [];
-	
+
 	blogs.forEach((blog, index) => {
 		// Every 5th item (index 4, 9, 14, etc.) should be a banner
 		if ((index + 1) % 5 === 0) {
@@ -46,23 +49,36 @@ const groupBlogsIntoSections = (blogs) => {
 				currentSection = [];
 			}
 			// Add banner section
-			sections.push({ type: "banner", blog: blog });
+			sections.push({ type: "banner", blogs: blog });
 		} else {
 			currentSection.push(blog);
 		}
 	});
-	
+
 	// Add remaining blogs if any
 	if (currentSection.length > 0) {
 		sections.push({ type: "grid", blogs: currentSection });
 	}
-	
+
 	return sections;
 };
 
 /**
-* Component for regular blog item
-*/
+ * Function to extract unique categories from all blogs
+ */
+const extractCategories = (blogs) => {
+	const categorySet = new Set();
+	blogs.forEach((blog) => {
+		if (blog.categories && Array.isArray(blog.categories)) {
+			blog.categories.forEach((category) => categorySet.add(category));
+		}
+	});
+	return Array.from(categorySet).sort();
+};
+
+/**
+ * Component for regular blog item
+ */
 const BlogItem = ({ blog }) => (
 	<div className={`${styles.podcast_item}`} data-scroll>
 		<div className={`${styles.video_wrapper}`}>
@@ -82,35 +98,43 @@ const BlogItem = ({ blog }) => (
 			</Link>
 		</div>
 		<div className={`${styles.podcast_text}`}>
-			<h5>{blog.title}</h5>
-			<p>{blog.description}</p>
+			<Link href={`/blog/${blog.id}`} legacyBehavior>
+				<a>
+					<h5>{blog.title}</h5>
+					<p>{blog.description}</p>
+				</a>
+			</Link>
 		</div>
 	</div>
 );
 
-/** 
-* Component for banner blog item
-*/         
+/**
+ * Component for banner blog item
+ */
 const BannerBlogItem = ({ blog }) => (
 	<section className={`${styles.blog_img_section}`} data-scroll>
 		<a href={`/blog/${blog.id}`}>
 			<img
 				src={blog.coverImageUrl}
 				className={`${styles.blog_img} img-responsive`}
-				style={{objectFit:"cover", maxHeight:"800px"}}
+				style={{ objectFit: "cover", maxHeight: "800px" }}
 				alt={blog.title}
 			/>
 		</a>
 		<div className={`${styles.blog_img_info}`}>
-			<h5>{blog.title}</h5>
-			<p>{blog.description}</p>
+			<Link href={`/blog/${blog.id}`} legacyBehavior>
+				<a>
+					<h5>{blog.title}</h5>
+					<p>{blog.description}</p>
+				</a>
+			</Link>
 		</div>
 	</section>
 );
 
-/** 
+/**
  * Component for grid section
-*/
+ */
 const GridSection = ({ blogs }) => (
 	<section className={`${styles.podcast} ptb_80`}>
 		<div className="container">
@@ -127,11 +151,95 @@ const GridSection = ({ blogs }) => (
  * BlogPage Page
  */
 export default function BlogPage() {
+	const router = useRouter();
+	const [selectedCategory, setSelectedCategory] = useState("All");
+
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox]", {});
 	}, []);
 
-	const blogSections = groupBlogsIntoSections(blogData.blogs);
+	// Trigger scroll animations after filtering
+	useEffect(() => {
+		const triggerScrollAnimations = () => {
+			const scrollElements = document.querySelectorAll("[data-scroll]");
+			scrollElements.forEach((element) => {
+				// Remove the attribute temporarily
+				element.removeAttribute("data-scroll");
+				// Force reflow
+				element.offsetHeight;
+				// Add it back to trigger the animation
+				element.setAttribute("data-scroll", "");
+				// Trigger the 'in' state after a short delay
+				setTimeout(() => {
+					element.setAttribute("data-scroll", "in");
+				}, 50);
+			});
+		};
+
+		// Trigger animations after filtering
+		if (selectedCategory) {
+			setTimeout(triggerScrollAnimations, 100);
+		}
+	}, [selectedCategory]);
+
+	// Handle query parameters
+	useEffect(() => {
+		if (router.isReady) {
+			const { category } = router.query;
+			const allCategories = extractCategories(blogData.blogs);
+
+			// Check if the category from query params is valid
+			if (category && allCategories.includes(category)) {
+				setSelectedCategory(category);
+			} else {
+				// Default to "All" if no valid category is found
+				setSelectedCategory("All");
+			}
+		}
+	}, [router.isReady, router.query]);
+
+	const allCategories = extractCategories(blogData.blogs);
+
+	// DEBUG: Log all categories
+	console.log("All available categories:", allCategories);
+
+	// DEBUG: Log some sample blog data
+	console.log("Sample blogs data:", blogData.blogs.slice(0, 3));
+
+	// Filter blogs based on selected category
+	const filteredBlogs =
+		selectedCategory === "All"
+			? blogData.blogs
+			: blogData.blogs.filter(
+					(blog) => blog.categories && blog.categories.includes(selectedCategory)
+			  );
+
+	// DEBUG: Log filtering results
+	console.log("Selected category:", selectedCategory);
+	console.log("Total blogs:", blogData.blogs.length);
+	console.log("Filtered blogs count:", filteredBlogs.length);
+	console.log("First filtered blog:", filteredBlogs[0]);
+
+	const blogSections = groupBlogsIntoSections(filteredBlogs);
+
+	// DEBUG: Log sections
+	console.log("Blog sections:", blogSections);
+
+	const handleCategorySelect = (category) => {
+		console.log("Category selected:", category);
+		setSelectedCategory(category);
+
+		// Update URL with query parameter
+		const query = category === "All" ? {} : { category };
+		router.push(
+			{
+				pathname: router.pathname,
+				query: query,
+			},
+			undefined,
+			{ shallow: true }
+		);
+	};
 
 	return (
 		<div>
@@ -147,13 +255,59 @@ export default function BlogPage() {
 						<div className={`${styles.podcast_info}`} data-scroll>
 							<h4>Blog</h4>
 						</div>
+
+						{/* Category Filter Pills */}
+						<div className={`${styles.category_filter}`} data-scroll>
+							{/* Desktop Pills */}
+							<div className={`${styles.category_pills_desktop}`}>
+								{allCategories.map((category, index) => (
+									<button
+										key={index}
+										className={`${styles.category_filter_pill} ${
+											selectedCategory === category ? styles.active : ""
+										}`}
+										onClick={() => handleCategorySelect(category)}
+									>
+										{category}
+									</button>
+								))}
+							</div>
+
+							{/* Mobile Accordion Dropdown */}
+							<div className={`${styles.category_accordion_mobile}`}>
+								<Accordion>
+									<AccordionItem uniqueKey="0">
+										<AccordionTitle>
+											<span className={styles.accordion_title_text}>
+												Category: {selectedCategory}
+											</span>
+										</AccordionTitle>
+										<AccordionContent>
+											<div className={`${styles.accordion_content}`}>
+												{allCategories.map((category) => (
+													<button
+														key={category}
+														className={`${styles.accordion_item} ${
+															selectedCategory === category ? styles.active : ""
+														}`}
+														onClick={() => handleCategorySelect(category)}
+													>
+														{category}
+													</button>
+												))}
+											</div>
+										</AccordionContent>
+									</AccordionItem>
+								</Accordion>
+							</div>
+						</div>
 					</div>
 				</section>
 
 				{/* Dynamic Blog Sections */}
 				{blogSections.map((section, index) => {
 					if (section.type === "banner") {
-						return <BannerBlogItem key={`banner-${index}`} blog={section.blog} />;
+						return <BannerBlogItem key={`banner-${index}`} blog={section.blogs} />;
 					} else {
 						return <GridSection key={`grid-${index}`} blogs={section.blogs} />;
 					}
@@ -168,7 +322,7 @@ export default function BlogPage() {
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
-									CONNECT WITH OM 
+									CONNECT WITH OM
 								</a>
 							</div>
 						</div>

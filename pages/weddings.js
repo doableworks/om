@@ -93,14 +93,14 @@ export default function WeddingsPage() {
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner} data-scroll>
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingBanner.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/weddingBanner.mp4"
 						className={`${styles.videoDesktop} img-responsive`}
 						muted
 						autoPlay
 						loop
 					/>
 					<video
-						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Top+Banner+-+Wedding+Mobile.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/Top+Banner+-+Wedding+Mobile.mp4"
 						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay
@@ -208,9 +208,7 @@ export default function WeddingsPage() {
 						)}
 						{isVideoPlaying && (
 							<video
-								src={
-									"https://websitetestcontent.s3.us-east-1.amazonaws.com/weddingVideo.mp4"
-								}
+								src={"https://d299alzxgdp6.cloudfront.net/weddingVideo.mp4"}
 								className="img-responsive"
 								style={{ height: "100%", width: "100%" }}
 								alt="videoTham"
@@ -333,7 +331,7 @@ export default function WeddingsPage() {
 						<div className={`${styles.btn_section}`}>
 							<div className={`${styles.btn}`}>
 								<a href="connect" className="text_24_m">
-									CONNECT WITH OM 
+									CONNECT WITH OM
 								</a>
 							</div>
 						</div>
