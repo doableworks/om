@@ -1,0 +1,116 @@
+@import "../helpers/helpers.scss";
+
+.main_footer {
+	background-color: var(--color_primary);
+	.footer_section_1 {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 767px) {
+			flex-wrap: wrap;
+		}
+		.left {
+			width: 40%;
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+			@media (min-width: 768px) and (max-width: 992px) {
+				width: 30%;
+			}
+		}
+		.right {
+			width: 50%;
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 767px) {
+				width: 100%;
+				flex-wrap: wrap;
+			}
+			@media (min-width: 768px) and (max-width: 992px) {
+				width: 65%;
+			}
+			.link_box {
+				height: 100%;
+				@media (max-width: 767px) {
+					height: auto;
+					width: 48%;
+					padding-top: 20px;
+				}
+				h4 {
+					color: var(--color_secondary);
+					a {
+						color: var(--color_secondary);
+					}
+				}
+				ul {
+					padding-left: 0;
+					li {
+						padding-bottom: 5px;
+						a {
+							color: var(--color_secondary);
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer_section_2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: 992px) {
+			flex-wrap: wrap;
+		}
+		.left {
+			width: 40%;
+			ul {
+				li {
+					img {
+						border-radius: 20px;
+						padding: 10%;
+					}
+				}
+			}
+			@media (max-width: 992px) {
+				width: 100%;
+			}
+			ul {
+				display: flex;
+				align-items: center;
+				padding-left: 0;
+				grid-gap: 15px;
+				list-style: none;
+				@media (max-width: 992px) {
+					justify-content: center;
+				}
+				li {
+					width: 40px;
+					height: 40px;
+					display: flex;
+					border-radius: 100%;
+					align-items: center;
+					justify-content: center;
+					color: var(--color_secondary);
+					background-color: var(--color_secondary);
+					&:first-child {
+						width: auto;
+						height: auto;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+		.right {
+			width: 50%;
+			text-align: left;
+			color: var(--color_secondary);
+			@media (max-width: 992px) {
+				width: 100%;
+				padding-top: 20px;
+				text-align: center;
+			}
+			a {
+				color: var(--color_secondary);
+			}
+		}
+	}
+}
