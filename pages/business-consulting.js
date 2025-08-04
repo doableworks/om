@@ -156,10 +156,10 @@ export default function CreativePage() {
 						</h3>
 						<div className={`${styles.para_section}`}>
 							<p className="text_18_m pb_20" data-scroll>
-								Dharma isn&apos;t only tradition - it is a strategy for a thriving life.
-								Our culture is sacred yet smart. Our mantras, philosophies and rituals
-								weren&apos;t crafted for worship alone - they were also built to help
-								you win and achieve your professional goals.
+								Dharma isn&apos;t simply tradition – it is a strategy for thriving. Our
+								culture is sacred yet smart. Our mantras, philosophies and rituals
+								weren&apos;t crafted for worship alone. They were built to help you win
+								- personally, professionally, spiritually.
 							</p>
 							<p className="text_18_m pb_20" data-scroll>
 								At GD Partners, we fuse dharmic wisdom with today&apos;s realities to

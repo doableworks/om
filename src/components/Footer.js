@@ -99,7 +99,7 @@ export default function Footer() {
 				<div className={`${styles.footer_section_2} pb_40`}>
 					<div className={`${styles.left}`}>
 						<ul>
-							<li>FOLLOW :</li>
+							<li>CONNECT :</li>
 							<li>
 								<a href="https://www.instagram.com/om.dhumatkar/?hl=en">
 									<img src={insta.src} className="img-responsive" alt="insta" />
@@ -110,11 +110,11 @@ export default function Footer() {
 									<img src={you.src} className="img-responsive" alt="youtube" />
 								</a>
 							</li>
-							{/* <li>
-								<a href="https://www.linkedin.com/in/omdhumatkar/">
+							<li>
+								<a href="https://www.linkedin.com/company/house%E2%80%94of%E2%80%94om/posts/?feedView=all">
 									<img src={link.src} className="img-responsive" alt="linkedin" />
 								</a>
-							</li> */}
+							</li>
 							<li>
 								<a href="https://open.spotify.com/artist/5WTG6aL5krHlBzF3CUvdl7?si=6_4f3WTvT1W4Swi32UuWQg">
 									<img src={SpotifyIcon.src} className="img-responsive" alt="spotify" />
