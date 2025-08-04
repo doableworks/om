@@ -99,7 +99,7 @@ export default function Footer() {
 				<div className={`${styles.footer_section_2} pb_40`}>
 					<div className={`${styles.left}`}>
 						<ul>
-							<li>CONNECT :</li>
+							<li>CONNECT</li>
 							<li>
 								<a href="https://www.instagram.com/om.dhumatkar/?hl=en">
 									<img src={insta.src} className="img-responsive" alt="insta" />
