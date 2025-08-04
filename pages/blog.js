@@ -214,8 +214,8 @@ export default function BlogPage() {
 		selectedCategory === "All"
 			? blogData.blogs
 			: blogData.blogs.filter(
-					(blog) => blog.categories && blog.categories.includes(selectedCategory)
-			  );
+				(blog) => blog.categories && blog.categories.includes(selectedCategory)
+			);
 
 	const blogSections = groupBlogsIntoSections(filteredBlogs);
 
