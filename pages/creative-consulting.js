@@ -88,34 +88,34 @@ export default function CreativePage() {
 			<main className={`${styles.weddings_Page}`}>
 				<section className={styles.banner} data-scroll>
 					{/* Desktop video */}
-						<video
-							src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Creative+Consulting+Banner.mp4"
-							className={`${styles.videoDesktop} img-responsive`}
-							muted
-							autoPlay
-							loop
-							style={{}}
-						/>
-						{/* Mobile video */}
-						<video
-							src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Creative+Consulting+Mobile.mp4"
-							className={`${styles.videoMobile} img-responsive`}
-							muted
-							autoPlay
-							loop
-						/>
-						<div
-							style={{
-								position: "absolute",
-								top: 0,
-								left: 0,
-								width: "100%",
-								height: "100%",
-								backgroundColor: "rgba(0, 0, 0, 0.3)",
-								pointerEvents: "none",
-							}}
-						/>
-						{/* <img
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Creative+Consulting+Banner.mp4"
+						className={`${styles.videoDesktop} img-responsive`}
+						muted
+						autoPlay
+						loop
+						style={{}}
+					/>
+					{/* Mobile video */}
+					<video
+						src="https://websitetestcontent.s3.us-east-1.amazonaws.com/Creative+Consulting+Mobile.mp4"
+						className={`${styles.videoMobile} img-responsive`}
+						muted
+						autoPlay
+						loop
+					/>
+					<div
+						style={{
+							position: "absolute",
+							top: 0,
+							left: 0,
+							width: "100%",
+							height: "100%",
+							backgroundColor: "rgba(0, 0, 0, 0.3)",
+							pointerEvents: "none",
+						}}
+					/>
+					{/* <img
 						src={videoTham.src}
 						className="img-responsive"
 						alt="videoTham"
