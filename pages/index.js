@@ -56,8 +56,7 @@ export default function HomePage() {
 					/>
 					{/* Mobile video */}
 					<video
-						src="https://d299alzxgdp6.cloudfront.net
-/Top+Banner+-+Homepage+Mobile.mp4"
+						src="https://d299alzxgdp6.cloudfront.net/Top+Banner+-+Homepage+Mobile.mp4"
 						className={`${styles.videoMobile} img-responsive`}
 						muted
 						autoPlay

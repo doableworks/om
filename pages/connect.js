@@ -54,11 +54,6 @@ export default function OmPage() {
 			<main className={`${styles.ContactPage}`}>
 				<section className={styles.form_section} data-scroll>
 					<div className="container">
-						<div className={styles.writeToUsText}>
-							<span>Write to us at</span>
-							<br />
-							<a href="mailto:team@omdhumatkar.com">team@omdhumatkar.com</a>
-						</div>
 						<div className={`${styles.form_section_wrapper} pb_80`}>
 							<div className={styles.left_img_wrapper}>
 								<img
@@ -74,6 +69,12 @@ export default function OmPage() {
 								</div>
 							</div>
 						</div>
+						<div className={styles.writeToUsText}>
+							<span>Write to us at</span>
+							<br />
+							<a href="mailto:team@omdhumatkar.com">team@omdhumatkar.com</a>
+						</div>{" "}
+						*
 					</div>
 				</section>
 				<section className={`${styles.banner_Section}`} data-scroll>
