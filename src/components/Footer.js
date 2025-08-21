@@ -101,22 +101,22 @@ export default function Footer() {
 						<ul>
 							<li>CONNECT</li>
 							<li>
-								<a href="https://www.instagram.com/om.dhumatkar/?hl=en">
+								<a href="https://www.instagram.com/om.dhumatkar/?hl=en" target="_blank">
 									<img src={insta.src} className="img-responsive" alt="insta" />
 								</a>
 							</li>
 							<li>
-								<a href="https://www.youtube.com/@omdhumatkar">
+								<a href="https://www.youtube.com/@omdhumatkar" target="_blank">
 									<img src={you.src} className="img-responsive" alt="youtube" />
 								</a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/company/house%E2%80%94of%E2%80%94om/posts/?feedView=all">
+								<a href="https://www.linkedin.com/company/house—of—om/about/" target="_blank">
 									<img src={link.src} className="img-responsive" alt="linkedin" />
 								</a>
 							</li>
 							<li>
-								<a href="https://open.spotify.com/artist/5WTG6aL5krHlBzF3CUvdl7?si=6_4f3WTvT1W4Swi32UuWQg">
+								<a href="https://open.spotify.com/artist/5WTG6aL5krHlBzF3CUvdl7?si=6_4f3WTvT1W4Swi32UuWQg" target="_blank">
 									<img src={SpotifyIcon.src} className="img-responsive" alt="spotify" />
 								</a>
 							</li>
