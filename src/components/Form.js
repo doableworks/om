@@ -25,7 +25,7 @@ import styles from "@/styles/components/Form.module.scss";
  * @returns {JSX.Element}
  */
 export default function Form() {
-	const EMAIL_ID = process.env.NEXT_PUBLIC_EMAIL_ID || 'team@omdhumatkar.com';
+	const emailId = process.env.NEXT_PUBLIC_EMAIL_ID || "team@omdhumatkar.com";
 	const formRef = useRef();
 	const [showSuccess, setShowSuccess] = useState(false);
 	const [wordCount, setWordCount] = useState(0);
@@ -94,15 +94,15 @@ export default function Form() {
 		try {
 			// Use FormSubmit.co to send email
 			const formData = new FormData();
-			formData.append('name', data.name || "");
-			formData.append('email', data.email || "");
-			formData.append('additionalInfo', data.additionalInfo || "");
-			formData.append('_subject', 'New Contact Form Submission from OM Dhumatkar Website');
-			formData.append('_captcha', 'false'); // Disable captcha
-			formData.append('_template', 'table'); // Use table template for better formatting
+			formData.append("name", data.name || "");
+			formData.append("email", data.email || "");
+			formData.append("additionalInfo", data.additionalInfo || "");
+			formData.append("_subject", "New Contact Form Submission from OM Dhumatkar Website");
+			formData.append("_captcha", "false"); // Disable captcha
+			formData.append("_template", "table"); // Use table template for better formatting
 
-			const response = await fetch(`https://formsubmit.co/${EMAIL_ID}`, {
-				method: 'POST',
+			const response = await fetch(`https://formsubmit.co/${emailId}`, {
+				method: "POST",
 				body: formData
 			});
 
@@ -114,7 +114,7 @@ export default function Form() {
 					setShowSuccess(false);
 				}, 5000);
 			} else {
-				throw new Error('Failed to submit form');
+				throw new Error("Failed to submit form");
 			}
 		} catch (error) {
 			setShowSuccess("error");
