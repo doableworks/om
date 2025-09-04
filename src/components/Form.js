@@ -25,6 +25,7 @@ import styles from "@/styles/components/Form.module.scss";
  * @returns {JSX.Element}
  */
 export default function Form() {
+	const EMAIL_ID = process.env.NEXT_PUBLIC_EMAIL_ID || 'team@omdhumatkar.com';
 	const formRef = useRef();
 	const [showSuccess, setShowSuccess] = useState(false);
 	const [wordCount, setWordCount] = useState(0);
@@ -84,47 +85,46 @@ export default function Form() {
 	};
 
 	/**
-	 * Handles form submission, sends data, and manages UI state.
+	 * Handles form submission, sends data via FormSubmit.co, and manages UI state.
 	 * @param {object} data - The form data to submit.
 	 */
 	const onSubmit = async (data) => {
 		setIsSubmitting(true);
-		const formData = new FormData();
-		formData.append("name", data.name || "");
-		formData.append("email", data.email || "");
-		formData.append("additionalInfo", data.additionalInfo || "");
-		const formUrl =
-			"https://script.google.com/macros/s/AKfycbwnQZcSGBdVWmjeXE4Vid9C8mtruuRm3AfCHE0TmO9GvBDA-byr3mYIAfQu7AejI7zc/exec";
-		fetch(formUrl, {
-			method: "POST",
-			body: formData,
-		})
-			.then((response) => {
-				if (response.ok) {
-					setShowSuccess(true);
-					reset();
-					setWordCount(0);
-					setTimeout(() => {
-						setShowSuccess(false);
-					}, 5000);
-				} else {
-					setShowSuccess("error");
-					console.error("Form submission failed:", response);
-					setTimeout(() => {
-						setShowSuccess(false);
-					}, 5000);
-				}
-			})
-			.catch((error) => {
-				setShowSuccess("error");
-				console.error("Fetch error:", error);
+		
+		try {
+			// Use FormSubmit.co to send email
+			const formData = new FormData();
+			formData.append('name', data.name || "");
+			formData.append('email', data.email || "");
+			formData.append('additionalInfo', data.additionalInfo || "");
+			formData.append('_subject', 'New Contact Form Submission from OM Dhumatkar Website');
+			formData.append('_captcha', 'false'); // Disable captcha
+			formData.append('_template', 'table'); // Use table template for better formatting
+
+			const response = await fetch(`https://formsubmit.co/${EMAIL_ID}`, {
+				method: 'POST',
+				body: formData
+			});
+
+			if (response.ok) {
+				setShowSuccess(true);
+				reset();
+				setWordCount(0);
 				setTimeout(() => {
 					setShowSuccess(false);
 				}, 5000);
-			})
-			.finally(() => {
-				setIsSubmitting(false);
-			});
+			} else {
+				throw new Error('Failed to submit form');
+			}
+		} catch (error) {
+			setShowSuccess("error");
+			console.error("Form submission failed:", error);
+			setTimeout(() => {
+				setShowSuccess(false);
+			}, 5000);
+		} finally {
+			setIsSubmitting(false);
+		}
 	};
 
 	return (
