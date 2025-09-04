@@ -69,7 +69,7 @@ export default function Footer() {
 								<a href="about-us">ABOUT</a>
 							</h4>
 							<h4 className="text_16_b pb_10" style={{ paddingBottom: "1.7rem" }}>
-								<a href="business-consulting">GD PARTNERS</a>
+								<a href="https://www.gd-partners.in" target="_blank">GD PARTNERS</a>
 							</h4>
 							<h4 className="text_16_b pb_10">
 								<a href="connect">CONNECT</a>

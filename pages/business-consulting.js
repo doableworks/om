@@ -162,7 +162,7 @@ export default function CreativePage() {
 								- personally, professionally, spiritually.
 							</p>
 							<p className="text_18_m pb_20" data-scroll>
-								At GD Partners, we fuse dharmic wisdom with today&apos;s realities to
+								At <a href="https://www.gd-partners.in" target="_blank" style={{ color: "inherit",fontWeight:"bold" }}>GD Partners</a>, we fuse dharmic wisdom with today&apos;s realities to
 								build the next generation of Bharatiya Business. We blend commercial
 								acumen with Indian ethos, marrying ancient wisdom with global best
 								practices. We see capital not as money, but in its timeless Sanskrit

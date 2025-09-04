@@ -225,11 +225,11 @@ export default function Header() {
 									</ul>
 								)}
 							</li>
-							{/* <li>
-							<a href="business-consulting" className="text_15_r">
+						 <li>
+							<a href="https://www.gd-partners.in" target="_blank" className="text_15_r">
 								GD PARTNERS
 							</a>
-						</li> */}
+						</li> 
 							<li>
 								<a href="connect" className="text_15_r">
 									CONNECT
